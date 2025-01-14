@@ -46,10 +46,10 @@
 
 	<div class="bg-accent grid grid-cols-1 gap-8 px-[5%] py-8 text-white md:grid-cols-5 md:px-[10%]">
 		<div class="col-span-2">
-			<enhanced:img src={RogelioSicat} alt="Rogelio Sicat" class="w-full" />
+			<enhanced:img src={RogelioSicat} alt="Rogelio Sikat" class="w-full" />
 		</div>
 		<div class="col-span-3 space-y-8">
-			<h2 class="text-secondary w-full text-6xl font-bold">Rogelio R. Sicat</h2>
+			<h2 class="text-secondary w-full text-6xl font-bold">Rogelio R. Sikat</h2>
 			<p class="text-lg font-medium">&ldquo;Rogelio Sicat&rdquo;</p>
 			<div class="text-secondary space-y-4 text-base">
 				<p>

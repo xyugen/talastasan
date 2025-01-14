@@ -7,7 +7,13 @@ import BuongKuwento from '$lib/assets/stories/buong-kuwento.png?enhanced';
 import Buod from '$lib/assets/stories/buod.png?enhanced';
 import KuwentongMayLarawan from '$lib/assets/stories/kuwentong-may-larawan.png?enhanced';
 
-export const fullStoryChapters = [
+interface NavLink {
+	title: string;
+	link?: string;
+	items?: NavLink[];
+}
+
+export const fullStoryChapters: NavLink[] = [
 	{
 		title: 'Pahina 1',
 		link: '/pahina-1'
@@ -39,6 +45,26 @@ export const fullStoryChapters = [
 	{
 		title: 'Pahina 8',
 		link: '/pahina-8'
+	}
+];
+
+export const navLinks: NavLink[] = [
+	{
+		title: 'Home',
+		link: '/'
+	},
+	{
+		title: 'Buong Kuwento',
+		// link: '/buong-kuwento',
+		items: fullStoryChapters
+	},
+	{
+		title: 'Buod',
+		link: '/buod'
+	},
+	{
+		title: 'Kuwentong May Larawan',
+		link: '/kuwentong-may-larawan'
 	}
 ];
 

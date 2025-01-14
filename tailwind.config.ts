@@ -4,6 +4,8 @@ import svelteUx from 'svelte-ux/plugins/tailwind.cjs';
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/svelte-ux/**/*.{svelte,js}'],
 
+	darkMode: 'selector',
+
 	theme: {
 		extend: {
 			fontFamily: {
@@ -26,7 +28,7 @@ export default {
 				warning: 'hsl(30.1408 84.1897% 49.6078%)',
 				danger: 'hsl(354.4845 100% 41.642%)',
 				'surface-100': 'hsl(0 0% 94.5098%)'
-			},
+			}
 			// dark: {
 			// 	'color-scheme': 'dark',
 			// 	primary: 'hsl(234.8208 100% 72.6713%)',

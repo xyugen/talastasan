@@ -16,6 +16,7 @@
 		"@eslint/compat": "^1.2.3",
 		"@eslint/js": "^9.17.0",
 		"@sveltejs/adapter-vercel": "^5.5.0",
+		"@sveltejs/enhanced-img": "^0.4.4",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"autoprefixer": "^10.4.20",
@@ -35,7 +36,7 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
-		"bits-ui": "^0.22.0",
+		"lucide-svelte": "^0.471.0",
 		"svelte-ux": "^0.77.0"
 	}
 }

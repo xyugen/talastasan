@@ -7,8 +7,6 @@
 	import { Drawer } from 'svelte-ux';
 
 	let open = false;
-
-	console.log(navLinks);
 </script>
 
 <div class="flex flex-row items-center md:hidden">
@@ -32,7 +30,11 @@
 							<Menu {open} on:close={toggleOff} matchWidth>
 								<div class="bg-secondary/90 text-secondary-content">
 									{#each navLink.items as { title, link }}
-										<MenuItem link={navLink.link + link}>{title}</MenuItem>
+										<MenuItem on:click={toggleOff}>
+											<a href={navLink.link + link} class="w-full">
+												{title}
+											</a>
+										</MenuItem>
 									{/each}
 								</div>
 							</Menu>

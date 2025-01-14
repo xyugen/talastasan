@@ -9,7 +9,7 @@ import KuwentongMayLarawan from '$lib/assets/stories/kuwentong-may-larawan.png?e
 
 interface NavLink {
 	title: string;
-	link?: string;
+	link: string;
 	items?: NavLink[];
 }
 
@@ -55,7 +55,7 @@ export const navLinks: NavLink[] = [
 	},
 	{
 		title: 'Buong Kuwento',
-		// link: '/buong-kuwento',
+		link: '/buong-kuwento',
 		items: fullStoryChapters
 	},
 	{

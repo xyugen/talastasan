@@ -52,7 +52,10 @@
 				<enhanced:img src={RogelioSicat} alt="Rogelio Sikat" class="rounded-lg shadow-lg" />
 			</div>
 			<div class="space-y-6 md:col-span-3">
-				<h3 class="text-3xl font-semibold text-secondary/90">Rogelio R. Sikat</h3>
+				<div class="space-y-2">
+					<h3 class="text-3xl font-semibold text-secondary/90">Rogelio R. Sikat</h3>
+					<h4 class="text-xl font-semibold text-secondary/50">“Rogelio Sícat”</h4>
+				</div>
 				<div class="space-y-4 text-base text-secondary/80">
 					<p>
 						Si Rogelio Sikat ay isang Pilipinong manunulat ng piksyon, mandudula, tagasalinwika, at

@@ -17,8 +17,8 @@
 					<!-- <Twitter class="h-6 w-6" /> -->
 				</a>
 			</div>
-			<p class="text-sm text-gray-400">
-				COPYRIGHT &copy; {year}, TALASTASAN.COM. ALL RIGHTS RESERVED.
+			<p class="text-center text-sm text-secondary-content/60">
+				Copyright &copy; {year}, TalasTasan. All Rights Reserved.
 			</p>
 		</div>
 	</div>

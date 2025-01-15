@@ -4,25 +4,17 @@
 	import { Button } from 'svelte-ux';
 	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
 	import ChevronRight from 'lucide-svelte/icons/chevron-right';
+	import StoryHeroSection from '@/components/story-hero-section.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
 
 <svelte:head>
-	<title>Impeng Negro | TalasTasan</title>
+	<title>Buong Kuwento | TalasTasan</title>
 </svelte:head>
 
 <!-- Hero -->
-<div
-	class="relative flex h-96 flex-col items-center justify-center bg-cover bg-no-repeat text-surface-100"
-	style="background-image: url({BuongKuwentoCover}); background-position: center;"
->
-	<div class="absolute inset-0 bg-black/40"></div>
-	<div class="z-10 space-y-4 text-center">
-		<h1 class="text-7xl font-medium">Impeng Negro</h1>
-		<p>Ni Rogelio Sikat</p>
-	</div>
-</div>
+<StoryHeroSection imageCover={BuongKuwentoCover} />
 
 <section class="bg-surface-100">
 	<div class="space-y-2 bg-secondary px-8 py-8 text-secondary-content md:px-[10%]">
@@ -35,7 +27,7 @@
 	</div>
 	<div class="container mx-auto space-y-12 px-8 py-8 md:px-[10%]">
 		<p
-			class="whitespace-pre-wrap rounded-md border border-primary/5 bg-white p-10 text-lg text-surface-content/80 shadow-md"
+			class="whitespace-pre-wrap rounded-md border border-primary/5 bg-white p-10 text-base text-surface-content/80 shadow-md md:text-lg"
 		>
 			{#if data.chapter}
 				{data.chapter.content}

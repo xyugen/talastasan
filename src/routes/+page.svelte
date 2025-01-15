@@ -5,6 +5,7 @@
 	import WrittenWorksCarousel from '@/components/written-works-carousel.svelte';
 	import { stories } from '@/data';
 	import ChevronDown from 'lucide-svelte/icons/chevron-down';
+	import Quote from 'lucide-svelte/icons/quote';
 </script>
 
 <svelte:head>
@@ -33,9 +34,12 @@
 <!-- Details Section -->
 <section id="details" class="bg-surface-100 py-32">
 	<div class="space-y-8 px-6 text-center md:px-20 lg:px-40">
-		<h3 class="text-3xl font-semibold text-surface-content">
-			Buksan ang isipan, palawakin ang kaalaman.
-		</h3>
+		<div class="relative w-fit mx-auto">
+			<h3 class="text-3xl font-semibold text-surface-content">
+				Buksan ang isipan, palawakin ang kaalaman.
+			</h3>
+			<Quote class="absolute rotate-180 size-8 -top-4 -left-10 text-surface-content/30" />
+		</div>
 		<p class="text-lg text-surface-content/80">
 			Ang TalasTasan ay isang mungkahing website na naglalaman ng mga akdang pampanitikan na
 			magsisilbing isang kapaki-pakinabang na kagamitang pampagtuturo at pagkatuto para sa mga guro

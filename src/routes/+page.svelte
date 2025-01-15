@@ -7,6 +7,10 @@
 	import ChevronDown from 'lucide-svelte/icons/chevron-down';
 </script>
 
+<svelte:head>
+	<title>TalasTasan</title>
+</svelte:head>
+
 <section
 	class="relative flex h-screen flex-col items-center justify-center object-scale-down text-white"
 >

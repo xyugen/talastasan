@@ -17,11 +17,11 @@
 
 <section class="bg-surface-100">
 	<PageTitle title="Buod" />
-	<ChapterReader>
-		<p
-			class="whitespace-pre-wrap rounded-md border border-primary/5 bg-white p-6 text-base text-surface-content/80 shadow-md md:p-10 md:text-lg"
-		>
-			{data.shortenedStory}
-		</p>
-	</ChapterReader>
+	<div class="container mx-auto space-y-12 px-2 py-4 md:px-[10%]">
+		<ChapterReader>
+			<p class="whitespace-pre-wrap">
+				{data.shortenedStory}
+			</p>
+		</ChapterReader>
+	</div>
 </section>

@@ -37,8 +37,10 @@
 			Buksan ang isipan, palawakin ang kaalaman.
 		</h3>
 		<p class="text-lg text-surface-content/80">
-			Ang TalasTasan ay naglalaman ng mga akdang pampanitikan na kapaki-pakinabang sa mga guro at
-			mag-aaral upang mapalawak ang kasanayan sa pagbasa at bokabularyo sa Filipino.
+			Ang TalasTasan ay isang mungkahing website na naglalaman ng mga akdang pampanitikan na
+			magsisilbing isang kapaki-pakinabang na kagamitang pampagtuturo at pagkatuto para sa mga guro
+			at mag-aaral upang higit pang mapalawak ang kanilang kasanayan sa pagbasa at mapalawak ang
+			kanilang bokabularyo sa Filipino.
 		</p>
 	</div>
 </section>

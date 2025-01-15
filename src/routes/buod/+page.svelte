@@ -3,6 +3,7 @@
 	import BuodCover from '@/assets/stories/buod-cover.png';
 	import PageTitle from '@/components/page-title.svelte';
 	import type { PageData } from './$types';
+	import ChapterReader from '@/components/chapter-reader.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -16,11 +17,11 @@
 
 <section class="bg-surface-100">
 	<PageTitle title="Buod" />
-	<div class="container mx-auto space-y-12 p-8 md:px-[10%]">
+	<ChapterReader>
 		<p
 			class="whitespace-pre-wrap rounded-md border border-primary/5 bg-white p-6 text-base text-surface-content/80 shadow-md md:p-10 md:text-lg"
 		>
 			{data.shortenedStory}
 		</p>
-	</div>
+	</ChapterReader>
 </section>

@@ -6,6 +6,7 @@
 	import ChevronRight from 'lucide-svelte/icons/chevron-right';
 	import StoryHeroSection from '@/components/story-hero-section.svelte';
 	import PageTitle from '@/components/page-title.svelte';
+	import ChapterReader from '@/components/chapter-reader.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -20,13 +21,11 @@
 <section class="bg-gradient-to-b from-gray-50 to-surface-100">
 	<PageTitle title="Buong Kuwento" chapter={data.chapter} />
 	<div class="container mx-auto space-y-12 px-2 py-4 md:px-[10%]">
-		<div
-			class="rounded-sm border border-primary/10 bg-white p-4 text-base leading-relaxed text-surface-content/80 shadow-sm md:rounded-lg md:p-6 md:text-lg md:shadow-lg"
-		>
+		<ChapterReader>
 			{#if data.chapter}
 				<p class="whitespace-pre-wrap">{data.chapter.content}</p>
 			{/if}
-		</div>
+		</ChapterReader>
 
 		<div class="flex items-center justify-between">
 			{#if data.previous}

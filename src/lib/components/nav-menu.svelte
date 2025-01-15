@@ -6,21 +6,22 @@
 	import { navLinks } from '@/data';
 	import { Drawer } from 'svelte-ux';
 
-	let open = false;
+	let drawerOpen = false;
 </script>
 
+<!-- Mobile -->
 <div class="flex flex-row items-center md:hidden">
-	<Button on:click={() => (open = true)}>
+	<Button on:click={() => (drawerOpen = true)}>
 		<MenuIcon />
 	</Button>
 
-	<Drawer bind:open placement="right" class="w-[60%] bg-secondary">
+	<Drawer bind:open={drawerOpen} placement="right" class="w-[60%] bg-secondary">
 		<div class="flex items-center justify-end">
-			<Button on:click={() => (open = false)}>
+			<Button on:click={() => (drawerOpen = false)}>
 				<Close class="text-secondary-content" />
 			</Button>
 		</div>
-		<div class="space-y-2 p-2 text-secondary-content">
+		<div class="flex flex-col items-start gap-2 p-2 text-secondary-content">
 			{#each navLinks as navLink}
 				{#if navLink.items}
 					<Toggle let:on={open} let:toggle let:toggleOff>
@@ -30,11 +31,11 @@
 							<Menu {open} on:close={toggleOff} matchWidth>
 								<div class="bg-secondary/90 text-secondary-content">
 									{#each navLink.items as { title, link }}
-										<MenuItem on:click={toggleOff}>
-											<a href={navLink.link + link} class="w-full">
+										<a href={navLink.link + link}>
+											<MenuItem on:click={() => (drawerOpen = false)}>
 												{title}
-											</a>
-										</MenuItem>
+											</MenuItem>
+										</a>
 									{/each}
 								</div>
 							</Menu>
@@ -48,6 +49,7 @@
 	</Drawer>
 </div>
 
+<!-- Desktop -->
 <nav class="hidden flex-row items-center md:flex">
 	{#each navLinks as navLink}
 		{#if navLink.items && navLink.items.length > 0}
@@ -58,11 +60,11 @@
 					<Menu {open} on:close={toggleOff} matchWidth>
 						<div class="bg-secondary/90 text-secondary-content">
 							{#each navLink.items as { title, link }}
-								<MenuItem>
-									<a href={navLink.link + link} class="w-full">
+								<a href={navLink.link + link} class="size-full">
+									<MenuItem>
 										{title}
-									</a>
-								</MenuItem>
+									</MenuItem>
+								</a>
 							{/each}
 						</div>
 					</Menu>

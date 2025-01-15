@@ -30,6 +30,9 @@
 							<ChevronDown />
 							<Menu {open} on:close={toggleOff} matchWidth>
 								<div class="bg-secondary/90 text-secondary-content">
+									<a href={navLink.link}>
+										<MenuItem on:click={() => (drawerOpen = false)}>Talatuntunan</MenuItem>
+									</a>
 									{#each navLink.items as { title, link }}
 										<a href={navLink.link + link}>
 											<MenuItem on:click={() => (drawerOpen = false)}>
@@ -59,6 +62,9 @@
 					<ChevronDown />
 					<Menu {open} on:close={toggleOff} matchWidth>
 						<div class="bg-secondary/90 text-secondary-content">
+							<a href={navLink.link}>
+								<MenuItem on:click={() => (drawerOpen = false)}>Talatuntunan</MenuItem>
+							</a>
 							{#each navLink.items as { title, link }}
 								<a href={navLink.link + link} class="size-full">
 									<MenuItem>

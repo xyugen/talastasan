@@ -37,6 +37,7 @@
 	},
 	"dependencies": {
 		"lucide-svelte": "^0.471.0",
-		"svelte-ux": "^0.77.0"
+		"svelte-ux": "^0.77.0",
+		"sveltekit-top-loader": "^0.1.0"
 	}
 }

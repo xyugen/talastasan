@@ -7,6 +7,10 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+	<title>Buod | TalasTasan</title>
+</svelte:head>
+
 <!-- Hero -->
 <StoryHeroSection imageCover={BuodCover} />
 

@@ -39,7 +39,7 @@
 				<a href="/buong-kuwento{data.previous.link}">
 					<Button variant="outline">
 						<ChevronLeft />
-						<span class="ml-2">Previous</span>
+						<span class="ml-2">{data.previous.title}</span>
 					</Button>
 				</a>
 			{:else}
@@ -50,7 +50,7 @@
 			{#if data.next}
 				<a href="/buong-kuwento{data.next.link}">
 					<Button variant="fill">
-						<span class="mr-2">Next</span>
+						<span class="mr-2">{data.next.title}</span>
 						<ChevronRight />
 					</Button>
 				</a>

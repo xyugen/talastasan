@@ -21,7 +21,7 @@
 	<PageTitle title="Buong Kuwento" chapter={data.chapter} />
 	<div class="container mx-auto space-y-12 px-6 py-12 md:px-[10%]">
 		<div
-			class="rounded-lg border border-primary/10 bg-white p-8 text-lg leading-relaxed text-gray-700 shadow-lg transition hover:shadow-xl"
+			class="rounded-lg border border-primary/10 bg-white p-8 text-lg leading-relaxed text-surface-content/80 shadow-lg"
 		>
 			{#if data.chapter}
 				<p class="whitespace-pre-wrap">{data.chapter.content}</p>

@@ -14,43 +14,49 @@
 	<title>Buong Kuwento | TalasTasan</title>
 </svelte:head>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <StoryHeroSection imageCover={BuongKuwentoCover} />
 
-<section class="bg-surface-100">
+<section class="bg-gradient-to-b from-gray-50 to-surface-100">
 	<PageTitle title="Buong Kuwento" chapter={data.chapter} />
-	<div class="container mx-auto space-y-12 px-8 py-8 md:px-[10%]">
-		<p
-			class="whitespace-pre-wrap rounded-md border border-primary/5 bg-white p-10 text-base text-surface-content/80 shadow-md md:text-lg"
+	<div class="container mx-auto space-y-12 px-6 py-12 md:px-[10%]">
+		<div
+			class="rounded-lg border border-primary/10 bg-white p-8 text-lg leading-relaxed text-gray-700 shadow-lg transition hover:shadow-xl"
 		>
 			{#if data.chapter}
-				{data.chapter.content}
+				<p class="whitespace-pre-wrap">{data.chapter.content}</p>
 			{/if}
-		</p>
+		</div>
 
-		<div class="flex flex-row justify-between">
+		<div class="flex justify-between items-center">
 			{#if data.previous}
-				<a href="/buong-kuwento{data.previous.link}">
-					<Button variant="outline">
-						<ChevronLeft />
-						<span class="ml-2">{data.previous.title}</span>
+				<a
+					href="/buong-kuwento{data.previous.link}"
+					class="group flex items-center space-x-2 text-primary hover:text-primary-dark transition"
+				>
+					<Button variant="outline" class="flex items-center space-x-2">
+						<ChevronLeft class="transition group-hover:scale-110" />
+						<span>{data.previous.title}</span>
 					</Button>
 				</a>
 			{:else}
-				<div></div>
-				<!-- Empty space for alignment if no previous chapter -->
+				<div class="w-24"></div>
+				<!-- Placeholder for alignment -->
 			{/if}
 
 			{#if data.next}
-				<a href="/buong-kuwento{data.next.link}">
-					<Button variant="fill">
-						<span class="mr-2">{data.next.title}</span>
-						<ChevronRight />
+				<a
+					href="/buong-kuwento{data.next.link}"
+					class="group flex items-center space-x-2 text-primary hover:text-primary-dark transition"
+				>
+					<Button variant="fill" class="flex items-center space-x-2">
+						<span>{data.next.title}</span>
+						<ChevronRight class="transition group-hover:scale-110" />
 					</Button>
 				</a>
 			{:else}
-				<div></div>
-				<!-- Empty space for alignment if no next chapter -->
+				<div class="w-24"></div>
+				<!-- Placeholder for alignment -->
 			{/if}
 		</div>
 	</div>

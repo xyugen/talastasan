@@ -2,15 +2,19 @@
 	import { writtenWorks } from '@/data';
 	import Carousel from './carousel.svelte';
 
-	// @ts-ignore
 	let image = writtenWorks.length > 0 ? writtenWorks[0] : null;
 </script>
 
-<div class="h-full w-[16rem] md:w-80">
-	<Carousel images={writtenWorks} on:change={({ detail }) => (image = detail.image)} />
+<div class="flex flex-col items-center space-y-4 w-full md:w-96">
+	<Carousel 
+		images={writtenWorks} 
+		on:change={({ detail }) => (image = detail.image)} 
+		divClass="rounded-lg shadow-lg"
+		imgClass="rounded-lg"
+	/>
 
 	{#if image}
-		<div class="bg-primary mt-2 min-h-10 rounded p-2 text-center">
+		<div class="mt-2 min-h-10 rounded-lg bg-primary p-4 text-center text-lg font-medium text-primary-content shadow-md">
 			{image.alt}
 		</div>
 	{/if}

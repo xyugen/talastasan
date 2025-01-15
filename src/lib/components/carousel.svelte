@@ -41,42 +41,33 @@
 	});
 </script>
 
-<!-- Preload all Carousel images for improved responsivity -->
-<svelte:head>
-	{#if images.length > 0}
-		{#each images as image}
-			<link rel="preload" href={image.src} as="image" />
-		{/each}
-	{/if}
-</svelte:head>
-
 <div class="relative h-full w-full overflow-hidden">
 	<!-- Carousel Inner -->
 	<div
-		class={'flex transition-transform duration-500 ease-in-out ' + divClass}
+		class={`flex transition-transform duration-500 ease-in-out ${divClass}`}
 		style="transform: translateX(calc(-100% * var(--active-index)))"
 		style:--active-index={activeIndex}
 	>
 		{#each images as { src, alt }}
 			<div class="w-full flex-shrink-0">
-				<img {src} {alt} class={'h-full w-fit object-fill' + imgClass} />
+				<img {src} {alt} class={`h-full w-full object-cover ${imgClass}`} />
 			</div>
 		{/each}
 	</div>
 
-	<!-- Previous and Next Buttons -->
+	<!-- Navigation Buttons -->
 	<div class="absolute inset-0 flex items-center justify-between px-4">
 		<button
-			class="rounded-full bg-black/50 p-2 text-white transition hover:bg-black/70"
+			class="rounded-full bg-white/80 p-3 text-gray-700 shadow-md transition hover:bg-white hover:shadow-lg"
 			on:click={previousSlide}
 		>
-			<ChevronLeft />
+			<ChevronLeft class="h-6 w-6" />
 		</button>
 		<button
-			class="rounded-full bg-black/50 p-2 text-white transition hover:bg-black/70"
+			class="rounded-full bg-white/80 p-3 text-gray-700 shadow-md transition hover:bg-white hover:shadow-lg"
 			on:click={nextSlide}
 		>
-			<ChevronRight />
+			<ChevronRight class="h-6 w-6" />
 		</button>
 	</div>
 
@@ -86,9 +77,11 @@
 			<button
 				type="button"
 				aria-label="Go to slide {index + 1}"
-				class="h-3 w-3 cursor-pointer rounded-full bg-gray-400 transition {index === activeIndex
-					? 'bg-white'
-					: ''}"
+				class={`h-3 w-3 rounded-full transition ${
+					index === activeIndex
+						? 'bg-primary shadow-md'
+						: 'bg-gray-300 hover:bg-gray-400'
+				}`}
 				on:click={() => setActiveIndex(index)}
 			></button>
 		{/each}

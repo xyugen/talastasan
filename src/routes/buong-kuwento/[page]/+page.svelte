@@ -19,20 +19,20 @@
 
 <section class="bg-gradient-to-b from-gray-50 to-surface-100">
 	<PageTitle title="Buong Kuwento" chapter={data.chapter} />
-	<div class="container mx-auto space-y-12 px-6 py-12 md:px-[10%]">
+	<div class="container mx-auto space-y-12 px-2 py-4 md:px-[10%]">
 		<div
-			class="rounded-lg border border-primary/10 bg-white p-8 text-lg leading-relaxed text-surface-content/80 shadow-lg"
+			class="rounded-sm border border-primary/10 bg-white p-4 text-base leading-relaxed text-surface-content/80 shadow-sm md:rounded-lg md:p-6 md:text-lg md:shadow-lg"
 		>
 			{#if data.chapter}
 				<p class="whitespace-pre-wrap">{data.chapter.content}</p>
 			{/if}
 		</div>
 
-		<div class="flex justify-between items-center">
+		<div class="flex items-center justify-between">
 			{#if data.previous}
 				<a
 					href="/buong-kuwento{data.previous.link}"
-					class="group flex items-center space-x-2 text-primary hover:text-primary-dark transition"
+					class="hover:text-primary-dark group flex items-center space-x-2 text-primary transition"
 				>
 					<Button variant="outline" class="flex items-center space-x-2">
 						<ChevronLeft class="transition group-hover:scale-110" />
@@ -47,7 +47,7 @@
 			{#if data.next}
 				<a
 					href="/buong-kuwento{data.next.link}"
-					class="group flex items-center space-x-2 text-primary hover:text-primary-dark transition"
+					class="hover:text-primary-dark group flex items-center space-x-2 text-primary transition"
 				>
 					<Button variant="fill" class="flex items-center space-x-2">
 						<span>{data.next.title}</span>

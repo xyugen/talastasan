@@ -58,13 +58,13 @@
 	<!-- Navigation Buttons -->
 	<div class="absolute inset-0 flex items-center justify-between px-4">
 		<button
-			class="rounded-full bg-white/80 p-3 text-gray-700 shadow-md transition hover:bg-white hover:shadow-lg"
+			class="rounded-full bg-white/50 p-3 text-secondary shadow-md transition hover:bg-white/75 hover:shadow-lg"
 			on:click={previousSlide}
 		>
 			<ChevronLeft class="h-6 w-6" />
 		</button>
 		<button
-			class="rounded-full bg-white/80 p-3 text-gray-700 shadow-md transition hover:bg-white hover:shadow-lg"
+			class="rounded-full bg-white/50 p-3 text-secondary shadow-md transition hover:bg-white/75 hover:shadow-lg"
 			on:click={nextSlide}
 		>
 			<ChevronRight class="h-6 w-6" />
@@ -78,9 +78,7 @@
 				type="button"
 				aria-label="Go to slide {index + 1}"
 				class={`h-3 w-3 rounded-full transition ${
-					index === activeIndex
-						? 'bg-primary shadow-md'
-						: 'bg-gray-300 hover:bg-gray-400'
+					index === activeIndex ? 'bg-primary shadow-md' : 'bg-gray-300 hover:bg-gray-400'
 				}`}
 				on:click={() => setActiveIndex(index)}
 			></button>

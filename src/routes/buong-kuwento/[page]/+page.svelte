@@ -5,6 +5,7 @@
 	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
 	import ChevronRight from 'lucide-svelte/icons/chevron-right';
 	import StoryHeroSection from '@/components/story-hero-section.svelte';
+	import PageTitle from '@/components/page-title.svelte';
 
 	let { data }: { data: PageData } = $props();
 </script>
@@ -17,14 +18,7 @@
 <StoryHeroSection imageCover={BuongKuwentoCover} />
 
 <section class="bg-surface-100">
-	<div class="space-y-2 bg-secondary px-8 py-8 text-secondary-content md:px-[10%]">
-		<h1 class="text-center text-3xl font-medium">Buong Kuwento</h1>
-		<p class="text-center">
-			{#if data.chapter}
-				{data.chapter.title}
-			{/if}
-		</p>
-	</div>
+	<PageTitle title="Buong Kuwento" chapter={data.chapter} />
 	<div class="container mx-auto space-y-12 px-8 py-8 md:px-[10%]">
 		<p
 			class="whitespace-pre-wrap rounded-md border border-primary/5 bg-white p-10 text-base text-surface-content/80 shadow-md md:text-lg"

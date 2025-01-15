@@ -1,6 +1,5 @@
 import type { PageLoad } from './$types';
 import { fullStoryChapters } from '@/data';
-
 export const load: PageLoad = ({ params }) => {
 	if (params.page) {
 		const index = fullStoryChapters.findIndex((chapter) => chapter.link.includes(params.page));

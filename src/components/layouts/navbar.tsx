@@ -32,7 +32,10 @@ const NavBar = () => {
           }}
         >
           <SheetTrigger asChild>
-            <Button size={"icon"} className="transition-colors hover:bg-accent px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
+            <Button
+              size={"icon"}
+              className="transition-colors hover:bg-accent px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20"
+            >
               <MenuIcon />
             </Button>
           </SheetTrigger>
@@ -53,11 +56,12 @@ const NavBar = () => {
                           {navLink.title} Items
                         </DialogTitle>
                         {navLink.items.map((item) => (
-                          <DropdownMenuItem key={item.title} asChild>
+                          <DropdownMenuItem key={item.link} asChild>
                             <button
                               className="w-full"
                               onClick={() => {
                                 if (pathname !== item.link) {
+                                  console.log(item.link);
                                   animatePageOut(item.link);
                                 }
                                 setIsSheetOpen(false);
@@ -110,17 +114,15 @@ const NavBar = () => {
                     Talatuntunan
                   </DropdownMenuLabel>
                   {navLink.items.map((item) => (
-                    <DropdownMenuItem key={item.title} asChild>
-                      <button
-                        className="w-full"
-                        onClick={() => {
-                          if (pathname !== item.link) {
-                            animatePageOut(item.link);
-                          }
-                        }}
-                      >
-                        {item.title}
-                      </button>
+                    <DropdownMenuItem
+                      key={item.link}
+                      onClick={() => {
+                        if (pathname !== item.link) {
+                          animatePageOut(item.link);
+                        }
+                      }}
+                    >
+                      {item.title}
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>

@@ -1,5 +1,4 @@
 import StoryChapter from "@/interface/StoryChapter";
-import React from "react";
 
 const PageTitle = ({
   title,

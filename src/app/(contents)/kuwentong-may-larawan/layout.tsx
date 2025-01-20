@@ -1,12 +1,12 @@
-import { BuongKuwentoCover } from "@/assets/images/stories";
+import { KuwentongMayLarawanCover } from "@/assets/images/stories";
+import HeroAnimation from "@/components/animations/hero";
 import React from "react";
 import StoryHeroSection from "../_components/story-hero-section";
-import HeroAnimation from "@/components/animations/hero";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <HeroAnimation>
-      <StoryHeroSection imageCover={BuongKuwentoCover.src} />
+      <StoryHeroSection imageCover={KuwentongMayLarawanCover.src} />
 
       {children}
     </HeroAnimation>

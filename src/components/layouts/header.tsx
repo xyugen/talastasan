@@ -4,6 +4,7 @@ import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import NavBar from "./navbar";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
         <Image src={Logo} alt="logo" className="w-12" />
         <h1 className="text-lg font-bold">TalasTasan</h1>
       </Link>
-      {/* <NavMenu /> */}
+      <NavBar />
     </header>
   );
 };

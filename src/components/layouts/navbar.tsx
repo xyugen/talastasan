@@ -17,6 +17,7 @@ import {
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const NavBar = () => {
   return (
@@ -39,6 +40,9 @@ const NavBar = () => {
                         {navLink.title}
                       </DropdownMenuTrigger>
                       <DropdownMenuContent>
+                        <DialogTitle className="sr-only">
+                          {navLink.title} Items
+                        </DialogTitle>
                         {navLink.items.map((item) => (
                           <DropdownMenuItem key={item.title}>
                             {item.title}

@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --background: 22 5% 9%; /* Deep blackish-brown (based on #1C0A00) */
@@ -66,6 +62,9 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
   }
   body {
     @apply bg-background text-foreground;

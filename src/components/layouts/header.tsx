@@ -22,9 +22,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed z-50 w-full flex items-center justify-between px-4 py-3 transition-all duration-150 md:px-8 ${
+      className={`fixed z-50 w-full flex items-center justify-between px-4 py-3 transition-all duration-300 md:px-8 ${
         isScrolled ? "bg-secondary shadow-lg" : "bg-transparent"
-      } text-primary-foreground`}
+      } text-secondary-foreground`}
     >
       <Link href="/" className="flex items-center gap-2">
         <Image src={Logo} alt="logo" className="w-12" />

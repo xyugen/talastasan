@@ -1,8 +1,5 @@
 import { navLinks } from "@/data/nav-links";
-import { useGSAP } from "@gsap/react";
 import { DialogTitle } from "@radix-ui/react-dialog";
-import gsap from "gsap";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import { ChevronDown, MenuIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -15,8 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-
-gsap.registerPlugin(useGSAP, ScrollToPlugin);
+import { Button } from "../ui/button";
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -24,15 +20,6 @@ const NavBar = () => {
   const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false);
 
   const { animatePageOut } = PageTransition();
-  const { contextSafe } = useGSAP();
-
-  const scrollTo = contextSafe((scrollElement: string, offsetY: number) => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: `#${scrollElement}`, offsetY },
-      ease: "power2.easeOut",
-    });
-  });
 
   return (
     <>
@@ -45,9 +32,9 @@ const NavBar = () => {
           }}
         >
           <SheetTrigger asChild>
-            <button className="transition-colors hover:bg-accent px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
+            <Button size={"icon"} className="transition-colors hover:bg-accent px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
               <MenuIcon />
-            </button>
+            </Button>
           </SheetTrigger>
           <SheetContent>
             <div className="mt-8 flex flex-col space-y-4">
@@ -72,8 +59,6 @@ const NavBar = () => {
                               onClick={() => {
                                 if (pathname !== item.link) {
                                   animatePageOut(item.link);
-                                } else {
-                                  scrollTo(pathname, 0);
                                 }
                                 setIsSheetOpen(false);
                               }}
@@ -93,8 +78,6 @@ const NavBar = () => {
                       onClick={() => {
                         if (pathname !== navLink.link) {
                           animatePageOut(navLink.link);
-                        } else {
-                          scrollTo(pathname, 0);
                         }
                         setIsSheetOpen(false);
                       }}
@@ -133,8 +116,6 @@ const NavBar = () => {
                         onClick={() => {
                           if (pathname !== item.link) {
                             animatePageOut(item.link);
-                          } else {
-                            scrollTo(pathname, 0);
                           }
                         }}
                       >
@@ -152,8 +133,6 @@ const NavBar = () => {
                 onClick={() => {
                   if (pathname !== navLink.link) {
                     animatePageOut(navLink.link);
-                  } else {
-                    scrollTo(pathname, 0);
                   }
                 }}
               >

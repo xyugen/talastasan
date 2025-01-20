@@ -4,58 +4,85 @@
 
 @layer base {
   :root {
-    --background: 22 5% 9%; /* Deep blackish-brown (based on #1C0A00) */
-    --foreground: 22 50% 90%; /* Subtle contrast (derived lighter brown) */
-    --card: 22 5% 9%;
-    --card-foreground: 33 10% 20%;
-    --popover: 22 5% 9%;
-    --popover-foreground: 33 10% 20%;
-    --primary: 33 22% 35%; /* Rich brown (based on #361500) */
-    --primary-foreground: 45 30% 85%; /* Light cream contrast */
-    --secondary: 33 15% 25%; /* Medium brown (based on #603601) */
-    --secondary-foreground: 80 10% 90%; /* Soft cream contrast */
-    --muted: 33 15% 25%;
-    --muted-foreground: 33 25% 60%; /* Muted tan */
-    --accent: 42 36% 60%; /* Vibrant warm brown (based on #CC9544) */
-    --accent-foreground: 22 5% 9%;
-    --destructive: 0 84.2% 40%; /* Deep red for destructive actions */
-    --destructive-foreground: 90 12% 96%;
-    --border: 33 10% 20%;
-    --input: 33 10% 20%;
-    --ring: 42 36% 60%;
-    --chart-1: 33 50% 50%; /* Warm golden-brown */
-    --chart-2: 45 40% 45%; /* Mid-tone brown */
-    --chart-3: 60 25% 30%; /* Deep earthy brown */
-    --chart-4: 24 45% 55%; /* Light tan */
-    --chart-5: 12 60% 70%; /* Soft cream */
+    /* Main colors from palette */
+    --background: 37 100% 98%; /* Light cream background */
+    --foreground: 24 100% 5%; /* Near black for text */
+
+    /* Card and popover */
+    --card: 37 100% 99%; /* Slightly lighter than background */
+    --card-foreground: 24 100% 5%;
+    --popover: 37 100% 99%;
+    --popover-foreground: 24 100% 5%;
+
+    /* Primary - using the gold accent */
+    --primary: 35 65% 53%; /* #CC9544 */
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - using darker brown */
+    --secondary: 24 100% 11%; /* #361500 */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted elements */
+    --muted: 35 30% 92%;
+    --muted-foreground: 24 10% 40%;
+
+    /* Accent - using medium brown */
+    --accent: 27 98% 19%; /* #603601 */
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%; /* Standard red */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders and inputs */
+    --border: 35 30% 80%;
+    --input: 35 30% 80%;
+    --ring: 35 65% 53%; /* Matching primary */
+
+    /* Chart colors */
+    --chart-1: 35 65% 53%; /* #CC9544 */
+    --chart-2: 24 100% 11%; /* #361500 */
+    --chart-3: 27 98% 19%; /* #603601 */
+    --chart-4: 35 65% 40%; /* Darker gold */
+    --chart-5: 35 45% 65%; /* Lighter gold */
+
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 22 5% 9%; /* Deep blackish-brown */
-    --foreground: 80 10% 90%; /* Soft cream */
-    --card: 22 5% 9%;
-    --card-foreground: 80 10% 90%;
-    --popover: 22 5% 9%;
-    --popover-foreground: 80 10% 90%;
-    --primary: 42 36% 60%; /* Vibrant warm brown */
-    --primary-foreground: 22 5% 9%;
-    --secondary: 33 15% 25%; /* Medium brown */
-    --secondary-foreground: 80 10% 90%; /* Soft cream contrast */
-    --muted: 33 10% 20%; /* Deep brown */
-    --muted-foreground: 42 30% 50%; /* Muted light brown */
-    --accent: 42 36% 60%; /* Vibrant warm brown */
-    --accent-foreground: 80 10% 90%; /* Soft cream */
-    --destructive: 0 62.8% 30.6%; /* Darker red */
-    --destructive-foreground: 80 10% 90%;
-    --border: 33 15% 25%;
-    --input: 33 15% 25%;
-    --ring: 42 36% 60%;
-    --chart-1: 45 40% 45%; /* Mid-tone brown */
-    --chart-2: 33 22% 35%; /* Warm brown */
-    --chart-3: 33 50% 50%; /* Warm golden-brown */
-    --chart-4: 24 45% 55%; /* Light tan */
-    --chart-5: 12 60% 70%; /* Soft cream */
+    --background: 24 100% 5%; /* Darkest brown #1C0A00 */
+    --foreground: 37 100% 98%;
+
+    --card: 24 100% 7%;
+    --card-foreground: 37 100% 98%;
+    --popover: 24 100% 7%;
+    --popover-foreground: 37 100% 98%;
+
+    --primary: 35 65% 53%; /* Keep gold as primary */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 27 98% 19%; /* #603601 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 24 100% 15%;
+    --muted-foreground: 37 40% 80%;
+
+    --accent: 35 65% 53%; /* Gold as accent in dark mode */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 24 100% 15%;
+    --input: 24 100% 15%;
+    --ring: 35 65% 53%;
+
+    /* Chart colors remain the same for consistency */
+    --chart-1: 35 65% 53%;
+    --chart-2: 24 100% 11%;
+    --chart-3: 27 98% 19%;
+    --chart-4: 35 65% 40%;
+    --chart-5: 35 45% 65%;
   }
 }
 

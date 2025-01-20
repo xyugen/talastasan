@@ -1,4 +1,4 @@
-import HeroImage from "@/assets/images/book-cover.png";
+import HeroImage from "@/assets/images/hero-image.jpg";
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {

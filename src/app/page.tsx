@@ -5,33 +5,37 @@ import DetailsSection from "./_components/details-section";
 import HeroSection from "./_components/hero-section";
 import ImpengNegroSection from "./_components/impeng-negro-section";
 import PublishedWorksSection from "./_components/published-works-section";
+import PlayAudio from "./_components/play-audio";
 
 const Page = () => {
   return (
-    <div className="relative min-h-[300vh]">
-      {/* Hero section stays fixed */}
-      <div className="fixed inset-0 -z-10">
-        <HeroAnimation>
-          <HeroSection />
-        </HeroAnimation>
-      </div>
+    <>
+      <PlayAudio />
+      <div className="relative min-h-[300vh]">
+        {/* Hero section stays fixed */}
+        <div className="fixed inset-0 -z-10">
+          <HeroAnimation>
+            <HeroSection />
+          </HeroAnimation>
+        </div>
 
-      {/* Container for scrolling content */}
-      <div className="relative">
-        {/* Spacer to allow hero section to be fully visible initially */}
-        <div className="h-screen w-full" />
+        {/* Container for scrolling content */}
+        <div className="relative">
+          {/* Spacer to allow hero section to be fully visible initially */}
+          <div className="h-screen w-full" />
 
-        {/* Scrolling sections */}
-        <div className="relative bg-background">
-          <AnimateScrollContainer>
-            <DetailsSection />
-            <AuthorSection />
-            <PublishedWorksSection />
-            <ImpengNegroSection />
-          </AnimateScrollContainer>
+          {/* Scrolling sections */}
+          <div className="relative bg-background">
+            <AnimateScrollContainer>
+              <DetailsSection />
+              <AuthorSection />
+              <PublishedWorksSection />
+              <ImpengNegroSection />
+            </AnimateScrollContainer>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

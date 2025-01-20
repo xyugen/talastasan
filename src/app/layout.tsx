@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from "./lib/font";
+import Header from "@/components/layouts/header";
+import Footer from "@/components/layouts/footer";
 
 export const metadata: Metadata = {
   title: "TalasTasan",
@@ -27,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

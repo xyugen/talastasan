@@ -1,23 +1,15 @@
 import { navLinks } from "@/data/nav-links";
-import { MenuIcon } from "lucide-react";
+import { DialogTitle } from "@radix-ui/react-dialog";
+import { ChevronDown, MenuIcon } from "lucide-react";
 import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuLabel,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "../ui/navigation-menu";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { DialogTitle } from "@radix-ui/react-dialog";
 
 const NavBar = () => {
   return (
@@ -26,7 +18,7 @@ const NavBar = () => {
       <div className="flex flex-row items-center md:hidden">
         <Sheet>
           <SheetTrigger asChild>
-            <button>
+            <button className="transition-colors hover:bg-accent px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
               <MenuIcon />
             </button>
           </SheetTrigger>
@@ -36,8 +28,11 @@ const NavBar = () => {
                 if (navLink.items && navLink.items.length > 0) {
                   return (
                     <DropdownMenu key={navLink.title}>
-                      <DropdownMenuTrigger className="text-left">
-                        {navLink.title}
+                      <DropdownMenuTrigger className="text-left w-fit">
+                        <span className="relative after:absolute after:bg-primary after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full">
+                          {navLink.title}{" "}
+                          <ChevronDown className="size-4 inline" />
+                        </span>
                       </DropdownMenuTrigger>
                       <DropdownMenuContent>
                         <DialogTitle className="sr-only">
@@ -56,10 +51,11 @@ const NavBar = () => {
                     <Link
                       key={navLink.title}
                       href={navLink.link}
-                      legacyBehavior
-                      passHref
+                      className="w-fit"
                     >
-                      {navLink.title}
+                      <span className="relative after:absolute after:bg-primary after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full">
+                        {navLink.title}
+                      </span>
                     </Link>
                   );
                 }
@@ -70,48 +66,37 @@ const NavBar = () => {
       </div>
 
       {/* Desktop */}
-      <NavigationMenu className="hidden flex-row items-center md:flex">
-        <NavigationMenuList>
-          {navLinks.map((navLink) => {
-            if (navLink.items && navLink.items.length > 0) {
-              return (
-                <NavigationMenuItem key={navLink.title}>
-                  <NavigationMenuTrigger>{navLink.title}</NavigationMenuTrigger>
-                  <NavigationMenuContent className="p-4">
-                    {navLink.items.map((item) => (
-                      <Link
-                        key={item.title}
-                        href={item.link}
-                        legacyBehavior
-                        passHref
-                      >
-                        <NavigationMenuLink
-                          className={navigationMenuTriggerStyle()}
-                        >
-                          {item.title}
-                        </NavigationMenuLink>
-                      </Link>
-                    ))}
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              );
-            } else if (navLink.link) {
-              return (
-                <Link
-                  key={navLink.title}
-                  href={navLink.link}
-                  legacyBehavior
-                  passHref
-                >
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    {navLink.title}
-                  </NavigationMenuLink>
-                </Link>
-              );
-            }
-          })}
-        </NavigationMenuList>
-      </NavigationMenu>
+      <nav className="transition-colors hover:bg-accent hidden flex-row gap-8 items-center md:flex px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
+        {navLinks.map((navLink) => {
+          if (navLink.items && navLink.items.length > 0) {
+            return (
+              <DropdownMenu key={navLink.title}>
+                <DropdownMenuTrigger asChild>
+                  <button className="flex flex-row gap-2">
+                    {navLink.title} <ChevronDown />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuLabel className="sr-only">
+                    Talatuntunan
+                  </DropdownMenuLabel>
+                  {navLink.items.map((item) => (
+                    <DropdownMenuItem key={item.title}>
+                      <Link href={navLink.link + item.link}>{item.title}</Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            );
+          } else if (navLink.link) {
+            return (
+              <Link key={navLink.title} href={navLink.link}>
+                {navLink.title}
+              </Link>
+            );
+          }
+        })}
+      </nav>
     </>
   );
 };

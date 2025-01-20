@@ -11,7 +11,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      setIsScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,9 +27,14 @@ const Header = () => {
         isScrolled ? "bg-secondary shadow-lg" : "bg-transparent"
       } text-secondary-foreground`}
     >
-      <Link href="/" className="flex items-center gap-2">
-        <Image src={Logo} alt="logo" className="w-12" />
-        <h1 className="text-lg font-bold">TalasTasan</h1>
+      <Link
+        href="/"
+        className={`transition-colors hover:bg-accent flex items-center gap-2 px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20 ${
+          !isScrolled && "shadow-md"
+        }`}
+      >
+        <Image src={Logo} alt="logo" className="w-10" />
+        <h1 className="text-base font-semibold">TalasTasan</h1>
       </Link>
       <NavBar />
     </header>

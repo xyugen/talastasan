@@ -7,7 +7,7 @@ gsap.registerPlugin(useGSAP);
 
 export default function TransitionLoader() {
   return (
-    <div className="banner [&>*]:fixed [&>*]:top-0 [&>*]:z-50 [&>*]:min-h-screen [&>*]:w-1/4 [&>*]:border-r [&>*]:bg-secondary">
+    <div className="banner [&>*]:fixed [&>*]:top-0 [&>*]:z-50 [&>*]:min-h-screen [&>*]:w-1/4 [&>*]:border-r [&>*]:bg-secondary [&>*]:border-primary/10">
       <div className="left-0" />
       <div className="left-1/4" />
       <div className="left-2/4" />

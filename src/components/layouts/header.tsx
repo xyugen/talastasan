@@ -4,7 +4,6 @@ import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-// import NavMenu from "@/components/nav-menu";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,12 +22,11 @@ const Header = () => {
 
   return (
     <header
-      className="fixed z-50 flex w-full flex-row items-center justify-between bg-secondary px-4 py-3 text-primary-content transition-all duration-150 md:px-8"
-      style={{
-        backgroundColor: `rgba(var(--tw-bg-opacity, 0), ${isScrolled ? 1 : 0})`,
-      }}
+      className={`fixed z-50 w-full flex items-center justify-between px-4 py-3 transition-all duration-150 md:px-8 ${
+        isScrolled ? "bg-secondary shadow-lg" : "bg-transparent"
+      } text-primary-foreground`}
     >
-      <Link href="/" className="flex w-fit flex-row items-center gap-2">
+      <Link href="/" className="flex items-center gap-2">
         <Image src={Logo} alt="logo" className="w-12" />
         <h1 className="text-lg font-bold">TalasTasan</h1>
       </Link>

@@ -1,11 +1,10 @@
 import HeroAnimation from "@/components/animations/hero";
-import AnimateScrollContainer from "./_components/animate-scroll-container";
 import AuthorSection from "./_components/author-section";
 import DetailsSection from "./_components/details-section";
 import HeroSection from "./_components/hero-section";
 import ImpengNegroSection from "./_components/impeng-negro-section";
-import PublishedWorksSection from "./_components/published-works-section";
 import PlayAudio from "./_components/play-audio";
+import PublishedWorksSection from "./_components/published-works-section";
 
 const Page = () => {
   return (
@@ -26,12 +25,10 @@ const Page = () => {
 
           {/* Scrolling sections */}
           <div className="relative bg-background">
-            <AnimateScrollContainer>
-              <DetailsSection />
-              <AuthorSection />
-              <PublishedWorksSection />
-              <ImpengNegroSection />
-            </AnimateScrollContainer>
+            <DetailsSection />
+            <AuthorSection />
+            <PublishedWorksSection />
+            <ImpengNegroSection />
           </div>
         </div>
       </div>

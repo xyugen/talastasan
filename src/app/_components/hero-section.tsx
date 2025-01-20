@@ -1,7 +1,6 @@
 import HeroImage from "@/assets/images/hero-image.jpg";
 import ParallaxHeroBG from "@/components/parallax-hero-bg";
-import { ChevronDown } from "lucide-react";
-import Link from "next/link";
+import { Mouse } from "lucide-react";
 
 const _heroText = "TalasTasan";
 
@@ -30,12 +29,10 @@ const HeroSection = () => {
         </h2>
       </div>
 
-      <Link
-        href="#details"
-        className="blur-item absolute bottom-8 inline-block"
-      >
-        <ChevronDown className="size-8 animate-bounce" />
-      </Link>
+      <div className="blur-item flex text-primary-foreground/80 flex-col items-center absolute bottom-6">
+        <Mouse className="size-6 animate-bounce" />
+        <small>Scroll Down</small>
+      </div>
     </section>
   );
 };

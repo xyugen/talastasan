@@ -3,6 +3,7 @@ import "./globals.css";
 import { poppins } from "./lib/font";
 import Header from "@/components/layouts/header";
 import Footer from "@/components/layouts/footer";
+import TransitionLoader from "@/components/transition-loader";
 
 export const metadata: Metadata = {
   title: "TalasTasan",
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
+        <TransitionLoader />
         <Header />
 
         <main>{children}</main>

@@ -54,6 +54,7 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        lora: ["Lora", "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

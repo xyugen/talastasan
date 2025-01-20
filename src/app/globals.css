@@ -9,7 +9,7 @@ body {
 @layer base {
   :root {
     --background: 22 5% 9%; /* Deep blackish-brown (based on #1C0A00) */
-    --foreground: 33 10% 20%; /* Subtle contrast (derived lighter brown) */
+    --foreground: 22 50% 90%; /* Subtle contrast (derived lighter brown) */
     --card: 22 5% 9%;
     --card-foreground: 33 10% 20%;
     --popover: 22 5% 9%;

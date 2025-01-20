@@ -10,14 +10,14 @@ const Page = () => {
   return (
     <div className="relative min-h-[300vh]">
       {/* Hero section stays fixed */}
-      <div className="fixed inset-0 z-0">
+      <div className="fixed inset-0 -z-10">
         <HeroAnimation>
           <HeroSection />
         </HeroAnimation>
       </div>
 
       {/* Container for scrolling content */}
-      <div className="relative z-10">
+      <div className="relative">
         {/* Spacer to allow hero section to be fully visible initially */}
         <div className="h-screen w-full" />
 

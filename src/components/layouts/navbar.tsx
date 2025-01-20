@@ -1,7 +1,12 @@
 import { navLinks } from "@/data/nav-links";
+import { useGSAP } from "@gsap/react";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
 import { ChevronDown, MenuIcon } from "lucide-react";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import PageTransition from "../animations/page-transition";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,12 +16,34 @@ import {
 } from "../ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
+gsap.registerPlugin(useGSAP, ScrollToPlugin);
+
 const NavBar = () => {
+  const pathname = usePathname();
+
+  const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false);
+
+  const { animatePageOut } = PageTransition();
+  const { contextSafe } = useGSAP();
+
+  const scrollTo = contextSafe((scrollElement: string, offsetY: number) => {
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: `#${scrollElement}`, offsetY },
+      ease: "power2.easeOut",
+    });
+  });
+
   return (
     <>
       {/* Mobile */}
       <div className="flex flex-row items-center md:hidden">
-        <Sheet>
+        <Sheet
+          open={isSheetOpen}
+          onOpenChange={(isOpen) => {
+            setIsSheetOpen(isOpen);
+          }}
+        >
           <SheetTrigger asChild>
             <button className="transition-colors hover:bg-accent px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
               <MenuIcon />
@@ -39,8 +66,20 @@ const NavBar = () => {
                           {navLink.title} Items
                         </DialogTitle>
                         {navLink.items.map((item) => (
-                          <DropdownMenuItem key={item.title}>
-                            {item.title}
+                          <DropdownMenuItem key={item.title} asChild>
+                            <button
+                              className="w-full"
+                              onClick={() => {
+                                if (pathname !== item.link) {
+                                  animatePageOut(item.link);
+                                } else {
+                                  scrollTo(pathname, 0);
+                                }
+                                setIsSheetOpen(false);
+                              }}
+                            >
+                              {item.title}
+                            </button>
                           </DropdownMenuItem>
                         ))}
                       </DropdownMenuContent>
@@ -48,15 +87,22 @@ const NavBar = () => {
                   );
                 } else if (navLink.link) {
                   return (
-                    <Link
+                    <button
                       key={navLink.title}
-                      href={navLink.link}
-                      className="w-fit"
+                      className="text-left"
+                      onClick={() => {
+                        if (pathname !== navLink.link) {
+                          animatePageOut(navLink.link);
+                        } else {
+                          scrollTo(pathname, 0);
+                        }
+                        setIsSheetOpen(false);
+                      }}
                     >
                       <span className="relative after:absolute after:bg-primary after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full">
                         {navLink.title}
                       </span>
-                    </Link>
+                    </button>
                   );
                 }
               })}
@@ -81,8 +127,19 @@ const NavBar = () => {
                     Talatuntunan
                   </DropdownMenuLabel>
                   {navLink.items.map((item) => (
-                    <DropdownMenuItem key={item.title}>
-                      <Link href={navLink.link + item.link}>{item.title}</Link>
+                    <DropdownMenuItem key={item.title} asChild>
+                      <button
+                        className="w-full"
+                        onClick={() => {
+                          if (pathname !== item.link) {
+                            animatePageOut(item.link);
+                          } else {
+                            scrollTo(pathname, 0);
+                          }
+                        }}
+                      >
+                        {item.title}
+                      </button>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
@@ -90,9 +147,18 @@ const NavBar = () => {
             );
           } else if (navLink.link) {
             return (
-              <Link key={navLink.title} href={navLink.link}>
+              <button
+                key={navLink.title}
+                onClick={() => {
+                  if (pathname !== navLink.link) {
+                    animatePageOut(navLink.link);
+                  } else {
+                    scrollTo(pathname, 0);
+                  }
+                }}
+              >
                 {navLink.title}
-              </Link>
+              </button>
             );
           }
         })}

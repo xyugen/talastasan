@@ -18,7 +18,6 @@ const ParallaxHeroBG = () => {
       const moveX = (clientX - window.innerWidth / 2) * 0.01;
       const moveY = (clientY - window.innerHeight / 2) * 0.01;
       setMousePosition({ x: moveX, y: moveY });
-      console.log(moveY);
     };
 
     window.addEventListener("mousemove", handleMouseMove);

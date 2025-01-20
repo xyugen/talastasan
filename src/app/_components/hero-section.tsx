@@ -10,6 +10,7 @@ const _descriptionText =
 const HeroSection = () => {
   return (
     <section
+      id="home"
       className="relative flex w-full h-screen flex-col items-center justify-center overflow-hidden text-primary-foreground"
       style={{ backgroundImage: `url(${HeroImage.src})` }}
     >

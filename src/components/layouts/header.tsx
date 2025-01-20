@@ -2,12 +2,15 @@
 
 import Logo from "@/assets/images/logo.png";
 import Image from "next/image";
-import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import NavBar from "./navbar";
+import PageTransition from "../animations/page-transition";
 import ScrollProgress from "../ui/scroll-progress";
+import NavBar from "./navbar";
 
 const Header = () => {
+  const pathname = usePathname();
+
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -22,6 +25,8 @@ const Header = () => {
     };
   }, []);
 
+  const { animatePageOut } = PageTransition();
+
   return (
     <>
       <header
@@ -29,18 +34,22 @@ const Header = () => {
           isScrolled ? "bg-secondary shadow-lg" : "bg-transparent"
         } text-secondary-foreground`}
       >
-        <Link
-          href="/"
+        <button
+          onClick={() => {
+            if (pathname !== "/") {
+              animatePageOut("/");
+            }
+          }}
           className={`transition-colors hover:bg-accent flex items-center gap-2 px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20 ${
             !isScrolled && "shadow-md"
           }`}
         >
           <Image src={Logo} alt="logo" className="w-10" />
           <h1 className="text-base font-semibold">TalasTasan</h1>
-        </Link>
+        </button>
         <NavBar />
       </header>
-      <ScrollProgress className="h-1 top-16" />
+      <ScrollProgress className="h-1 top-16 z-30" />
     </>
   );
 };

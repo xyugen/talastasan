@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AuthorSection = () => {
   return (
-    <section className="bg-white py-32">
+    <section className="py-32">
       <div className="container mx-auto px-6 md:px-20 lg:px-40">
         <h2 className="mb-16 text-center text-4xl font-bold text-secondary">
           Ang Awtor

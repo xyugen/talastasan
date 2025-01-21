@@ -1,34 +1,30 @@
 "use client";
 
-import EmblaCarousel from "@/components/carousel/embla-carousel";
+import HorizontalScrollCarousel from "@/components/carousel/horizontal-scroll-carousel";
 import publishedWorks from "@/data/published-works";
-import { useState } from "react";
+import { ArrowDownFromLine } from "lucide-react";
 
 const PublishedWorksSection = () => {
-  const [currentIndex, setCurrentIndex] = useState<number | null>(
-    publishedWorks.length > 0 ? 0 : null
-  );
-
+  const cards = publishedWorks.map((work, index) => ({
+    url: work.src.src,
+    title: work.title,
+    id: index,
+  }));
   return (
-    <section className="bg-background py-32">
+    <section className="bg-background py-24 text-foreground">
       <div className="mb-16 text-center">
-        <h2 className="text-4xl font-bold text-foreground">
+        <h2 className="text-4xl font-bold">
           Nailathalang Akda
         </h2>
       </div>
+      <div className="flex flex-col gap-2 p-8 items-center justify-center">
+        <span className="font-semibold uppercase">Scroll down</span>
+        <ArrowDownFromLine className="size-4 animate-bounce" />
+      </div>
       <div className="flex flex-col items-center space-y-4 w-full">
-        <div className="container mx-auto w-fit px-6">
-          <EmblaCarousel
-            images={publishedWorks.map((work) => work.src)}
-            onChangeAction={(index) => setCurrentIndex(index)}
-          />
+        <div className="mx-auto w-full">
+          <HorizontalScrollCarousel cards={cards} />
         </div>
-
-        {currentIndex !== null && (
-          <div className="mt-2 min-h-10 rounded-lg bg-primary p-4 text-center text-lg font-medium text-primary-content shadow-md">
-            {publishedWorks[currentIndex].alt}
-          </div>
-        )}
       </div>
     </section>
   );

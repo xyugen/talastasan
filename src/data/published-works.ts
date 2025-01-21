@@ -7,24 +7,24 @@ import {
 
 const publishedWorks = [
   {
-    alt: "Impeng Negro",
+    title: "Impeng Negro",
     src: ImpengNegro,
-    title: "impeng-negro",
+    alt: "impeng-negro",
   },
   {
-    alt: "Tata Selo",
+    title: "Tata Selo",
     src: TataSelo,
-    title: "tata-selo",
+    alt: "tata-selo",
   },
   {
-    alt: "Pagsalunga",
+    title: "Pagsalunga",
     src: Pagsalunga,
-    title: "pagsalunga",
+    alt: "pagsalunga",
   },
   {
-    alt: "Dugo Sa Bukang Liwayway",
+    title: "Dugo Sa Bukang Liwayway",
     src: DugoSaBukangLiwayway,
-    title: "dugo-sa-bukang-liwayway",
+    alt: "dugo-sa-bukang-liwayway",
   },
 ];
 

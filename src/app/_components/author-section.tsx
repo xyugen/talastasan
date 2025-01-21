@@ -1,31 +1,50 @@
-import RogelioSikat from "@/assets/images/rogelio-sikat.jpg";
+"use client";
+
+import RogelioSikat from "@/assets/images/rogelio-sikat.jpeg";
+import BlurFade from "@/components/ui/blur-fade";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { PenTool } from "lucide-react";
 import Image from "next/image";
 
 const AuthorSection = () => {
   return (
-    <section className="py-32">
-      <div className="container mx-auto px-6 md:px-20 lg:px-40">
-        <h2 className="mb-16 text-center text-4xl font-bold text-secondary">
-          Ang Awtor
-        </h2>
-        <div className="grid grid-cols-1 gap-16 md:grid-cols-5">
-          <div className="md:col-span-2">
-            <Image
-              src={RogelioSikat}
-              alt="Rogelio Sikat"
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="space-y-6 md:col-span-3">
-            <div className="space-y-2">
-              <h3 className="text-3xl font-semibold text-secondary/90">
-                Rogelio R. Sikat
-              </h3>
-              <h4 className="text-xl font-semibold text-secondary/50">
-                “Rogelio Sícat”
-              </h4>
-            </div>
-            <div className="space-y-4 text-base text-secondary/80">
+    <section id="author" className="mt-16">
+      <div className="relative space-y-4 p-4 min-h-[140vh] md:p-9 lg:p-20">
+        <BlurFade delay={0.5} inView className="md:absolute ">
+          <Image
+            src={RogelioSikat || "/placeholder.svg"}
+            alt="Rogelio Sikat"
+            className="top-0 left-0 h-auto rounded-lg shadow-lg w-full md:w-[800px] border-4 border-secondary"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 75vw, 50vw"
+            placeholder="blur"
+          />
+        </BlurFade>
+
+        <BlurFade
+          delay={0.5}
+          inView
+          className="md:absolute inline-block right-4 md:right-9 lg:right-20 max-w-[800px] bottom-0 md:w-3/4"
+        >
+          <Card className="group relative border-4 border-secondary">
+            <PenTool className="group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform absolute -rotate-90 size-10 -right-6 -top-6 fill-primary stroke-secondary" />
+            <CardHeader className="font-lora">
+              <CardTitle>Ang Awtor</CardTitle>
+              <CardDescription className="space-y-3">
+                <h2 className="text-3xl font-semibold text-secondary/90">
+                  Rogelio R. Sikat
+                </h2>
+                <h3 className="text-xl font-semibold text-secondary/50">
+                  “Rogelio Sícat”
+                </h3>
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4 text-base text-secondary/80 [&>p]:text-justify">
               <p>
                 Si <span className="font-bold">Rogelio Sikat</span> ay isang
                 Pilipinong manunulat ng piksyon, mandudula, tagasalin-wika, at
@@ -39,7 +58,6 @@ const AuthorSection = () => {
                 sa Pamantasan ng Santo Tomas at nagtamo rin ng MA sa Filipino
                 mula sa Unibersidad ng Pilipinas.
               </p>
-
               <p>
                 Kinilala si <span className="font-bold">Rogelio Sikat</span> sa
                 kanyang mga kontribusyon sa panitikan, kabilang na ang
@@ -54,14 +72,14 @@ const AuthorSection = () => {
                 Writer&rdquo; ni Lilia Quindoza-Santiago, na lumabas sa Pen &
                 Ink III.
               </p>
-
               <p>
                 Naging propesor si{" "}
                 <span className="font-bold">Rogelio Sikat</span> at nagsilbi
                 bilang dekano ng Kolehiyo ng Sining at mga Titik sa Unibersidad
                 ng Pilipinas-Diliman mula 1991 hanggang 1994. Ang kanyang akdang
-                &ldquo;<span className="font-bold">Tata Selo</span>&rdquo; ay
-                naging inspirasyon para sa pelikulang &ldquo;
+                &ldquo;
+                <span className="font-bold">Tata Selo</span>&rdquo; ay naging
+                inspirasyon para sa pelikulang &ldquo;
                 <span className="font-bold">Munting Lupa</span>&rdquo; ni
                 Angelito Tiongson, habang ang direktor na si Aureaus Solito ay
                 gumawa ng maikling pelikula batay sa kanyang kuwento na &ldquo;
@@ -71,9 +89,9 @@ const AuthorSection = () => {
                 <span className="font-bold">National Book Award</span>&rdquo;
                 para sa pagsasalin-wika.
               </p>
-            </div>
-          </div>
-        </div>
+            </CardContent>
+          </Card>
+        </BlurFade>
       </div>
     </section>
   );

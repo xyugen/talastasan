@@ -2,9 +2,7 @@
 
 import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
-import { usePathname } from "next/navigation";
-import PageTransition from "../animations/page-transition";
-
+import Link from "next/link";
 interface StoryCardProps {
   title: string;
   description: string;
@@ -18,17 +16,9 @@ const StoryCard: React.FC<StoryCardProps> = ({
   image,
   href,
 }) => {
-  const pathname = usePathname();
-
-  const { animatePageOut } = PageTransition();
-
   return (
-    <button
-      onClick={() => {
-        if (pathname !== href) {
-          animatePageOut(href);
-        }
-      }}
+    <Link
+      href={href}
       className="group relative overflow-hidden rounded-lg border-4 border-secondary bg-white transition-transform"
     >
       <div className="relative aspect-[16/11] overflow-hidden">
@@ -47,7 +37,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
         </div>
         <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
       </div>
-    </button>
+    </Link>
   );
 };
 

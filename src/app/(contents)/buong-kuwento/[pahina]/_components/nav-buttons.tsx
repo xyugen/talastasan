@@ -15,9 +15,13 @@ const NavButtons = ({
       {prev ? (
         <Link
           href={`/buong-kuwento${prev.link}`}
-          className="hover:text-primary-dark group flex items-center space-x-2 text-primary transition"
+          className="hover:text-secondary-foreground group flex items-center space-x-2 text-secondary transition"
         >
-          <Button variant="outline" className="flex items-center space-x-2">
+          <Button
+            size={"lg"}
+            variant="outline"
+            className="flex items-center space-x-2"
+          >
             <ChevronLeft className="transition group-hover:scale-110" />
             <span>{prev.title}</span>
           </Button>
@@ -29,9 +33,13 @@ const NavButtons = ({
       {next ? (
         <Link
           href={`/buong-kuwento${next.link}`}
-          className="hover:text-primary-dark group flex items-center space-x-2 text-primary transition"
+          className="hover:text-secondary-foreground group flex items-center space-x-2 text-secondary transition"
         >
-          <Button variant="default" className="flex items-center space-x-2">
+          <Button
+            size={"lg"}
+            variant="default"
+            className="flex bg-secondary hover:bg-secondary/90 items-center space-x-2"
+          >
             <span>{next.title}</span>
             <ChevronRight className="transition group-hover:scale-110" />
           </Button>

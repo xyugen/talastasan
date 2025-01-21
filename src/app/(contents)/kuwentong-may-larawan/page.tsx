@@ -7,8 +7,8 @@ const Page = () => {
     <section className="bg-surface-100">
       <PageTitle title="Kuwentong May Larawan" />
       <div className="container mx-auto w-fit p-2 md:py-12">
-        <div className="mx-auto flex w-full lg:w-[60%] flex-col items-center space-y-4">
-          <AnimatedStoryViewer slides={storyWithImages} />
+        <div className="mx-auto w-full md:w-[875px] space-y-4">
+          <AnimatedStoryViewer className="w-full" slides={storyWithImages} />
         </div>
       </div>
     </section>

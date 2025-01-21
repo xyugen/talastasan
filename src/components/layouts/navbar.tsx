@@ -68,22 +68,6 @@ const searchItems: {
     title: "Pahina 8",
     link: "/buong-kuwento/pahina-8",
   },
-  {
-    title: "Pahina 9",
-    link: "/buong-kuwento/pahina-9",
-  },
-  {
-    title: "Pahina 10",
-    link: "/buong-kuwento/pahina-10",
-  },
-  {
-    title: "Pahina 11",
-    link: "/buong-kuwento/pahina-11",
-  },
-  {
-    title: "Pahina 12",
-    link: "/buong-kuwento/pahina-12",
-  },
 ];
 
 const NavBar = () => {
@@ -270,7 +254,7 @@ const NavBar = () => {
             <div className="flex flex-row gap-2">
               <div className="relative flex-1">
                 <Input
-                  placeholder="Search..."
+                  placeholder="Hanapin..."
                   value={searchValue}
                   onChange={(e) => handleSearch(e.target.value)}
                   className="pr-8"

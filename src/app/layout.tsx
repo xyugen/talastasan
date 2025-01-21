@@ -4,6 +4,7 @@ import TransitionLoader from "@/components/transition-loader";
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from "./lib/font";
+import ClickSound from "@/components/click-sound";
 
 export const metadata: Metadata = {
   title: {
@@ -58,6 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
+        <ClickSound />
         <TransitionLoader />
         <Header />
 

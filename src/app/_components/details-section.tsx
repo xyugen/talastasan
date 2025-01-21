@@ -15,7 +15,7 @@ const DetailsSection = () => {
         
         <BlurFade
           className="relative bg-card border-4 border-secondary rounded-lg p-8 mx-auto w-fit space-y-2"
-          delay={0.5}
+          delay={0.3}
           inView
         >
           <Quote className="absolute fill-primary stroke-secondary left-0 translate-x-[-50%] md:-left-8 -top-4 size-8 rotate-180 text-foreground/70" />
@@ -24,7 +24,7 @@ const DetailsSection = () => {
           </h3>
         </BlurFade>
 
-        <BlurFade delay={0.65} inView className="text-lg text-foreground">
+        <BlurFade delay={0.4} inView className="text-lg text-foreground">
           Ang TalasTasan ay isang mungkahing website na naglalaman ng mga akdang
           pampanitikan na magsisilbing isang kapaki-pakinabang na kagamitang
           pampagtuturo at pagkatuto para sa mga guro at mag-aaral upang higit

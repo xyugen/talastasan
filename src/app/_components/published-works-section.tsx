@@ -18,7 +18,7 @@ const PublishedWorksSection = () => {
         </h2>
       </div>
       <div className="flex flex-col gap-2 p-8 items-center justify-center">
-        <span className="font-semibold uppercase">Scroll down</span>
+        <span className="font-semibold uppercase">Mag-scroll pababa</span>
         <ArrowDownFromLine className="size-4 animate-bounce" />
       </div>
       <div className="flex flex-col items-center space-y-4 w-full">

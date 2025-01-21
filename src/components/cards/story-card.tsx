@@ -1,9 +1,14 @@
+"use client";
+
+import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
+import { usePathname } from "next/navigation";
+import PageTransition from "../animations/page-transition";
 
 interface StoryCardProps {
   title: string;
   description: string;
-  image: StaticImageData | string; // Use string for image src unless using a specific type for assets
+  image: StaticImageData | string;
   href: string;
 }
 
@@ -13,25 +18,36 @@ const StoryCard: React.FC<StoryCardProps> = ({
   image,
   href,
 }) => {
+  const pathname = usePathname();
+
+  const { animatePageOut } = PageTransition();
+
   return (
-    <a
-      href={href}
-      className="group relative overflow-hidden rounded-lg border border-primary/30 bg-white transition-transform hover:-translate-y-1"
+    <button
+      onClick={() => {
+        if (pathname !== href) {
+          animatePageOut(href);
+        }
+      }}
+      className="group relative overflow-hidden rounded-lg border-4 border-secondary bg-white transition-transform"
     >
-      <div className="relative aspect-video overflow-hidden">
+      <div className="relative aspect-[16/11] overflow-hidden">
         <Image
           src={image}
           alt={title}
-          layout="fill" // Adjusts the image to fill its parent container
-          objectFit="cover" // Ensures the image is cropped correctly
-          className="transition-transform group-hover:scale-100"
+          layout="fill"
+          objectFit="cover"
+          className="transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300"
         />
+        <div className="absolute bottom-0 left-0 bg-gradient-to-tr from-primary/20 via-primary/10 to-transparent p-2 rounded-l-sm text-left">
+          <h3 className="mb-3 text-xl font-semibold text-primary-foreground">
+            {title}
+          </h3>
+          <p className="text-primary-foreground">{description}</p>
+        </div>
+        <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
       </div>
-      <div className="p-6">
-        <h3 className="mb-3 text-xl font-semibold text-[#2D2522]">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-      </div>
-    </a>
+    </button>
   );
 };
 

@@ -61,7 +61,6 @@ const NavBar = () => {
                               className="w-full"
                               onClick={() => {
                                 if (pathname !== item.link) {
-                                  console.log(item.link);
                                   animatePageOut(item.link);
                                 }
                                 setIsSheetOpen(false);

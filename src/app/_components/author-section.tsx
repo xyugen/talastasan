@@ -15,8 +15,8 @@ import Image from "next/image";
 const AuthorSection = () => {
   return (
     <section id="author" className="mt-16">
-      <div className="relative space-y-4 p-4 min-h-[140vh] md:p-9 lg:p-20">
-        <BlurFade delay={0.5} inView className="md:absolute ">
+      <div className="relative space-y-4 p-4 min-h-[1100px] md:p-9 lg:p-20">
+        <BlurFade delay={0.5} inView className="lg:absolute ">
           <Image
             src={RogelioSikat || "/placeholder.svg"}
             alt="Rogelio Sikat"
@@ -32,14 +32,14 @@ const AuthorSection = () => {
           className="md:absolute inline-block right-4 md:right-9 lg:right-20 max-w-[800px] bottom-0 md:w-3/4"
         >
           <Card className="group relative border-4 border-secondary">
-            <PenTool className="group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform absolute -rotate-90 size-10 -right-6 -top-6 fill-primary stroke-secondary" />
-            <CardHeader className="font-lora">
-              <CardTitle>Ang Awtor</CardTitle>
-              <CardDescription className="space-y-3">
+            <PenTool className="group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform absolute -rotate-90 size-10 -right-4 -top-4 md:-right-6 md:-top-6 fill-primary stroke-secondary" />
+            <CardHeader className="font-lora space-y-4">
+              <CardTitle className="text-secondary/80">Ang Awtor</CardTitle>
+              <CardDescription className="flex flex-col sm:flex-row sm:items-end gap-2">
                 <h2 className="text-3xl font-semibold text-secondary/90">
                   Rogelio R. Sikat
                 </h2>
-                <h3 className="text-xl font-semibold text-secondary/50">
+                <h3 className="text-xl mb-[0.1rem] font-semibold text-secondary/60">
                   “Rogelio Sícat”
                 </h3>
               </CardDescription>

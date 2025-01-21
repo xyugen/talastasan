@@ -12,8 +12,15 @@ import {
   Image8,
   Image9,
 } from "@/assets/images/story-images";
+import { StaticImageData } from "next/image";
 
-export const storyWithImages = [
+export interface StoryWithImage {
+  image: StaticImageData;
+  alt: string;
+  content: string;
+}
+
+export const storyWithImages: StoryWithImage[] = [
   {
     image: Image1,
     alt: "Image 1 description",

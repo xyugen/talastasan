@@ -264,6 +264,7 @@ const NavBar = () => {
           }
         }}
       >
+        <DialogTitle className="sr-only">Search</DialogTitle>
         <DialogContent className="sm:max-w-[425px]">
           <div className="mt-4">
             <div className="flex flex-row gap-2">

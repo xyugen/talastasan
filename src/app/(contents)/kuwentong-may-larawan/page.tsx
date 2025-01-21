@@ -1,10 +1,7 @@
-import React from "react";
 import PageTitle from "../_components/page-title";
-import EmblaCarousel from "@/components/carousel/embla-carousel";
-import storyWithImages from "@/data/story-with-images";
 
 const Page = () => {
-  const image = storyWithImages.length > 0 ? storyWithImages[0] : null;
+  // const image = storyWithImages.length > 0 ? storyWithImages[0] : null;
 
   return (
     <section className="bg-surface-100">

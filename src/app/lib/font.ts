@@ -6,4 +6,6 @@ export const poppins = Poppins({
   subsets: ["latin"],
 });
 
-export const lora = Lora({})
+export const lora = Lora({
+  subsets: ["latin"],
+});

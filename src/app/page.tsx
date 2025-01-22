@@ -5,6 +5,7 @@ import HeroSection from "./_components/hero-section";
 import ImpengNegroSection from "./_components/impeng-negro-section";
 import PlayAudio from "./_components/play-audio";
 import PublishedWorksSection from "./_components/published-works-section";
+import { ChevronUp } from "lucide-react";
 
 const Page = () => {
   return (
@@ -25,6 +26,9 @@ const Page = () => {
 
           {/* Scrolling sections */}
           <div className="relative bg-background">
+            <section className="py-6 absolute top-0 left-1/2 -translate-x-1/2">
+              <ChevronUp className="size-8 animate-bounce" />
+            </section>
             <DetailsSection />
             <AuthorSection />
             <PublishedWorksSection />

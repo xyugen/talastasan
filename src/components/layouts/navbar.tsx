@@ -167,8 +167,10 @@ const NavBar = () => {
                       key={navLink.title}
                       className="text-left"
                       onClick={() => {
-                        if (pathname !== navLink.link) {
+                        if (pathname !== navLink.link.split("#")[0]) {
                           animatePageOut(navLink.link);
+                        } else {
+                          window.location.hash = navLink.link.split("#")[1];
                         }
                         setIsSheetOpen(false);
                       }}
@@ -221,8 +223,10 @@ const NavBar = () => {
               <button
                 key={navLink.title}
                 onClick={() => {
-                  if (pathname !== navLink.link) {
+                  if (pathname !== navLink.link.split("#")[0]) {
                     animatePageOut(navLink.link);
+                  } else {
+                    window.location.hash = navLink.link.split("#")[1];
                   }
                 }}
               >

@@ -1,6 +1,7 @@
 "use client";
 
 import Logo from "@/assets/images/logo.png";
+import siteName from "@/data/site-name";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -47,7 +48,7 @@ const Header = () => {
             }`}
           >
             <Image src={Logo} alt="logo" className="w-10" />
-            <h1 className="text-base font-semibold">TalasTasan</h1>
+            <h1 className="text-base font-semibold">{siteName}</h1>
           </button>
           <SoundToggle />
         </div>

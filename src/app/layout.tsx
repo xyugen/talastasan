@@ -1,15 +1,16 @@
+import ClickSound from "@/components/click-sound";
 import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import TransitionLoader from "@/components/transition-loader";
+import siteName from "@/data/site-name";
 import type { Metadata } from "next";
 import "./globals.css";
 import { poppins } from "./lib/font";
-import ClickSound from "@/components/click-sound";
 
 export const metadata: Metadata = {
   title: {
-    default: "TalasTasan",
-    template: "%s | TalasTasan",
+    default: siteName,
+    template: `%s | ${siteName}`,
   },
   description:
     "Paglinang ng kasanayan sa pagbasa. Pagpapalawak ng bokabularyo.",
@@ -26,11 +27,11 @@ export const metadata: Metadata = {
     { name: "Pagzone", url: "https://github.com/pagzone" },
   ],
   openGraph: {
-    title: "TalasTasan",
+    title: siteName,
     description:
       "Paglinang ng kasanayan sa pagbasa. Pagpapalawak ng bokabularyo.",
     url: "https://talastasan.vercel.app",
-    siteName: "TalasTasan",
+    siteName: siteName,
     type: "website",
     images: ["/opengraph.png"],
   },

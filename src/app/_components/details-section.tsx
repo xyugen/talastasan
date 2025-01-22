@@ -1,5 +1,6 @@
 import { DotPattern } from "@/components/patterns/dot-pattern";
 import BlurFade from "@/components/ui/blur-fade";
+import siteName from "@/data/site-name";
 import { cn } from "@/lib/utils";
 import { Quote } from "lucide-react";
 
@@ -25,7 +26,7 @@ const DetailsSection = () => {
         </BlurFade>
 
         <BlurFade delay={0.4} inView className="text-lg text-foreground">
-          Ang TalasTasan ay isang mungkahing website na naglalaman ng mga akdang
+          Ang <span className="font-semibold text-secondary">{siteName}</span> ay isang mungkahing website na naglalaman ng mga akdang
           pampanitikan na magsisilbing isang kapaki-pakinabang na kagamitang
           pampagtuturo at pagkatuto para sa mga guro at mag-aaral upang higit
           pang malinang ang kanilang kasanayan sa pagbasa at mapalawak ang

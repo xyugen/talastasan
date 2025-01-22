@@ -1,8 +1,9 @@
 import HeroImage from "@/assets/images/hero-image.jpg";
 import ParallaxHeroBG from "@/components/parallax-hero-bg";
+import siteName from "@/data/site-name";
 import { Mouse } from "lucide-react";
 
-const _heroText = "TalasTasan";
+const _heroText = siteName;
 
 const _descriptionText =
   "Paglinang ng kasanayan sa pagbasa. Pagpapalawak ng bokabularyo.";

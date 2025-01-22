@@ -65,10 +65,10 @@ export const navLinks: NavLink[] = [
   },
   {
     title: "Tungkol sa",
-    link: "/#tungkol-sa",
+    link: "/tungkol-sa",
   },
   {
-    title: "Makipag-ugnayan",
-    link: "/#makipag-ugnayan",
+    title: "Makipag-ugnay",
+    link: "/makipag-ugnay",
   }
 ];

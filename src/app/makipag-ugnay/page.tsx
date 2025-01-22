@@ -4,30 +4,33 @@ import siteName from "@/data/site-name";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
-const ContactSection = () => {
+const Page = () => {
   return (
     <section
       id="makipag-ugnayan"
       className="flex justify-center items-center py-20 overflow-clip"
     >
       <div className="relative px-4">
-        <BlurFade className="md:w-4/5 mx-auto space-y-2" delay={0.3} inView>
-          <h2 className="text-center text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide">
+        <BlurFade className="mx-auto space-y-2" delay={0.3} inView>
+          <h1 className="text-4xl md:text-5xl font-normal text-center mb-8 text-secondary/80">
             Impormasyon para Makipag-ugnay
-          </h2>
+          </h1>
           <p className="text-center text-foreground/80">
             Para sa mga tanong at ibang detalye hinggil sa {siteName}, maaaring
-            makipag-ugnay sa pamamagitan ng mga sumusunod.
+            makipag-ugnay sa pamamagitan ng mga sumusunod:
           </p>
         </BlurFade>
 
         <BlurFade
-          className="w-fit mx-auto mt-6 text-lg text-foreground space-y-4 border-4 border-secondary rounded-lg p-4 md:p-6"
+          className="w-fit md:w-[60%] mx-auto mt-6 text-lg text-foreground space-y-4 border-4 border-secondary rounded-lg p-4 md:p-6"
           delay={0.4}
           inView
         >
           {contactDetails.map((detail, index) => (
-            <div key={index} className="space-y-1 text-sm md:text-base break-words">
+            <div
+              key={index}
+              className="space-y-1 text-sm md:text-base break-words"
+            >
               <h3 className="text-lg font-semibold text-foreground underline underline-offset-2">
                 {detail.name}
               </h3>
@@ -71,4 +74,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Page;

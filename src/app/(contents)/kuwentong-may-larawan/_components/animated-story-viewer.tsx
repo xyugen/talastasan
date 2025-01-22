@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
+import { cn } from "@/lib/utils";
 
 interface AnimatedStoryViewerProps {
   slides: StoryWithImage[];
@@ -90,7 +91,7 @@ const AnimatedStoryViewer: React.FC<AnimatedStoryViewerProps> = ({
 
       <div className="relative mt-12 z-10">
         <button
-          className="absolute left-2 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/90 text-primary-foreground p-2 rounded-full transition-colors"
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-primary hover:bg-primary/90 text-primary-foreground p-2 rounded-full transition-colors disabled:cursor-not-allowed disabled:bg-gray-500/50 disabled:text-gray-800"
           onClick={() => paginate(-1)}
           disabled={currentSlide === 0}
         >
@@ -98,7 +99,7 @@ const AnimatedStoryViewer: React.FC<AnimatedStoryViewerProps> = ({
         </button>
 
         <button
-          className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary/80 hover:bg-primary/90 text-primary-foreground p-2 rounded-full transition-colors"
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary/80 hover:bg-primary/90 text-primary-foreground p-2 rounded-full transition-colors disabled:cursor-not-allowed disabled:bg-gray-500/50 disabled:text-gray-800"
           onClick={() => paginate(1)}
           disabled={currentSlide === slides.length - 1}
         >
@@ -106,18 +107,7 @@ const AnimatedStoryViewer: React.FC<AnimatedStoryViewerProps> = ({
         </button>
 
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => {
-                setDirection(index > currentSlide ? 1 : -1);
-                setCurrentSlide(index);
-              }}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                index === currentSlide ? "bg-primary" : "bg-gray-700/50"
-              }`}
-            />
-          ))}
+          <p key={currentSlide}>{`${currentSlide + 1} / ${slides.length}`}</p>
         </div>
       </div>
 
@@ -129,8 +119,24 @@ const AnimatedStoryViewer: React.FC<AnimatedStoryViewerProps> = ({
         transition={{ duration: 0.3 }}
         className="mt-12 p-6 bg-white rounded-lg shadow-lg"
       >
-        <p className="whitespace-pre-wrap text-lg leading-relaxed">
+        <p
+          className={cn(
+            "whitespace-pre-wrap text-lg leading-relaxed",
+            currentSlide + 1 === slides.length && "font-medium italic text-center"
+          )}
+        >
           {slides[currentSlide].content}
+
+          {currentSlide + 1 === slides.length && (
+            <span className="flex flex-col gap-4 items-center justify-center mt-32">
+              <span>
+                <strong>Wakas!</strong>
+              </span>
+              <span className="not-italic">
+                <strong>I M P E N G&nbsp;&nbsp;N E G R O</strong>
+              </span>
+            </span>
+          )}
         </p>
       </motion.div>
     </div>

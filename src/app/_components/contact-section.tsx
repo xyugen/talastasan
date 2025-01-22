@@ -22,7 +22,7 @@ const ContactSection = () => {
         </BlurFade>
 
         <BlurFade
-          className="w-fit mx-auto mt-6 text-lg text-foreground space-y-4 border-4 border-secondary rounded-lg p-6"
+          className="w-fit mx-auto mt-6 text-lg text-foreground space-y-4 border-4 border-secondary rounded-lg p-4 md:p-6"
           delay={0.4}
           inView
         >

@@ -37,6 +37,18 @@ const searchItems: {
     description: "Ang kuwento sa pamamagitan ng mga larawan.",
   },
   {
+    title: "Talasalitaan",
+    link: "/talasalitaan",
+  },
+  {
+    title: "Tungkol sa",
+    link: "/tungkol-sa",
+  },
+  {
+    title: "Makipag-ugnay",
+    link: "/makipag-ugnay",
+  },
+  {
     title: "Pahina 1",
     link: "/buong-kuwento/pahina-1",
   },

@@ -8,7 +8,7 @@ const ImpengNegroSection = () => {
   return (
     <section className="bg-background py-24">
       <div className="mb-16 text-center">
-        <h2 className="text-4xl font-semibold text-foreground">
+        <h2 className="text-4xl md:text-6xl font-semibold text-foreground">
           <span className="relative">
             Impeng Negro
             <svg
@@ -30,14 +30,15 @@ const ImpengNegroSection = () => {
           </span>
         </h2>
       </div>
-      <div className="container mx-auto grid gap-8 px-6 lg:grid-cols-3">
-        {stories.map(({ title, description, image, link }) => (
+      <div className="mx-auto grid gap-2 px-12 w-full lg:grid-cols-3">
+        {stories.map(({ title, description, image, link }, i) => (
           <StoryCard
             key={title}
             title={title}
             description={description}
             image={image}
             href={link}
+            index={i}
           />
         ))}
       </div>

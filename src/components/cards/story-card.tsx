@@ -3,11 +3,14 @@
 import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import BlurFade from "../ui/blur-fade";
+
 interface StoryCardProps {
   title: string;
   description: string;
   image: StaticImageData | string;
   href: string;
+  index?: number;
 }
 
 const StoryCard: React.FC<StoryCardProps> = ({
@@ -15,29 +18,31 @@ const StoryCard: React.FC<StoryCardProps> = ({
   description,
   image,
   href,
+  index = 0,
 }) => {
   return (
-    <Link
-      href={href}
+    <BlurFade
       className="group relative overflow-hidden rounded-lg border-4 border-secondary bg-white transition-transform"
+      delay={0.3 * index}
+      inView
     >
-      <div className="relative aspect-[16/11] overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          layout="fill"
-          objectFit="cover"
-          className="transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300"
-        />
-        <div className="absolute bottom-0 left-0 bg-gradient-to-tr from-primary/20 via-primary/10 to-transparent p-2 rounded-l-sm text-left">
-          <h3 className="mb-3 text-xl font-semibold text-primary-foreground">
-            {title}
-          </h3>
-          <p className="text-primary-foreground">{description}</p>
+      <Link href={href} className="relative">
+        <div className="relative aspect-[16/11] overflow-hidden">
+          <Image
+            src={image}
+            alt={title}
+            layout="fill"
+            objectFit="cover"
+            className="transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300"
+          />
+          <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
         </div>
-        <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
-      </div>
-    </Link>
+        <div className="bg-background text-foreground p-2 text-left">
+          <h3 className="text-xl font-semibold">{title}</h3>
+          <p>{description}</p>
+        </div>
+      </Link>
+    </BlurFade>
   );
 };
 

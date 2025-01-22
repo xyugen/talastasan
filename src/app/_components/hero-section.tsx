@@ -23,10 +23,10 @@ const HeroSection = () => {
 
       {/*  Content */}
       <div className="z-10 space-y-6 text-center">
-        <h1 id="hero-text" className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide">
+        <h1 id="hero-text" className="text-4xl md:text-6xl lg:text-7xl  font-bold tracking-wide">
           <span>{_heroText}</span>
         </h1>
-        <h2 id="description" className="mx-auto max-w-2xl text-lg font-light">
+        <h2 id="description" className="mx-auto text-lg md:text-2xl lg:text-3xl font-light">
           <span>{_descriptionText}</span>
         </h2>
       </div>

@@ -110,7 +110,7 @@ const NavBar = () => {
   return (
     <>
       {/* Mobile */}
-      <div className="flex flex-row gap-2 items-center md:hidden px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
+      <div className="flex flex-row gap-2 items-center lg:hidden px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
         <button onClick={() => setIsDialogOpen(true)}>
           <Search className="size-6" />
         </button>
@@ -188,7 +188,7 @@ const NavBar = () => {
       </div>
 
       {/* Desktop */}
-      <nav className="transition-colors hover:bg-accent hidden flex-row gap-8 items-center md:flex px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
+      <nav className="transition-colors hover:bg-accent hidden flex-row gap-8 items-center lg:flex px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
         {/* Existing desktop menu code remains the same */}
         {navLinks.map((navLink) => {
           if (navLink.items && navLink.items.length > 0) {

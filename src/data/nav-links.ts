@@ -41,6 +41,10 @@ export const navLinks: NavLink[] = [
     link: "/#home",
   },
   {
+    title: "Talasalitaan",
+    link: "/talasalitaan",
+  },
+  {
     title: "Mga Nilalaman",
     link: "/mga-nilalaman",
     items: [

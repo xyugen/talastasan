@@ -8,7 +8,7 @@ const ContactSection = () => {
   return (
     <section
       id="makipag-ugnayan"
-      className="flex justify-center items-center py-20"
+      className="flex justify-center items-center py-20 overflow-clip"
     >
       <div className="relative px-4">
         <BlurFade className="md:w-4/5 mx-auto space-y-2" delay={0.3} inView>

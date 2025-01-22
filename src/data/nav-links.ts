@@ -38,7 +38,7 @@ export const storyChapterLinks: NavLink[] = [
 export const navLinks: NavLink[] = [
   {
     title: "Home",
-    link: "/",
+    link: "/#home",
   },
   {
     title: "Mga Nilalaman",
@@ -65,6 +65,6 @@ export const navLinks: NavLink[] = [
   },
   {
     title: "Makipag-ugnayan",
-    link: "/makipag-ugnay",
+    link: "/#makipag-ugnayan",
   }
 ];

@@ -6,6 +6,7 @@ import ImpengNegroSection from "./_components/impeng-negro-section";
 import PlayAudio from "./_components/play-audio";
 import PublishedWorksSection from "./_components/published-works-section";
 import { ChevronUp } from "lucide-react";
+import ContactSection from "./_components/contact-section";
 
 const Page = () => {
   return (
@@ -30,6 +31,7 @@ const Page = () => {
               <ChevronUp className="size-8 animate-bounce" />
             </section>
             <DetailsSection />
+            <ContactSection />
             <AuthorSection />
             <PublishedWorksSection />
             <ImpengNegroSection />

@@ -27,7 +27,7 @@ const ContactSection = () => {
           inView
         >
           {contactDetails.map((detail, index) => (
-            <div key={index} className="space-y-1">
+            <div key={index} className="space-y-1 text-sm md:text-base break-words">
               <h3 className="text-lg font-semibold text-foreground underline underline-offset-2">
                 {detail.name}
               </h3>

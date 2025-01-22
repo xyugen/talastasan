@@ -1,4 +1,5 @@
 import { navLinks } from "@/data/nav-links";
+import searchItems from "@/data/search-items";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 import { usePathname } from "next/navigation";
@@ -15,72 +16,6 @@ import {
 } from "../ui/dropdown-menu";
 import { Input } from "../ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-
-const searchItems: {
-  title: string;
-  link: string;
-  description?: string;
-}[] = [
-  {
-    title: "Buong Kuwento",
-    link: "/buong-kuwento",
-    description: "Tingnan ang detalyadong pangyayari.",
-  },
-  {
-    title: "Buod",
-    link: "/buod",
-    description: "Isang maikling buod ng kuwento.",
-  },
-  {
-    title: "Kuwentong May Larawan",
-    link: "/kuwentong-may-larawan",
-    description: "Ang kuwento sa pamamagitan ng mga larawan.",
-  },
-  {
-    title: "Talasalitaan",
-    link: "/talasalitaan",
-  },
-  {
-    title: "Tungkol sa",
-    link: "/tungkol-sa",
-  },
-  {
-    title: "Makipag-ugnay",
-    link: "/makipag-ugnay",
-  },
-  {
-    title: "Pahina 1",
-    link: "/buong-kuwento/pahina-1",
-  },
-  {
-    title: "Pahina 2",
-    link: "/buong-kuwento/pahina-2",
-  },
-  {
-    title: "Pahina 3",
-    link: "/buong-kuwento/pahina-3",
-  },
-  {
-    title: "Pahina 4",
-    link: "/buong-kuwento/pahina-4",
-  },
-  {
-    title: "Pahina 5",
-    link: "/buong-kuwento/pahina-5",
-  },
-  {
-    title: "Pahina 6",
-    link: "/buong-kuwento/pahina-6",
-  },
-  {
-    title: "Pahina 7",
-    link: "/buong-kuwento/pahina-7",
-  },
-  {
-    title: "Pahina 8",
-    link: "/buong-kuwento/pahina-8",
-  },
-];
 
 const NavBar = () => {
   const pathname = usePathname();

@@ -44,7 +44,24 @@ const ContactSection = () => {
               <p className="flex items-center gap-2">
                 <Phone className="size-4" />
                 <span className="font-semibold">Numero:</span>{" "}
-                {detail.phoneNumber}
+                {detail.phoneNumber instanceof Array ? (
+                  detail.phoneNumber.map((number, index) => (
+                    <Link
+                      key={index}
+                      href={`tel:${number}`}
+                      className="text-secondary/80"
+                    >
+                      {number}
+                    </Link>
+                  ))
+                ) : (
+                  <Link
+                    href={`tel:${detail.phoneNumber}`}
+                    className="text-secondary/80"
+                  >
+                    {detail.phoneNumber}
+                  </Link>
+                )}
               </p>
             </div>
           ))}

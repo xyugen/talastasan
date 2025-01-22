@@ -40,7 +40,7 @@ const CarouselCard = ({
   return (
     <BlurFade
       key={card.id}
-      className="relative h-[400px] w-[250px] md:h-[600px] md:w-[400px] overflow-hidden bg-neutral-200 rounded-lg shadow-lg border-4 border-secondary p-2"
+      className="relative h-[400px] w-[250px] md:h-[500px] md:w-[300px] overflow-hidden bg-neutral-200 rounded-lg shadow-lg border-4 border-secondary p-2"
       delay={0.3 * index}
       inView
     >

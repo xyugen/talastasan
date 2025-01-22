@@ -189,7 +189,11 @@ const NavBar = () => {
 
       {/* Desktop */}
       <nav className="transition-colors hover:bg-accent hidden flex-row gap-8 items-center lg:flex px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
-        {/* Existing desktop menu code remains the same */}
+        {/* Search */}
+        <button onClick={() => setIsDialogOpen(true)}>
+          <Search className="size-6" />
+        </button>
+
         {navLinks.map((navLink) => {
           if (navLink.items && navLink.items.length > 0) {
             return (
@@ -235,10 +239,6 @@ const NavBar = () => {
             );
           }
         })}
-
-        <button onClick={() => setIsDialogOpen(true)}>
-          <Search className="size-6" />
-        </button>
       </nav>
 
       {/* Search Dialog */}

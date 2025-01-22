@@ -5,11 +5,13 @@ import React, { useEffect, useState } from "react";
 
 interface PaginatedChapterReaderProps {
   content: string;
+  isLastPage?: boolean;
   className?: string;
 }
 
 const PaginatedChapterReader: React.FC<PaginatedChapterReaderProps> = ({
   content,
+  isLastPage = false,
   className = "",
 }) => {
   const [pages, setPages] = useState<string[]>([]);
@@ -56,6 +58,22 @@ const PaginatedChapterReader: React.FC<PaginatedChapterReaderProps> = ({
         <p className="whitespace-pre-wrap">
           {pages[currentPage]}
           {currentPage !== pages.length - 1 && <>...</>}
+
+          {isLastPage && (
+            <span className="font-medium flex flex-col gap-4 items-center justify-center mt-10">
+              <span className="text-center">
+                <i>
+                  Sa matinding sikat ng araw, tila siya’y isang mandirigmang
+                  sugatan, ngunit matatag na nakatindig sa pinagwagiang
+                  larangan.
+                </i>
+              </span>
+              <span className="mt-16">Wakas!</span>
+              <span className="not-italic">
+                <strong>I M P E N G&nbsp;&nbsp;N E G R O</strong>
+              </span>
+            </span>
+          )}
         </p>
       </div>
 

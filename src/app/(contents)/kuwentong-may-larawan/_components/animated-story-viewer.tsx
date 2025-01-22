@@ -122,7 +122,8 @@ const AnimatedStoryViewer: React.FC<AnimatedStoryViewerProps> = ({
         <p
           className={cn(
             "whitespace-pre-wrap text-lg leading-relaxed",
-            currentSlide + 1 === slides.length && "font-medium italic text-center"
+            currentSlide + 1 === slides.length &&
+              "font-medium italic text-center"
           )}
         >
           {slides[currentSlide].content}

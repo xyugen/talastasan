@@ -23,7 +23,10 @@ const Page = async ({ params }: { params: Promise<{ pahina: string }> }) => {
     <section className="bg-gradient-to-b from-gray-50 to-white">
       <PageTitle title="Buong Kuwento" chapter={storyChapter} />
       <div className="container mx-auto space-y-12 px-2 py-4 md:px-[10%]">
-        <PaginatedChapterReader content={storyChapter.content} />
+        <PaginatedChapterReader
+          content={storyChapter.content}
+          isLastPage={!nextChapter}
+        />
 
         <div className="w-full border-t border-secondary/20" />
 

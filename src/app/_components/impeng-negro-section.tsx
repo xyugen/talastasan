@@ -6,9 +6,9 @@ import { motion } from "motion/react";
 
 const ImpengNegroSection = () => {
   return (
-    <section className="bg-background py-24">
+    <section className="bg-background py-24 min-h-screen">
       <div className="mb-16 text-center">
-        <h2 className="text-4xl md:text-6xl font-semibold text-foreground">
+        <h2 className="text-4xl sm:text-6xl font-semibold text-foreground">
           <span className="relative">
             Impeng Negro
             <svg
@@ -30,7 +30,7 @@ const ImpengNegroSection = () => {
           </span>
         </h2>
       </div>
-      <div className="mx-auto grid gap-2 px-12 w-full lg:grid-cols-3">
+      <div className="mx-auto grid gap-2 px-2 w-full lg:grid-cols-3">
         {stories.map(({ title, description, image, link }, i) => (
           <StoryCard
             key={title}

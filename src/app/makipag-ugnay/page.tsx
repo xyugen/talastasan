@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <section
       id="makipag-ugnayan"
-      className="flex justify-center items-center py-20 overflow-clip"
+      className="flex justify-center items-center py-20 overflow-hidden"
     >
       <div className="relative px-4">
         <BlurFade className="mx-auto space-y-2" delay={0.3} inView>

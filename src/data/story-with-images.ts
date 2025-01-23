@@ -79,10 +79,10 @@ Tumindig na siya. Naghihimas at naghihikab na iniunat ang mahahabang kamay. Inaa
     image: Image3,
     alt: "Image 3 description",
     content: `Umiingit ang sahig ng kanilang bárong-bárong nang siya’y pumasok.
-    
+
 “Nariyan sa kahon ang kamiseta mo.”
 
-Sa sulok ng kaniyang kaliwang mata’y nasulyapan niya ang kaniyang ina. Nakaupo ito, taas ang kaliwang paa, sa ulo ng halos dumapa ng bangko, nakasandig ang ulo sa tagpiang dingding at nakalugay ang buhok. Bukas ang kusaping damit na giris, nakahantad ang laylay at tuyot na dibdib. Kalong nito ang kaniyang kapatid na bunso. Pinasususo. `,
+Sa sulok ng kaniyang kaliwang mata’y nasulyapan niya ang kaniyang ina. Nakaupo ito, taas ang kaliwang paa, sa ulo ng halos dumapa ng bangko, nakasandig ang ulo sa tagpiang dingding at nakalugay ang buhok. Bukas ang kusaping damit na giris, nakahantad ang laylay at tuyot na dibdib. Kalong nito ang kaniyang kapatid na bunso. Pinasususo.`,
   },
   {
     image: Image4,
@@ -94,13 +94,13 @@ Sa sulok ng kaniyang kaliwang mata’y nasulyapan niya ang kaniyang ina. Nakaupo
     alt: "Image 5 description",
     content: `Bahagya na niyang maulinigan ang ina. Nakatitig siya sa tatlo niyang kapatid. Sunod-sunod na nakatungo ang mga ito sa isa pang bangong nasa tagiliran ng nanggigimalmal na mesang kainan. Nagsisikain pa.
 
-Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si Kano, kaya ganito ang tawag dito sa kanilang pook. Kakutis ni Kano ang iba pa niyang kapatid. Marurusing ngunit mapuputi. May pitong taon na si Kano. Siya nama’y maglalabing-anim na. Payat siya ngunit mahahaba ang kaniyang biyas. `,
+Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si Kano, kaya ganito ang tawag dito sa kanilang pook. Kakutis ni Kano ang iba pa niyang kapatid. Marurusing ngunit mapuputi. May pitong taon na si Kano. Siya nama’y maglalabing-anim na. Payat siya ngunit mahahaba ang kaniyang biyas.`,
   },
   {
     image: Image6,
     alt: "Image 6 description",
     content: `Hinalungkat na niya ang kahong karton na itinuro ng ina. Magkakasama ang mga damit nila Kano, Boyet, at Diding. Sa may ilalim, nakuha niya ang kulay-lumot niyang kamiseta. Hinawakan niya iyon sa magkabilang tirante. Itinaas. Sinipat.
-    
+
 “Iyan ang isuot mo.” Parang nahulaan ng kaniyang ina ang kaniyang iniisip.
 
 Isinuot niya ang kamiseta. Lapat na lapat sa kaniya ang kamisetang iyon noong bagong bili ngunit ngayo’y maluwag na. Nagmumukha siyang Intsik-beho kapag suot iyon ngunit wala naman siyang maraming kamisetang maisusuot. Mahina ang kita ng kaniyang ina sa paglalaba at mahina rin ang kaniyang kita sa pag-aagwador.
@@ -185,7 +185,7 @@ Natatanaw na niya ngayon ang poso. Sa malamig ngunit maliwanag nang sikat ng ara
     image: Image15,
     alt: "Image 15 description",
     content: `Sa langkay na iyon ay kilalang-kilala niya ang anyo ni Ogor. Paano niya malilimutan si Ogor? Sa mula’t mula pa, itinurong na siya nitong kaaway. ‘Di kailanman binigyan ng pagkakataong maging kaibigan.
-    
+
 Halos kasing gulang niya si Ogor, ngunit higit na matipuno ang katawan nito. Malakas si Ogor. Tuwid ang tindig nito at halos hindi yumuyuko kahit may pasang balde ng tubig. Tila sino mang masasalubong sa daan ay kayang-kayang sagasaan. Nang marating niya ang poso ay tungo ang ulo tinungo niya ang hulihan ng pila. Marahan niyang inalis sa pagkakakawit ng mga balde. Sa sarili, nausal niyang sana’y huwag siya ang maging paksa ng paghaharutan at pagkakatuwaan ng mga agwador.`,
   },
   {
@@ -215,6 +215,7 @@ Sa kalawanging medyo-agwa niyon ay nakasilong ang iba pang agwador. May naghubad
     content: `Kasalukuyan siyang nagtitiis sa init nang may maulinigan siyang sigaw mula sa tindahan;
 
 “Hoy, Negro, sumilong ka. Baka ka pumuti!”
+
 Si Ogor iyon. Kahit hindi siya lumingon, para na niyang nakita si Ogor. Nakangisi at nanunukso na naman.
 
 Malakas ang narinig niyang tawanan. Hindi pa rin siya lumilingon. Tila wala siyang naririnig. Nakatingin siya sa nakasahod na balde ngunit ang naiisip niya’y ang bilin ng ina, na huwag niyang papansinin si Ogor. Bakit nga ba niya papansinin si Ogor?`,

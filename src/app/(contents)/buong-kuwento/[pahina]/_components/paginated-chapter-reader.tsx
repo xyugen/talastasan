@@ -57,7 +57,11 @@ const PaginatedChapterReader: React.FC<PaginatedChapterReaderProps> = ({
       <div className="rounded-sm border border-primary/10 bg-white p-4 text-base leading-relaxed text-surface-content/80 shadow-sm md:rounded-lg md:p-6 md:text-lg md:shadow-lg min-h-[50vh]">
         <p className="whitespace-pre-wrap">
           {pages[currentPage]}
-          {currentPage !== pages.length - 1 && <>...</>}
+          {currentPage !== pages.length - 1 &&
+            pages[currentPage] &&
+            !pages[currentPage].endsWith(".") && (
+              <span className="font-light">...</span>
+            )}
 
           {isLastPage && (
             <span className="font-medium flex flex-col gap-4 items-center justify-center mt-10">

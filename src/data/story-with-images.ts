@@ -358,7 +358,7 @@ Muli niyang itinaas ang kamay.
   {
     image: Image41,
     alt: "Image 41 description",
-    content: `Maraming sandalling walang nagmangahas magsalita. Walang makakibo sa mga agwador. Hindi makapaniwala ang lahat. Lahat ay nakatingin sa kaniya.
+    content: `Maraming sandaling walang nagmangahas magsalita. Walang makakibo sa mga agwador. Hindi makapaniwala ang lahat. Lahat ay nakatingin sa kaniya.
 
 Isa-sa niyang tiningnan ang mga nakapaligid sa kaniya. Walang pagtutol sa mga mata ng mga ito. Ang nababakas niya’y paghanga. Ang Nakita niya’y pangingimi.
 

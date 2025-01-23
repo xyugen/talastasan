@@ -25,6 +25,7 @@ Tumindig na siya. Naghihimas at naghihikab na iniunat ang mahahabang kamay. Inaa
 Sa sulok ng kaniyang kaliwang mata’y nasulyapan niya ang kaniyang ina. Nakaupo ito, taas ang kaliwang paa, sa ulo ng halos dumapa ng bangko, nakasandig ang ulo sa tagpiang dingding at nakalugay ang buhok. Bukas ang kusaping damit na giris, nakahantad ang laylay at tuyot na dibdib. Kalong nito ang kaniyang kapatid na bunso. Pinasususo. 
 
 “Mamaya, baka umuwi ka na namang… basag ang mukha.”
+
 Bahagya na niyang maulinigan ang ina. Nakatitig siya sa tatlo niyang kapatid. Sunod-sunod na nakatungo ang mga ito sa isa pang bangong nasa tagiliran ng nanggigimalmal na mesang kainan. Nagsisikain pa.
 
 Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si Kano, kaya ganito ang tawag dito sa kanilang pook. Kakutis ni Kano ang iba pa niyang kapatid. Marurusing ngunit mapuputi. May pitong taon na si Kano. Siya nama’y maglalabing-anim na. Payat siya ngunit mahahaba ang kaniyang biyas.`,

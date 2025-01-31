@@ -4,8 +4,7 @@ import { Quote } from "lucide-react";
 const DetailsSection = () => {
   return (
     <section
-      id="tungkol-sa"
-      className="flex justify-center items-center py-20 min-h-[45vh]"
+      className="flex justify-center items-center py-12 min-h-[30vh]"
     >
       <div className="relative space-y-8 px-6 text-center md:px-20 lg:px-40">
         <BlurFade

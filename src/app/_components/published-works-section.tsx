@@ -11,7 +11,7 @@ const PublishedWorksSection = () => {
     id: index,
   }));
   return (
-    <section className="bg-background py-24 text-foreground">
+    <section className="bg-background py-12 text-foreground">
       <div className="mb-16 text-center">
         <h2 className="text-4xl font-bold">
           Nailathalang Akda

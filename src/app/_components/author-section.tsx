@@ -14,8 +14,8 @@ import Image from "next/image";
 
 const AuthorSection = () => {
   return (
-    <section id="author" className="mt-16">
-      <div className="relative space-y-4 p-4 min-h-[1100px] md:p-9 lg:p-20">
+    <section id="author" className="mt-4">
+      <div className="relative flex lg:block flex-col justify-center items-center space-y-4 p-4 min-h-[950px] lg:px-20">
         <BlurFade delay={0.5} inView className="lg:absolute ">
           <Image
             src={RogelioSikat || "/placeholder.svg"}
@@ -29,7 +29,7 @@ const AuthorSection = () => {
         <BlurFade
           delay={0.5}
           inView
-          className="md:absolute inline-block right-4 md:right-9 lg:right-20 max-w-[800px] bottom-0 md:w-3/4"
+          className="lg:absolute  inline-block right-4 md:right-9 hlg:right-20 max-w-[800px] bottom-0 md:-bottom-28 lg:bottom-20 hlg:bottom-32 xl:bottom-48 lg:w-2/4"
         >
           <Card className="group relative border-4 border-secondary">
             <PenTool className="group-hover:-translate-x-2 group-hover:translate-y-2 transition-transform absolute -rotate-90 size-10 -right-4 -top-4 md:-right-6 md:-top-6 fill-primary stroke-secondary" />

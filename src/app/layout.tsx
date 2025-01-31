@@ -1,4 +1,5 @@
 import ClickSound from "@/components/click-sound";
+import DebugBreakpoints from "@/components/debug-breakpoints";
 import Footer from "@/components/layouts/footer";
 import Header from "@/components/layouts/header";
 import TransitionLoader from "@/components/transition-loader";
@@ -66,6 +67,7 @@ export default function RootLayout({
 
         <main>{children}</main>
 
+        {process.env.NODE_ENV === "development" && <DebugBreakpoints />}
         <Footer />
       </body>
     </html>

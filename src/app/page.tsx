@@ -32,7 +32,7 @@ const Page = () => {
             <DetailsSection />
             <AuthorSection />
             <PublishedWorksSection />
-            <ImpengNegroSection />
+            {/* <ImpengNegroSection /> */}
           </div>
         </div>
       </div>

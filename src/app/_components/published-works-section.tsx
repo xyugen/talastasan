@@ -2,7 +2,6 @@
 
 import PublishedWorkCard from "@/components/cards/published-work-card";
 import publishedWorks from "@/data/published-works";
-import { ArrowDownFromLine } from "lucide-react";
 
 const PublishedWorksSection = () => {
     const cards = publishedWorks.map((work, index) => ({
@@ -22,12 +21,12 @@ const PublishedWorksSection = () => {
                     Nailathalang Akda
                 </h2>
             </div>
-            <div className="flex flex-col gap-2 p-8 items-center justify-center">
+            {/* <div className="flex flex-col gap-2 p-8 items-center justify-center">
                 <span className="font-semibold uppercase">
                     Mag-scroll pababa
                 </span>
                 <ArrowDownFromLine className="size-4 animate-bounce" />
-            </div>
+            </div> */}
             <div className="flex flex-col items-center space-y-4 w-full">
                 <div className="mx-auto w-full">
                     <section className="relative px-4 py-12 bg-primary/10 flex flex-row flex-wrap justify-center items-center gap-4">

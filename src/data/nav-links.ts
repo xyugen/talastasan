@@ -40,10 +40,10 @@ export const navLinks: NavLink[] = [
     title: "Home",
     link: "/#home",
   },
-  {
-    title: "Talasalitaan",
-    link: "/talasalitaan",
-  },
+  // {
+  //   title: "Talasalitaan",
+  //   link: "/talasalitaan",
+  // },
   {
     title: "Mga Nilalaman",
     link: "/mga-nilalaman",

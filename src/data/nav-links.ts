@@ -1,3 +1,4 @@
+import { PageRoutes } from "@/constants/page-routes";
 import NavLink from "@/interface/NavLink";
 
 export const storyChapterLinks: NavLink[] = [
@@ -38,7 +39,7 @@ export const storyChapterLinks: NavLink[] = [
 export const navLinks: NavLink[] = [
   {
     title: "Home",
-    link: "/#home",
+    link: PageRoutes.HOME,
   },
   // {
   //   title: "Talasalitaan",
@@ -46,29 +47,32 @@ export const navLinks: NavLink[] = [
   // },
   {
     title: "Mga Nilalaman",
-    link: "/mga-nilalaman",
+    link: PageRoutes.MGA_NILALAMAN,
     items: [
       {
-        title: "Buong Kuwento",
-        link: "/buong-kuwento",
-        items: storyChapterLinks,
+        title: "Impeng Negro",
+        link: PageRoutes.IMPENG_NEGRO
       },
       {
-        title: "Buod",
-        link: "/buod",
+        title: "Tata Selo",
+        link: PageRoutes.TATA_SELO
       },
       {
-        title: "Kuwentong May Larawan",
-        link: "/kuwentong-may-larawan",
+        title: "Pagsalunga",
+        link: PageRoutes.PAGSALUNGA
       },
+      {
+        title: "Dugo Sa Bukang Liwayway",
+        link: PageRoutes.DUGO_SA_BUKANG_LIWAYWAY
+      }
     ],
   },
   {
     title: "Tungkol sa",
-    link: "/tungkol-sa",
+    link: PageRoutes.TUNGKOL_SA,
   },
   {
     title: "Makipag-ugnay",
-    link: "/makipag-ugnay",
+    link: PageRoutes.MAKIPAG_UGNAY,
   }
 ];

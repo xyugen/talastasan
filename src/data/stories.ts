@@ -3,8 +3,16 @@ import {
   BuongKuwento,
   KuwentongMayLarawan,
 } from "@/assets/images/stories";
+import { StaticImageData } from "next/image";
 
-const stories = [
+export interface Story {
+  image?: StaticImageData;
+  link?: string;
+  title: string;
+  description: string;
+}
+
+const impengNegroStories: Story[] = [
   {
     image: BuongKuwento,
     link: "/buong-kuwento",
@@ -26,4 +34,26 @@ const stories = [
   },
 ];
 
-export default stories;
+const emptyStories: Story[] = [
+  {
+    // image: BuongKuwento,
+    // link: "/buong-kuwento",
+    title: "Buong Kuwento",
+    description: "Tingnan ang detalyadong pangyayari.",
+  },
+  {
+    // image: Buod,
+    // link: "/buod",
+    title: "Buod",
+    description: "Isang maikling buod ng kwento.",
+  },
+  {
+    // image: KuwentongMayLarawan,
+    // link: "/kuwentong-may-larawan",
+    title: "Kuwentong May Larawan",
+    description:
+      "Tingnan ang detalyadong pangyayari sa pamamagitan ng mga larawan.",
+  },
+]
+
+export { impengNegroStories, emptyStories };

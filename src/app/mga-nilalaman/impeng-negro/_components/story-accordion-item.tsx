@@ -1,21 +1,20 @@
 "use client";
 
-import { Story } from "@/data/stories";
+import { AccordionStory } from "@/interface/AccordionStory";
 import { Accordion } from "radix-ui";
 import PageTitle from "../../_components/page-title";
 
-const StoryAccordionItem = ({ story }: { story: Story }) => {
-  const ContentComponent = story.content;
+const StoryAccordionItem = ({ story }: { story: AccordionStory }) => {
+    const ContentComponent = story.content;
+    const itemId = story.title.replaceAll(" ", "-").toLowerCase();
     return (
-        <Accordion.Item id={story.title.replace(" ", "-")} value={story.title}>
+        <Accordion.Item id={itemId} value={itemId}>
             <Accordion.Header>
                 <Accordion.Trigger asChild>
                     <PageTitle
                         title={story.title}
                         onClick={() => {
-                            const element = document.getElementById(
-                                story.title.replace(" ", "-")
-                            );
+                            const element = document.getElementById(itemId);
                             if (element) {
                                 // delay
                                 setTimeout(() => {

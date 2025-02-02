@@ -11,7 +11,6 @@ export interface Story {
   link?: string;
   title: string;
   description: string;
-  content?: ComponentType;
 }
 
 const impengNegroStories: Story[] = [

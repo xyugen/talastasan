@@ -1,6 +1,6 @@
 import storiesContents from "@/data/stories-contents";
 import { redirect } from "next/navigation";
-import PageTitle from "../../_components/page-title";
+import PageTitle from "../../../../app/mga-nilalaman/_components/page-title";
 import NavButtons from "./_components/nav-buttons";
 import PaginatedChapterReader from "./_components/paginated-chapter-reader";
 

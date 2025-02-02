@@ -57,11 +57,20 @@ const NavBar = () => {
         setSearchValue("");
     };
 
+    const handleNavClick = (navLink: NavLink) => {
+        if (pathname !== navLink.link.split("#")[0] && !navLink.disabled) {
+            animatePageOut(navLink.link);
+        } else {
+            window.location.hash = navLink.link.split("#")[1];
+        }
+        if (isSheetOpen) setIsSheetOpen(false);
+    };
+
     const handleNavItemClick = (navLink: NavLink, navItem: NavLink) => {
         const itemLink = navLink.link
             ? navLink.link + navItem.link
             : navItem.link;
-        if (pathname !== itemLink) {
+        if (pathname !== itemLink && !navItem.disabled) {
             animatePageOut(itemLink);
         }
         if (isSheetOpen) setIsSheetOpen(false);
@@ -129,22 +138,10 @@ const NavBar = () => {
                                         <button
                                             key={navLink.title}
                                             className="text-left"
-                                            onClick={() => {
-                                                if (
-                                                    pathname !==
-                                                    navLink.link.split("#")[0]
-                                                ) {
-                                                    animatePageOut(
-                                                        navLink.link
-                                                    );
-                                                } else {
-                                                    window.location.hash =
-                                                        navLink.link.split(
-                                                            "#"
-                                                        )[1];
-                                                }
-                                                setIsSheetOpen(false);
-                                            }}
+                                            onClick={handleNavClick.bind(
+                                                null,
+                                                navLink
+                                            )}
                                         >
                                             <span className="relative after:absolute after:bg-primary after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full">
                                                 {navLink.title}
@@ -198,16 +195,7 @@ const NavBar = () => {
                         return (
                             <button
                                 key={navLink.title}
-                                onClick={() => {
-                                    if (
-                                        pathname !== navLink.link.split("#")[0]
-                                    ) {
-                                        animatePageOut(navLink.link);
-                                    } else {
-                                        window.location.hash =
-                                            navLink.link.split("#")[1];
-                                    }
-                                }}
+                                onClick={handleNavClick.bind(null, navLink)}
                             >
                                 {navLink.title}
                             </button>

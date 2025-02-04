@@ -38,6 +38,7 @@ const PaginatedChapterReader: React.FC<PaginatedChapterReaderProps> = ({
     }
 
     setPages(pagesArray);
+    setCurrentPage(0);
   }, [content]);
 
   const handleNextPage = () => {

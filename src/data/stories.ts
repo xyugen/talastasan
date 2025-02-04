@@ -4,7 +4,6 @@ import {
   KuwentongMayLarawan as KuwentongMayLarawanImg,
 } from "@/assets/images/stories";
 import { StaticImageData } from "next/image";
-import { ComponentType } from "react";
 
 export interface Story {
   image?: StaticImageData;

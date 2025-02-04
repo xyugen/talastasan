@@ -12,7 +12,7 @@ interface StoriesSectionProps {
 
 const StoriesSection = ({ title, stories, baseUrl }: StoriesSectionProps) => {
     return (
-        <section id="stories" className="bg-background py-24 min-h-screen">
+        <section id="stories" className="bg-background min-h-screen">
             <BlurFade delay={0.3} className="mb-16 text-center">
                 <h2 className="text-4xl sm:text-6xl font-semibold text-foreground">
                     <span className="relative">

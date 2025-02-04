@@ -27,21 +27,19 @@ const StoryCard: React.FC<StoryCardProps> = ({
             inView
         >
             <Link
-                href={href ? `/mga-nilalaman${href}` : "#stories"}
+                href={image ? `/mga-nilalaman${href}` : "#stories"}
                 className="relative"
             >
-                {image && (
-                    <div className="relative aspect-[16/11] overflow-hidden">
-                        <Image
-                            src={image}
-                            alt={title}
-                            layout="fill"
-                            objectFit="cover"
-                            className="transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300"
-                        />
-                        <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
-                    </div>
-                )}
+                <div className="relative aspect-[16/11] overflow-hidden">
+                    <Image
+                        src={image ? image : ""}
+                        alt={title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300"
+                    />
+                    <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
+                </div>
                 <div className="bg-background text-foreground p-2 text-left">
                     <h3 className="text-xl font-semibold">{title}</h3>
                     <p>{description}</p>

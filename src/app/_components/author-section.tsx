@@ -16,13 +16,9 @@ const AuthorSection = () => {
     return (
         <section id="author" className="mt-4">
             <div className="relative flex flex-col md:grid md:grid-cols-2 gap-4 space-y-4 p-4 lg:px-20">
-                <div className="relative mt-4">
+                <BlurFade delay={0.5} inView className="relative mt-4">
                     <div className="absolute rounded-full left-1/2 h-full w-1 bg-secondary" />
-                    <BlurFade
-                        delay={0.5}
-                        inView
-                        className="sticky top-1/4"
-                    >
+                    <div className="sticky top-1/4">
                         <Image
                             src={RogelioSikat || "/placeholder.svg"}
                             alt="Rogelio Sikat"
@@ -30,8 +26,8 @@ const AuthorSection = () => {
                             sizes="(max-width: 640px) 100vw, (max-width: 768px) 75vw, 50vw"
                             placeholder="blur"
                         />
-                    </BlurFade>
-                </div>
+                    </div>
+                </BlurFade>
 
                 <BlurFade delay={0.5} inView className="">
                     <Card className="group relative border-4 border-secondary">

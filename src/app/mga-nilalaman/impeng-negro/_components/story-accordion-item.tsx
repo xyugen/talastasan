@@ -9,26 +9,24 @@ const StoryAccordionItem = ({ story }: { story: AccordionStory }) => {
     const itemId = story.title.replaceAll(" ", "-").toLowerCase();
     return (
         <Accordion.Item id={itemId} value={itemId}>
-            <Accordion.Header>
-                <Accordion.Trigger asChild>
-                    <PageTitle
-                        title={story.title}
-                        onClick={() => {
-                            const element = document.getElementById(itemId);
-                            if (element) {
-                                // delay
-                                setTimeout(() => {
-                                    // offset Y
-                                    element.scrollIntoView({
-                                        behavior: "smooth",
-                                    });
-                                }, 500);
-                            }
-                        }}
-                    />
-                </Accordion.Trigger>
-            </Accordion.Header>
-            <Accordion.Content className="data-[state=open]:animate-slide-down data-[state=closed]:animate-slide-up">
+            <Accordion.Trigger
+                className="w-full [&[data-state=open]>div>svg]:rotate-180"
+                onClick={() => {
+                    const element = document.getElementById(itemId);
+                    if (element) {
+                        // delay
+                        setTimeout(() => {
+                            // offset Y
+                            element.scrollIntoView({
+                                behavior: "smooth",
+                            });
+                        }, 500);
+                    }
+                }}
+            >
+                <PageTitle title={story.title} />
+            </Accordion.Trigger>
+            <Accordion.Content className="data-[state=open]:animate-slide-down data-[state=closed]:animate-slide-up px-2 w-full">
                 {ContentComponent && <ContentComponent />}
             </Accordion.Content>
         </Accordion.Item>

@@ -8,13 +8,13 @@ export const metadata: Metadata = {
 
 const BuongKuwento = () => {
     return (
-        <section className="relative min-h-screen bg-gradient-to-b from-white to-primary/5 px-4 py-16 text-surface-content md:px-8">
-            <div className="mb-12 text-center">
+        <section className="relative min-h-screen bg-gradient-to-b from-white to-primary/5 px-4 py-6 text-surface-content md:px-8">
+            <div className="flex flex-col items-center space-y-4 text-center">
                 <p className="mx-auto max-w-2xl text-lg text-surface-content/80">
                     Piliin ang pahina upang simulan ang iyong pagbabasa.
                 </p>
 
-                <div className="grid gap-6 md:grid-cols-2">
+                <div className="lg:w-3/4 grid gap-6 md:grid-cols-2">
                     {storiesContents.map((chapter) => (
                         <ChapterButton key={chapter.link} chapter={chapter} />
                     ))}

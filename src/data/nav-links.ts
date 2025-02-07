@@ -51,23 +51,23 @@ export const navLinks: NavLink[] = [
     items: [
       {
         title: "Impeng Negro",
-        link: PageRoutes.IMPENG_NEGRO
+        link: PageRoutes.IMPENG_NEGRO,
       },
       {
         title: "Tata Selo",
-        link: PageRoutes.TATA_SELO,
-        disabled: true,
+        link: PageRoutes.IMPENG_NEGRO,
+        disabled: false,
       },
       {
         title: "Pagsalunga",
-        link: PageRoutes.PAGSALUNGA,
-        disabled: true,
+        link: PageRoutes.IMPENG_NEGRO,
+        disabled: false,
       },
       {
         title: "Dugo Sa Bukang Liwayway",
-        link: PageRoutes.DUGO_SA_BUKANG_LIWAYWAY,
-        disabled: true,
-      }
+        link: PageRoutes.IMPENG_NEGRO,
+        disabled: false,
+      },
     ],
   },
   {
@@ -77,5 +77,5 @@ export const navLinks: NavLink[] = [
   {
     title: "Makipag-ugnay",
     link: PageRoutes.MAKIPAG_UGNAY,
-  }
+  },
 ];

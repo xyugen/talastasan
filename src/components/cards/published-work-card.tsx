@@ -1,7 +1,7 @@
 import BlurFade from "../ui/blur-fade";
 
 interface PublishedWorkCardProps {
-    card: { url: string; title: string; id: number };
+    card: { url: string; title: string; id: number, alt: string };
     index: number;
     onClick?: (index: number) => void;
 }
@@ -14,6 +14,7 @@ const PublishedWorkCard = ({
     return (
         <button
             key={card.id}
+            id={card.alt}
             className="group flex justify-center items-center cursor-pointer hover:-translate-y-1 transition-transform"
             onClick={() => onClick && onClick(i)}
         >

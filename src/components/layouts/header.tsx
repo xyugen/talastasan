@@ -32,28 +32,30 @@ const Header = () => {
   return (
     <>
       <header
-        className={`fixed z-50 w-full flex items-center justify-between px-4 py-3 transition-all duration-300 md:px-8 ${
+        className={`fixed z-50 w-full flex flex-col px-4 py-3 transition-all duration-300 md:px-8 ${
           isScrolled ? "bg-secondary shadow-lg" : "bg-transparent"
         } text-secondary-foreground`}
       >
-        <div className="flex justify-center items-center gap-4">
-          <button
-            onClick={() => {
-              if (pathname !== "/") {
-                animatePageOut("/");
-              }
-            }}
-            className={`transition-colors hover:bg-accent flex items-center gap-2 px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20 ${
-              !isScrolled && "shadow-md"
-            }`}
-          >
-            <Image src={Logo} alt="logo" className="w-10" />
-            <h1 className="text-base font-semibold">{siteName}</h1>
-          </button>
-          <SoundToggle />
-        </div>
+        <div className="flex items-center justify-between">
+          <div className="flex justify-center items-center gap-4">
+            <button
+              onClick={() => {
+                if (pathname !== "/") {
+                  animatePageOut("/");
+                }
+              }}
+              className={`transition-colors hover:bg-accent flex items-center gap-2 px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20 ${
+                !isScrolled && "shadow-md"
+              }`}
+            >
+              <Image src={Logo} alt="logo" className="w-10" />
+              <h1 className="text-base font-semibold">{siteName}</h1>
+            </button>
+            <SoundToggle />
+          </div>
 
-        <NavBar />
+          <NavBar />
+        </div>
       </header>
       <ScrollProgress className="h-1 top-16 z-30" />
     </>

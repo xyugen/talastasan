@@ -29,7 +29,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
             inView
         >
             <Link
-                href={image ? `/mga-nilalaman${href}` : "#stories"}
+                href={href ? `/mga-nilalaman${href}` : "#stories"}
                 className="relative"
                 onClick={() => {
                     setIsSearchExpanded(false);

@@ -37,19 +37,19 @@ const impengNegroStories: Story[] = [
 const emptyStories: Story[] = [
   {
     // image: BuongKuwento,
-    // link: "/buong-kuwento",
+    link: "#buong-kuwento",
     title: "Buong Kuwento",
     description: "Tingnan ang detalyadong pangyayari.",
   },
   {
     // image: Buod,
-    // link: "/buod",
+    link: "#buod",
     title: "Buod",
     description: "Isang maikling buod ng kwento.",
   },
   {
     // image: KuwentongMayLarawan,
-    // link: "/kuwentong-may-larawan",
+    link: "#kuwentong-may-larawan",
     title: "Kuwentong May Larawan",
     description:
       "Tingnan ang detalyadong pangyayari sa pamamagitan ng mga larawan.",

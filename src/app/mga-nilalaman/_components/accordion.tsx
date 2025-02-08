@@ -1,36 +1,11 @@
 "use client";
 
+import { AccordionStory } from "@/interface/AccordionStory";
 import { Accordion } from "radix-ui";
 import { useEffect, useState } from "react";
 import StoryAccordionItem from "./story-accordion-item";
-import { AccordionStory } from "@/interface/AccordionStory";
-import dynamic from "next/dynamic";
 
-const Buod = dynamic(() => import("@/components/stories/buod/buod"));
-const Talasalitaan = dynamic(() => import("@/components/stories/talasalitaan/talasalitaan"));
-const KuwentongMayLarawan = dynamic(() => import("@/components/stories/kuwentong-may-larawan/kuwentong-may-larawan"));
-const BuongKuwento = dynamic(() => import("@/components/stories/buong-kuwento/buong-kuwento"));
-
-const impengNegroStories: AccordionStory[] = [
-    {
-        title: "Talasalitaan",
-        content: Talasalitaan,
-    },
-    {
-        title: "Buong Kuwento",
-        content: BuongKuwento,
-    },
-    {
-        title: "Buod",
-        content: Buod,
-    },
-    {
-        title: "Kuwentong May Larawan",
-        content: KuwentongMayLarawan,
-    },
-];
-
-const AccordionRoot = ({ hash }: { hash: string }) => {
+const AccordionRoot = ({ hash, stories }: { hash: string, stories: AccordionStory[] }) => {
     const [value, setValue] = useState<string | null>(null);
 
     useEffect(() => {
@@ -63,10 +38,11 @@ const AccordionRoot = ({ hash }: { hash: string }) => {
             type="single"
             collapsible
         >
-            {impengNegroStories.map((story) => (
+            {stories.map((story) => (
                 <StoryAccordionItem key={story.title} story={story} />
             ))}
         </Accordion.Root>
+
     );
 };
 

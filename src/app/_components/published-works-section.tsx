@@ -16,16 +16,21 @@ const publishedWorksStories = [
   {
     title: "Tata Selo",
     stories: emptyStories,
+    baseUrl: PageRoutes.TATA_SELO,
   },
   {
     title: "Pagsalunga",
     stories: emptyStories,
+    baseUrl: PageRoutes.PAGSALUNGA,
   },
+
   {
     title: "Dugo sa Bukang Liwayway",
     stories: emptyStories,
+    baseUrl: PageRoutes.DUGO_SA_BUKANG_LIWAYWAY,
   },
 ];
+
 
 type PublishedWorksStory = (typeof publishedWorksStories)[number];
 

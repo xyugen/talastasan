@@ -1,7 +1,33 @@
 "use client";
 
+import { AccordionStory } from "@/interface/AccordionStory";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
-import AccordionRoot from "./_components/accordion";
+import AccordionRoot from "../_components/accordion";
+
+const Buod = dynamic(() => import("@/components/stories/buod/buod"));
+const Talasalitaan = dynamic(() => import("@/components/stories/talasalitaan/talasalitaan"));
+const KuwentongMayLarawan = dynamic(() => import("@/components/stories/kuwentong-may-larawan/kuwentong-may-larawan"));
+const BuongKuwento = dynamic(() => import("@/components/stories/buong-kuwento/buong-kuwento"));
+
+const impengNegroStories: AccordionStory[] = [
+    {
+        title: "Talasalitaan",
+        content: Talasalitaan,
+    },
+    {
+        title: "Buong Kuwento",
+        content: BuongKuwento,
+    },
+    {
+        title: "Buod",
+        content: Buod,
+    },
+    {
+        title: "Kuwentong May Larawan",
+        content: KuwentongMayLarawan,
+    },
+];
 
 const Page = () => {
     const [hash, setHash] = useState("");
@@ -10,7 +36,7 @@ const Page = () => {
         setHash(window.location.hash.replace("#", "")); // Remove the '#' if needed.
     }, []);
 
-    return <AccordionRoot hash={hash} />;
+    return <AccordionRoot hash={hash} stories={impengNegroStories} />;
 };
 
 export default Page;

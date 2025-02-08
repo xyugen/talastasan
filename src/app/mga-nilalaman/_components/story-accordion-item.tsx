@@ -2,7 +2,7 @@
 
 import { AccordionStory } from "@/interface/AccordionStory";
 import { Accordion } from "radix-ui";
-import PageTitle from "../../_components/page-title";
+import PageTitle from "./page-title";
 
 const StoryAccordionItem = ({ story }: { story: AccordionStory }) => {
     const ContentComponent = story.content;

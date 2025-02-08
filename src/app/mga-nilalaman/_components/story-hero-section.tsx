@@ -1,8 +1,10 @@
 
 const StoryHeroSection = ({
   imageCover,
+  title,
 }: {
   imageCover: string;
+  title: string;
 }) => {
   return (
     <div
@@ -14,7 +16,7 @@ const StoryHeroSection = ({
     >
       <div className="absolute inset-0 bg-gradient-to-b from-stone-800/70 via-stone-800/55 to-stone-800/40"></div>
       <div className="z-10 space-y-4 text-center text-secondary-foreground">
-        <h1 className="text-7xl font-medium">Impeng Negro</h1>
+        <h1 className="text-5xl md:text-7xl font-medium">{title}</h1>
         <p>Ni Rogelio Sikat</p>
       </div>
     </div>

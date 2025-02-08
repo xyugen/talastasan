@@ -55,17 +55,17 @@ export const navLinks: NavLink[] = [
       },
       {
         title: "Tata Selo",
-        link: PageRoutes.IMPENG_NEGRO,
+        link: PageRoutes.TATA_SELO,
         disabled: false,
       },
       {
         title: "Pagsalunga",
-        link: PageRoutes.IMPENG_NEGRO,
+        link: PageRoutes.PAGSALUNGA,
         disabled: false,
       },
       {
         title: "Dugo Sa Bukang Liwayway",
-        link: PageRoutes.IMPENG_NEGRO,
+        link: PageRoutes.DUGO_SA_BUKANG_LIWAYWAY,
         disabled: false,
       },
     ],

@@ -5,6 +5,8 @@ type State = {
   pageOut: boolean;
   openMenu: boolean;
   soundOn: boolean;
+  isSearchExpanded: boolean;
+  searchValue: string;
 };
 
 type Action = {
@@ -12,6 +14,8 @@ type Action = {
   setPageOut: (state: boolean) => void;
   setOpenMenu: (state: boolean) => void;
   setSoundOn: (state: boolean) => void;
+  setIsSearchExpanded: (state: boolean) => void;
+  setSearchValue: (value: string) => void;
 };
 
 export const useStateStore = create<State & Action>((set) => ({
@@ -19,8 +23,12 @@ export const useStateStore = create<State & Action>((set) => ({
   openMenu: false,
   href: "",
   soundOn: true,
+  isSearchExpanded: false,
+  searchValue: "",
   setPageOut: (state) => set(() => ({ pageOut: state })),
   setOpenMenu: (state) => set(() => ({ openMenu: state })),
   setHref: (href) => set(() => ({ href: href })),
-  setSoundOn: (state) => set(() => ({ soundOn: state }))
+  setSoundOn: (state) => set(() => ({ soundOn: state })),
+  setIsSearchExpanded: (state) => set(() => ({ isSearchExpanded: state })),
+  setSearchValue: (value) => set(() => ({ searchValue: value })),
 }));

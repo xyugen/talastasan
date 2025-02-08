@@ -1,10 +1,10 @@
 "use client";
 
+import { useStateStore } from "@/lib/state-store";
 import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import BlurFade from "../ui/blur-fade";
-
 interface StoryCardProps {
     title: string;
     description: string;
@@ -20,18 +20,25 @@ const StoryCard: React.FC<StoryCardProps> = ({
     href,
     index = 0,
 }) => {
+    const { setIsSearchExpanded, setSearchValue } = useStateStore();
     return (
         <BlurFade
             className="group relative overflow-hidden rounded-lg border-4 border-secondary bg-white transition-transform"
+
             delay={0.3 * index}
             inView
         >
             <Link
                 href={image ? `/mga-nilalaman${href}` : "#stories"}
                 className="relative"
+                onClick={() => {
+                    setIsSearchExpanded(false);
+                    setSearchValue("");
+                }}
             >
                 <div className="relative aspect-[16/11] overflow-hidden">
                     <Image
+
                         src={image ? image : ""}
                         alt={title}
                         layout="fill"

@@ -15,6 +15,7 @@ import {
 } from "../ui/dropdown-menu";
 import { Input } from "../ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
+import { useStateStore } from "@/lib/state-store";
 
 // Create a memoized search result item component
 const SearchResultItem = memo(
@@ -32,7 +33,9 @@ const SearchResultItem = memo(
     >
       <h3 className="font-medium text-foreground">{result.title}</h3>
       {result.description && (
-        <p className="text-sm text-muted-foreground">{result.description}</p>
+        <p className="text-sm text-muted-foreground">
+          {result.description}
+        </p>
       )}
     </button>
   )
@@ -41,10 +44,14 @@ const SearchResultItem = memo(
 SearchResultItem.displayName = "SearchResultItem";
 
 const NavBar = () => {
+  const {
+    isSearchExpanded,
+    setIsSearchExpanded,
+    searchValue,
+    setSearchValue,
+  } = useStateStore();
   const pathname = usePathname();
   const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false);
-  const [isSearchExpanded, setIsSearchExpanded] = useState<boolean>(false);
-  const [searchValue, setSearchValue] = useState<string>("");
   const { animatePageOut } = PageTransition();
 
   // Memoize the filtered search results
@@ -57,7 +64,9 @@ const NavBar = () => {
       (item) =>
         item.title.toLowerCase().includes(searchValue.toLowerCase()) ||
         item.link.toLowerCase().includes(searchValue.toLowerCase()) ||
-        item.description?.toLowerCase().includes(searchValue.toLowerCase())
+        item.description
+          ?.toLowerCase()
+          .includes(searchValue.toLowerCase())
     );
   }, [searchValue]);
 
@@ -73,7 +82,9 @@ const NavBar = () => {
       if (pathname === pagePath) {
         // If on same page, just scroll to element
         if (hash) {
-          document.getElementById(hash)?.scrollIntoView({ behavior: "smooth" });
+          document
+            .getElementById(hash)
+            ?.scrollIntoView({ behavior: "smooth" });
         }
       } else {
         // Navigate to new page
@@ -82,7 +93,7 @@ const NavBar = () => {
       setIsSearchExpanded(false);
       setSearchValue("");
     },
-    [pathname, animatePageOut]
+    [pathname, animatePageOut, setIsSearchExpanded, setSearchValue]
   );
 
   const handleNavClick = (navLink: NavLink) => {
@@ -92,14 +103,20 @@ const NavBar = () => {
       window.location.hash = navLink.link.split("#")[1];
     }
     if (isSheetOpen) setIsSheetOpen(false);
+    setIsSearchExpanded(false);
+    setSearchValue("");
   };
 
   const handleNavItemClick = (navLink: NavLink, navItem: NavLink) => {
-    const itemLink = navLink.link ? navLink.link + navItem.link : navItem.link;
+    const itemLink = navLink.link
+      ? navLink.link + navItem.link
+      : navItem.link;
     if (pathname !== itemLink && !navItem.disabled) {
       animatePageOut(itemLink);
     }
     if (isSheetOpen) setIsSheetOpen(false);
+    setIsSearchExpanded(false);
+    setSearchValue("");
   };
 
   // Update the search results rendering in both mobile and desktop sections
@@ -152,7 +169,7 @@ const NavBar = () => {
       <div className="flex flex-row gap-2 items-center lg:hidden px-4 h-10 rounded-full bg-accent/70 text-accent-foreground border border-primary/20">
         <button
           onClick={() => setIsSearchExpanded(!isSearchExpanded)}
-          className="text-accent-foreground hover:text-foreground transition-colors"
+          className="text-accent-foreground hover:text-primary transition-colors"
         >
           <Search className="size-6" />
         </button>
@@ -186,11 +203,17 @@ const NavBar = () => {
                           {navLink.title} Items
                         </DialogTitle>
                         {navLink.items.map((item) => (
-                          <DropdownMenuItem key={item.link} asChild>
+                          <DropdownMenuItem
+                            key={item.link}
+                            asChild
+                          >
                             <button
                               className="w-full"
                               onClick={() => {
-                                handleNavItemClick(navLink, item);
+                                handleNavItemClick(
+                                  navLink,
+                                  item
+                                );
                               }}
                             >
                               {item.title}
@@ -205,7 +228,10 @@ const NavBar = () => {
                     <button
                       key={navLink.title}
                       className="text-left"
-                      onClick={handleNavClick.bind(null, navLink)}
+                      onClick={handleNavClick.bind(
+                        null,
+                        navLink
+                      )}
                     >
                       <span className="relative after:absolute after:bg-primary after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-300 hover:after:w-full">
                         {navLink.title}
@@ -246,7 +272,7 @@ const NavBar = () => {
           ) : (
             <button
               onClick={() => setIsSearchExpanded(true)}
-              className="text-accent-foreground hover:text-foreground transition-colors"
+              className="text-accent-foreground hover:text-primary transition-colors"
             >
               <Search className="size-6" />
             </button>
@@ -270,7 +296,10 @@ const NavBar = () => {
                     <DropdownMenuItem
                       key={item.link}
                       onClick={() => {
-                        handleNavItemClick(navLink, item);
+                        handleNavItemClick(
+                          navLink,
+                          item
+                        );
                       }}
                     >
                       {item.title}

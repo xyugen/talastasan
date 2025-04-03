@@ -21,6 +21,23 @@ const BuongKuwento = dynamic(
   () => import("@/components/stories/buong-kuwento/buong-kuwento")
 );
 
+const LastPage = () => {
+  return (
+    <span className="font-medium flex flex-col gap-4 items-center justify-center mt-10">
+      <span className="text-center">
+        <i>
+          Sa matinding sikat ng araw, tila siya’y isang mandirigmang sugatan,
+          ngunit matatag na nakatindig sa pinagwagiang larangan.
+        </i>
+      </span>
+      <span className="mt-16">Wakas!</span>
+      <span className="not-italic">
+        <strong>I M P E N G&nbsp;&nbsp;N E G R O</strong>
+      </span>
+    </span>
+  );
+};
+
 const impengNegroStories: AccordionStory[] = [
   {
     title: "Talasalitaan",
@@ -28,7 +45,12 @@ const impengNegroStories: AccordionStory[] = [
   },
   {
     title: "Buong Kuwento",
-    content: () => <BuongKuwento storiesContents={impengNegroStoryContents} />,
+    content: () => (
+      <BuongKuwento
+        storiesContents={impengNegroStoryContents}
+        lastPage={LastPage}
+      />
+    ),
   },
   {
     title: "Buod",

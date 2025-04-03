@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { useState } from "react";
+import { ComponentType, useState } from "react";
 import ChapterButton from "./_components/chapter-button";
 import NavButtons from "./_components/nav-buttons";
 import PaginatedChapterReader from "./_components/paginated-chapter-reader";
@@ -11,8 +11,10 @@ export const metadata: Metadata = {
 
 const BuongKuwento = ({
   storiesContents,
+  lastPage: LastPage
 }: {
   storiesContents: StoryChapter[];
+  lastPage?: ComponentType;
 }) => {
   const [activeChapterIndex, setActiveChapterIndex] = useState<number>(-1);
 
@@ -32,6 +34,7 @@ const BuongKuwento = ({
             <PaginatedChapterReader
               content={storyChapter.content}
               isLastPage={!nextChapter}
+              lastPage={LastPage}
             />
           </div>
 

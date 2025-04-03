@@ -1,6 +1,8 @@
 "use client";
 
+import BuongKuwento from "@/components/stories/buong-kuwento/buong-kuwento";
 import Talasalitaan from "@/components/stories/talasalitaan/talasalitaan";
+import { tataSeloStoryContents } from "@/data/stories-contents";
 import { tataSeloTalasalitaan } from "@/data/talasalitaan";
 import { AccordionStory } from "@/interface/AccordionStory";
 import { useEffect, useState } from "react";
@@ -13,7 +15,7 @@ const tataSelo: AccordionStory[] = [
   },
   {
     title: "Buong Kuwento",
-    content: () => <div></div>,
+    content: () => <BuongKuwento storiesContents={tataSeloStoryContents} />,
   },
   {
     title: "Buod",

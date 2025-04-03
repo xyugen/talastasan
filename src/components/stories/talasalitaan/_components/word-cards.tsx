@@ -1,13 +1,12 @@
 "use client";
 
-import talasalitaan from '@/data/talasalitaan';
-import React from 'react'
+import { Salita } from '@/data/talasalitaan';
 import WordCard from './word-card';
 
-const WordCards = () => {
+const WordCards = ({ words }: { words: Salita[] }) => {
   return (
-    <div className='space-y-4'>
-      {talasalitaan
+    <div className="space-y-4">
+      {words
         .sort((a, b) => a.word.localeCompare(b.word))
         .map((word) => (
           <WordCard key={word.word} word={word} />

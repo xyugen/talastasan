@@ -1,6 +1,6 @@
 import StoryChapter from "@/interface/StoryChapter";
 
-const storiesContents: StoryChapter[] = [
+export const impengNegroStoryContents: StoryChapter[] = [
   {
     title: "Pahina 1",
     link: "/pahina-1",
@@ -210,5 +210,3 @@ May luha siya sa mata. May galak siyang nadama. Luwalhati. Hinagud-hagod niya an
 Muli niyang tiningnan ang nakabulagtang si Ogor. Pagkaraa’y nakapikit at buka ang labing nag-angat siya ng mukha.`,
   },
 ];
-
-export default storiesContents;

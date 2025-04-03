@@ -52,7 +52,7 @@ export interface StoryWithImage {
   content: string;
 }
 
-export const storyWithImages: StoryWithImage[] = [
+export const impengNegroStoryWithImages: StoryWithImage[] = [
   {
     image: Image1,
     alt: "Image 1 description",
@@ -380,5 +380,3 @@ Pinangingimian siya!`,
     content: `Sa matinding sikat ng araw, tila siya’y isang mandirigmang sugatan, ngunit matatag na nakatindig sa pinagwagiang larangan.`,
   },
 ];
-
-export default storyWithImages;

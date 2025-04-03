@@ -1,4 +1,11 @@
-const talasalitaan = [
+export interface Salita {
+  word: string;
+  meaning: string;
+  partOfSpeech: string;
+  sentence: string;
+}
+
+export const impengNegroTalasalitaan = [
   {
     word: "Alimpuyo",
     meaning: "Damdaming nag-aalab o nag-aapoy.",
@@ -123,7 +130,3 @@ const talasalitaan = [
       "Sa bawat dagok ni Impen, dama ang pag-uumigting ng kanyang galit.",
   },
 ];
-
-export default talasalitaan;
-
-export type Salita = (typeof talasalitaan)[number];

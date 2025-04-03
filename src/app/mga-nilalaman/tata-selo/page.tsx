@@ -1,5 +1,7 @@
 "use client";
 
+import Talasalitaan from "@/components/stories/talasalitaan/talasalitaan";
+import { tataSeloTalasalitaan } from "@/data/talasalitaan";
 import { AccordionStory } from "@/interface/AccordionStory";
 import { useEffect, useState } from "react";
 import AccordionRoot from "../_components/accordion";
@@ -7,7 +9,7 @@ import AccordionRoot from "../_components/accordion";
 const tataSelo: AccordionStory[] = [
   {
     title: "Talasalitaan",
-    content: () => <div></div>,
+    content: () => <Talasalitaan words={tataSeloTalasalitaan} />,
   },
   {
     title: "Buong Kuwento",

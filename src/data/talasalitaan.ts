@@ -24,7 +24,7 @@ export const impengNegroTalasalitaan = [
     meaning: "Pagkatagilid na halos mabubuwal na.",
     partOfSpeech: "Pangngalan",
     sentence:
-      "Natatiling matatag si Impen sa kabila ng kanilang giray na tahanan.",
+      "Nanatiling matatag si Impen sa kabila ng kanilang giray na tahanan.",
   },
   {
     word: "Himlay",
@@ -40,12 +40,6 @@ export const impengNegroTalasalitaan = [
       "Maluwag na ang kamiseta ni Impen, ngunit ito pa rin ang kanyang suot.",
   },
   {
-    word: "Kuyom",
-    meaning: "Mahigpit na pagkakahawak.",
-    partOfSpeech: "Pangngalan",
-    sentence: "Kuyom ni Impen ang kanyang palad sa matinding galit kay Ogor.",
-  },
-  {
     word: "Kutod",
     meaning: "Sira-sirang damit o pantalong pinaglumaan.",
     partOfSpeech: "Pang-uri",
@@ -53,10 +47,10 @@ export const impengNegroTalasalitaan = [
       "Kahit kutod na ang kanyang pantalon, patuloy pa rin si Impen sa pag-aagwador.",
   },
   {
-    word: "Lambot",
-    meaning: "Kawalan ng lakas o tigas.",
-    partOfSpeech: "Pang-uri",
-    sentence: "Nanlalambot si Ogor habang si Impen ay patuloy sa pagbayo.",
+    word: "Kuyom",
+    meaning: "Mahigpit na pagkakahawak.",
+    partOfSpeech: "Pangngalan",
+    sentence: "Kuyom ni Impen ang kanyang palad sa matinding galit kay Ogor.",
   },
   {
     word: "Lankay",
@@ -78,13 +72,6 @@ export const impengNegroTalasalitaan = [
     sentence: "Nagkakalugkugan ang mga balde nang bumagsak si Impen.",
   },
   {
-    word: "Nakabibingi",
-    meaning: "Sobrang lakas ng tunog na nakakairita.",
-    partOfSpeech: "Pang-uri",
-    sentence:
-      "Ang nakabibinging tawanan ng mga agwador ay hindi kayang tiisin ni Impen.",
-  },
-  {
     word: "Nangangalirang",
     meaning: "Pakiramdam ng pangangati dahil sa init.",
     partOfSpeech: "Pang-uri",
@@ -98,29 +85,16 @@ export const impengNegroTalasalitaan = [
       "Ang kanilang mesang kainan ay nanggigimalmal na dahil sa katagalan.",
   },
   {
-    word: "Pihit",
-    meaning: "Pagtatangkang magbago ng posisyon.",
-    partOfSpeech: "Pangngalan",
-    sentence: "Nagpipihit si Impen upang makawala mula kay Ogor.",
-  },
-  {
-    word: "Paslit",
-    meaning: "Maliit o batang musmos.",
-    partOfSpeech: "Pangngalan",
-    sentence:
-      "Ang mga paslit sa kanilang lugar ay nagtuturo kay Impen habang siya’y naglalakad.",
-  },
-  {
     word: "Pagkit",
     meaning: "Dikit o kapit na mahigpit.",
     partOfSpeech: "Pangngalan",
     sentence: "Parang pagkit ang kapit ni Impen sa braso ni Ogor.",
   },
   {
-    word: "Talinghaga",
+    word: "Talinhaga",
     meaning: "Malalim na kahulugan o di-tuwirang pahayag.",
     partOfSpeech: "Pangngalan",
-    sentence: "Ang sinabi ni Ogor ay puno ng talinghagang mapanukso.",
+    sentence: "Ang sinabi ni Ogor ay puno ng talinhagang mapanukso.",
   },
   {
     word: "Umigting",
@@ -128,5 +102,110 @@ export const impengNegroTalasalitaan = [
     partOfSpeech: "Pangngalan",
     sentence:
       "Sa bawat dagok ni Impen, dama ang pag-uumigting ng kanyang galit.",
+  },
+];
+
+export const tataSeloTalasalitaan = [
+  {
+    word: "Balanggot",
+    meaning: "Malapad na sombrero na karaniwang ginagamit ng mga magsasaka",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Nakasumbrero ng balanggot ang batang magbubukid habang kinakausap si Tata Selo.",
+  },
+  {
+    word: "Halas",
+    meaning: "Makapal na patse ng kalyo sa balat",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Mapapansin ang halas sa bisig at binti ng batang magbubukid dahil sa araw-araw na pagtatrabaho.",
+  },
+  {
+    word: "Istaked",
+    meaning: "Kulungan o piitan na yari sa rehas",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Nakahawak si Tata Selo sa rehas ng istaked habang pinagmamasdan ang mga tao sa labas.",
+  },
+  {
+    word: "Kahangga",
+    meaning: "Kapitbahay o taong malapit sa tirahan",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Kinausap ni Tata Selo ang kanyang kahangga na hindi makapaniwala sa nangyari.",
+  },
+  {
+    word: "Kalumpon",
+    meaning: "Pangkat o grupo ng mga tao",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Lumaki ang kalumpon ng tao sa harap ng munisipyo upang saksihan ang pangyayari.",
+  },
+  {
+    word: "Naembargo",
+    meaning: "Nakuha o kinamkam dahil sa utang o pagkakautang",
+    partOfSpeech: "Pandiwa",
+    sentence:
+      "Ang lupa ni Tata Selo ay naembargo matapos niyang isanla ito noong nagkasakit ang kanyang asawa.",
+  },
+  {
+    word: "Naggitgitan",
+    meaning: "Nagsisiksikan at nagtutulakan",
+    partOfSpeech: "Pandiwa",
+    sentence: "Naggitgitan ang mga tao upang makalapit sa istaked.",
+  },
+  {
+    word: "Nakasungaw",
+    meaning: "Nakalabas o nakausli",
+    partOfSpeech: "Pandiwa",
+    sentence:
+      "Nakasungaw ang luha sa mata ni Tata Selo habang iniisip ang kanyang anak.",
+  },
+  {
+    word: "Napadukmo",
+    meaning: "Napayuko o napahilig ang ulo sa balikat dahil sa lungkot",
+    partOfSpeech: "Pandiwa",
+    sentence:
+      "Napadukmo si Tata Selo sa kanyang balikat matapos marinig ang tanong tungkol sa kanyang anak.",
+  },
+  {
+    word: "Payapain",
+    meaning: "Patahimikin o pakalmahin ang isang sitwasyon",
+    partOfSpeech: "Pandiwa",
+    sentence:
+      "Itinaas ng alkalde ang kamay upang payapain ang mga nagkakagulong tao.",
+  },
+  {
+    word: "Pinangko",
+    meaning: "Maliit na bahagi ng ani o pananim",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Hindi ipinapamigay ni Tata Selo kahit isang pinangko mula sa kanyang ani.",
+  },
+  {
+    word: "Propitaryo",
+    meaning: "May-ari ng lupa o negosyo",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Ang binatang anak ng pinakamayamang propitaryo ay nagbigay ng kanyang opinyon tungkol sa kaso ni Tata Selo.",
+  },
+  {
+    word: "Sumasawata",
+    meaning: "Pumipigil o humahadlang",
+    partOfSpeech: "Pandiwa",
+    sentence: "Ang mga pulis ay sumasawata sa mga nagkakagulong tao.",
+  },
+  {
+    word: "Tinaga",
+    meaning: "Pagtaga gamit ang matalim na bagay tulad ng itak",
+    partOfSpeech: "Pandiwa",
+    sentence: "Dahil sa matinding galit, tinaga ni Tata Selo si Kabesang Tano.",
+  },
+  {
+    word: "Ulila",
+    meaning: "Isang tao na nawalan ng magulang",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Ang anak ni Tata Selo ay ulila na sa ina kaya’t lalo siyang nag-aalala para rito.",
   },
 ];

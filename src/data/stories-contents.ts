@@ -405,3 +405,144 @@ Hinawakan ng bata ang kamay ni Tata Selo na umabot sa kanya.
 Mag-iikaapat na ng hapon. Padahilig na ang sikat ng araw, ngunit mainit pa rin iyon. May kapiraso nang lihin sa istaked, sa may dingding na steel matting, ngunit si Tata Selo’y wala roon. Nasa init siya, nakakapit sa rehas sa dakong harapan ng istaked. Nakatingin siya sa labas, sa kanyang malalabo at tila lagi nang nag-aaninaw na mata’y tumatama ang mapulang sikat ng araw. Sa labas ng istaked, nakasandig sa rehas ang batang inutusan niya kanina. Sinabi ng bata na ayaw siyang papasukin sa tanggapan ng alkalde ngunit hindi siya pinakinggan ni Tata Selo, na ngayo’y hindi pagbawi ng saka ang sinasabi. Habang nakakapit sa rehas at nakatingin sa labas, sinasabi niyang lahat ay kinuha na sa kanila, lahat, ay! Ang lahat ay kinuha na sa kanila…`,
   },
 ];
+
+export const saLupaNgSarilingBayanStoryContents: StoryChapter[] = [
+  {
+    title: "Pahina 1",
+    link: "/pahina-1",
+    content: `Namatay ang kanyang ina noong siya'y limang taong gulang lamang. ‘Di naglipat-taon, sumunod na namatay ang kanyang ama. Siya'y inampon ng isang amain – kapatid ng kanyang ama – sapagkat wala nang ibang sa kanya'y mag-aampon. 
+
+"Dalawang pera lang ang hihingin niya noon sa kanyang Tata Indo ay kailangan pa niyang maghapong umiyak." Sa ganitong pangungusap malimit ilarawan ni Ama ang kakuriputan at kabagsikan ng amaing iyong nag-ampon kay Layo. "Kaya, ang gagawin ng Layong iyan ay paririto, sa iyong ina sasabak ng iyak. Kumakaripas pa ng takbo iyan kapag nabigyan ng iyong ina ng tatlong pera."
+Malaki na ang ipinagbago ng buhay ng batang iyong binabanggit ni Ama. Mula sa isang api-apihang kamusmusan, siya ngayo'y isa na sa mga kinikilalang manananggol sa lungsod. Kausapin mo ang isang abugado o kaya'y isang kumukuha ng abugasya at malamang na nakikilala niya kung sino si Atty. Pedro Enriquez. Sasabihin ng abugado na talagang magaling ito (topnotcher yata iyan, sa sabihin sa iyo ng abugado); sasabihin naman ng estudyante na talagang magaling ito, lamang ay mahigpit sa klase (si Layo ay nagtuturo rin ng batas sa isang unibersidad at isang taga-San Roque ang minsa'y ibinagsak niya). Tatlo ang tanggapan ni Layo: isa sa Escolta, isa sa Echague (sa itaas ng isang malaking hotel doon), at isa sa Intramuros, sa pinakamalaking gusaling nakatayo roon ngayon.
+
+Bago siya naratay ay umuwi siya sa amin sa San Roque. Bakasyon noon at nasa San Roque rin ako. Kasama niya ang asawa at dalawang anak. Sakay sila ng isang kotse – bihirang mapasok ng kotse ang San Roque. Sa tapat ng aming maliit na bahay huminto ang kotseng iyon.
+
+"Galing kami sa San Fernando (ang bayan ng kanyang asawa), at nagyaya si Ising at ang mga bata rito. Gusto raw nilang makita itong San Roque." Ayaw umuwi ni Layo sa aming bayan; totoo nga marahil na ang pinakamapapait na hinanakit ay inilalaan ng isang nilikha sa kanyang sariling bayan: hindi pa nakakalimutan ni Layo ang kanyang mga hinanakit sa San Roque kahit ngayong patay na ang kanyang mabagsik na Tata Indo, at kahit ngayong maluwag na ang kanyang buhay.
+
+Hindi sila gaanong nagtagal sa amin sa pagdaraang iyon. Pagkainom nilang mag-anak ng inuming pampalamig ay nagpaalam na sila. Sumakay sila uli sa kotse at mula noon ay hindi na nagbalik.`,
+  },
+  {
+    title: "Pahina 2",
+    link: "/pahina-2",
+    content: `Gayon man, malimit pa rin silang magkita ni Ama sa Maynila. Si Ama ay isang retiradong guro. Isang kumpare niya ang nagpapatulong sa isang kaso sa manahan. Hinahabol ng kanyang kumpare at ng mga kapatid nito ang isang malawak na lupa sa San Jose na tinatayang hihigit sa kalahating milyong piso ang halaga. Inirekomenda ni Ama si Layo sa kanyang kumpare at dito nila inilapit ang kaso kadastral na iyon.
+
+Tuwing maluluwas si Ama at ang kanyang kumpare ay dumaraan sila sa tinutuluyan kong bahay-pangaserahan. Sinasamahan ko sila sa pagpunta kina Layo.
+
+Marami akong nalaman sa pagsama-sama kong ito sa opisina ni Layo. Malaki na pala ang bahay ni Layo sa Quezon City. Malawak pala ang kanyang lupa sa Isabela. Siya pala ang umusig kay gayo't ganitong pulitiko; siya pala ang awtor ng gayo't ganitong aklat sa batas. Siya pala ang abugado ng malaking korporasyong iyon...
+
+Tanyag na nga at matagumpay si Layo.
+
+Ngunit ang hinanakit niya sa San Roque ay hindi pa rin niya nalilimutan.
+
+"Ni puntod ni Ama't Ina ay ‘di ko madalaw," minsa'y nasabi sa amin ni Layo. Nagpauna noong umuwi sa Kalookan ang kumpare ni Ama at kami'y isinama ni Layo sa kanyang bahay. Doon, nang kami na lamang ang magkakaharap, ay nakabitiw siya sa kanyang mga kilos, gawi at salitang abugado. Naghubad din siya ng barong-tagalog at nakakamiseta na lamang sa pakikipag-usap sa amin.
+
+Ang tungkol sa puntod na iyon ng kanyang mga magulang ang hindi malimut-limutan ni Layo. Maliit lamang ang libingan ng San Roque noon; mabuti ngayon at may bakod na't may malalaking nitso. Marahil, ang puntod ng mga magulang ni Layo kaawa-awa rin ang kanyang ama't ina, kung nakabuhayan ba nila ang pagtatagumpay ni Layo ay nakasama sa putol ng lupang nabili ni Gallego, ang pinakamayaman sa amin. Ngayo'y may nakatayong poultry ng manok sa dating bahaging iyon ng libingan, isang malaking bahay ng manok, sapagkat malaki ang poultry ni Gallego. Sinasabing sa mga dumi lamang ng manok ay nakabibili ng trak na de-karga si Gallego; ang mga duming iyon ay pinapala ng kanyang mga trabahador sa ibabaw ng mga dating puntod, at ipinagbibili sa mga may palaisdaan ng bangus.
+Ang katulong na abugado ni Layo ang umasikaso sa kasong nilalakad ni Ama nang maratay si Layo. Dinaraanan pa rin ako ni Ama sa bahay-pangaserahan. Iyon ang bilin ko sa kanya; matanda na si Ama at natatakot akong baka sa pagtawid-tawid niya ay matumbok na lamang siya ng sasakyan. Madalang na niyang makasama ngayon ang kanyang kumpare; naisaloob marahil ng kanyang kumpare na totoong nakaaabala siya kay Ama kung kaya siya na lamang ang sumasama sa abugado sa mga bista.
+
+Dinadalaw namin ni Ama si Layo, na itinuturing na ni Amang pamangkin, hindi dahil sa nais naming tumunton ng isang mayamang kamag-anak (dumarami ang kamag-anak ng isang tao kapag mayaman na siya), kundi dahil si Layo na rin ang tumunton kay Ama at sa amin bilang mga kadugo.`,
+  },
+  {
+    title: "Pahina 3",
+    link: "/pahina-3",
+    content: `"Kayo lamang ang matutunton kong kamag-anak sa San Roque, minsa'y sinabi niya sa aming mag-ama. "Kayo lang, Tiyo Julio, Ben."
+
+Malaki ang ipinangayayat ni Layo mula nang siya'y magkasakit. Ngayo'y maputlang-maputla siya. Malimit namin siyang datnan na mahaba ang balbas. Maliit siyang lalaki at lalo pa siyang lumiit sa tingin ko nang siya'y magkasakit. Lalo namang lumaki ang kanyang ulo. (Marunong talaga ang Layong iyan, malimit sabihin ni Ama, iyon ba namang laki ng ulong iyon!)
+
+Sa isang pribadong silid sa ospital siya nakatigil. Hindi siya iniiwan doon ng kanyang maybahay. Kung minsan, naroon ang isa niyang anak, si Fe, ang bunso. Walang imik ang maybahay ni Layo. Dati raw itong modista sa San Fernando. Ngayon ngang maratay si Layo, mga kamag-anak lamang nila sa panig ni Ising ang dumadalaw sa kanya.
+
+"Walang napariritong taga-San Roque?" minsan ay itinanong ni Ama.
+
+"Hindi ko sila hinihintay, Tiyo Julio."
+
+Ang tungkol sa kanyang tunay na karamdaman ay kamakailan lamang namin nalaman. Kinausap ni Ama ang doktor na tumitingin sa kanya. Malaki na raw ang naputol na bahagi ng kanyang bituka.
+
+"Sana'y nakasama na roon ang bahaging may kanser," sabi ng manggagamot. Yaon ay sa ikalawang pag-opera kay Layo.
+
+Hindi na niya kinailangan ang ikatlong operasyon, Nang muli naming kausapin ang doktor, sinabi nitong laganap na ang kanser sa kanyang bituka at tatlong buwan na lamang ang pinakamahabang itatagal ng kanyang buhay.
+
+Ang sabi ni Ama'y may tatlumpu't pitong taong gulang lamang si Layo. Nang kami'y pumasok sa silid ay mataman ko siyang pinagmasdan. Kay-bata pa niya upang mamatay. Tanyag siya ngayon, ngunit hindi pa niya naaabot ang ituktok ng katanyagan. Sino ang makaaalam, nasabi ko nga kay Ama nang kami'y pauwi na, kung magiging hukom siya balang araw?
+
+Sa loob ng tatlong buwang ibinigay na taning ng manggagamot ay malimit naming dalawin si Layo. Gusto ni Layo na lagi namin siyang dinadalaw. Kapag may isang linggo namin siyang hindi nadalaw, naghihinanakit siya. Kami raw ba'y nagsasawa na sa pagdalaw sa kanya?
+
+"Naiinip ako rito, Tiyo Julio," sabi niya kay Ama.
+
+Nagtaka pa ako nang malaman kong alam ni Layo ang kanyang sakit.`,
+  },
+  {
+    title: "Pahina 4",
+    link: "/pahina-4",
+    content: `"May kanser pala ako, Tiyo Julio, ay ‘di ko nalalaman," pabiro niyang sabi kay Ama. "Ang buhay nga naman, oo," bahagya siyang tumawa, "kay-lakas-lakas kong tao'y may kanser pala ako."
+
+Sinabi niya iyon na parang iyon ang pinakakaraniwang bagay na kanyang masasabi. Natingnan ko tuloy si Ising na nasa silid din at naririnig ang aming pag-uusap. Ano kaya ang nasa loob ni Ising? Nakaupo si Ising sa sopang naroon. Nang pumasok kami at patuluyin ni Ising ay tila iiyak ito. Ngayon nga – narinig niya ang sinabi ni Layo – ay tahimik siyang nagpapahid ng luha.
+
+"Akala ko'y ulser lang noong una," patuloy ni Layo. "Hindi pala. Ito pala ang pinakamabagsik. Bakit kaya naman ako ang pinakapili-pili nito, ha, Tiyo Julio?" "Nakalilimot ka sigurong kumain noon," sa kawalan ng masabi'y nasabi ni Ama.
+
+Tumingin sa kisame si Layo. "Hindi nga ako nakapagkakain noon, Tiyo Julio," aniya. "Napaggugutom ako. Trabaho sa araw, aral sa gabi. Nakapagtrabaho pa ako noon sa diyaryo, a," baling niya sa akin sapagkat alam niyang interesado ako sa trabaho sa peryodiko. Journalism ang aking tinatapos. "City editor na ako noon," aniya at binanggit ang isang maliit, malinis, ngunit patay nang pahayagan, "nang ako'y magbitiw. Mahirap, mahirap na buhay iyang buhay ng manunulat."
+
+Wala kaming sukat masabi ni Ama kaya siya ang pinabayaan naming magsalita. Nahihirapan siyang magsalita, ngunit nakikita naming ibig niyang magsalita. Parang nakatutulong iyon sa kanya; parang nakababawas iyon sa tinitiis niyang kirot.
+Tumawa nang mahina si Layo.
+
+"Kangina'y pinag-uusapan namin nitong si Ising, Tiyo – oy, Ising, sinasabi ko sa kanila iyong sinabi ko sa iyo kangina kung saan ako ililibing. Dito sa Maynila, 'ka ko, gusto kong dito sa Maynila malibing."
+
+"Huwag na nga nating pag-usapan iyan," sansala ni Ama. "Ikaw ang kung anu-ano ang pinagsasabi mo."
+
+"Hindi nga, Tiyo Julio, hindi ko na inaasahang bubuti pa ako," nakangiti pa ring pakli ni Layo. "Huwag ninyo akong ililibing sa San Roque, Tiyo Julio, huwag. Dito sa Maynila.”
+
+Tumayo si Ama. "Aalis na kami ni Ben, hala ka."
+
+Tumaas ang maputla at butuhang kamay ng nakangiti pa ring si Layo.
+
+"Ang Tiyo Julio naman," ani Layo at bahagyang umiling. "Siya," aniya at tiningnan ako, "iba na ang ating pag-usapan, takot ang Tiyo Julio. Nakapagpalalathala ka na ba, Ben?" 
+
+Hindi ko siya sinagot. Marami akong naiisip habang nakatingin sa kanya. Nakikita ko sa kanya ang paghahangad na maging matatag sa harap ng nalalapit na kamatayan, ngunit bigo ang hangarin niyang maging matatag. Bigo ka, Layo, bigo ka. Natatakot ka rin, nagtatapang-tapangan ka lang. Bakit hindi mo pa amining takot ka? At itong libing sa San Roque. Kung ayaw mong malibing doon ay bakit lagi mong binabanggit?`,
+  },
+  {
+    title: "Pahina 5",
+    link: "/pahina-5",
+    content: `"Palaisip itong si Ben," itinuro ako ng maputlang hintuturo ni Layo, "makasusulat nga siguro ito." Kay Ama naman siya tumingin. "Dalas-dalasan naman ninyo ang dalaw, Tiyo Julio. Sa amin na kaya kayo umuwi, si Ising lamang at ang mga bata ang naroon? Baka nahihirapan kayong umuwi sa probinsiya."
+
+Ipinangako na lamang ni Ama na lagi namin siyang dadalawin.
+
+Mahinang-mahina na si Layo nang siya'y muli naming dalawin. Paos na ang kanyang tinig at halos hindi na niya maigalaw ang mga kamay.
+
+Ngayo'y wala na ang kanyang tatag. Umiiyak siya ngayon.
+
+"Kaawa-awa naman itong si Ising," sabi niya, "kaawa-awa naman ang aking mga anak. Kayo na, Tiyo Julio, Ben, ang bahala sa kanila. Kayo na ang bahalang tumingin sa kanila."
+
+Kay Ama niya inihabilin ang paglilibing sa kanya. Dito sa Maynila, sinabi na naman niya. Mag-iisa akong malilibing dito, Tiyo Julio, ngunit gusto kong dito malibing.
+
+"Magdasal ka," payo ni Ama, "iyang mga hinanakit mo'y kalimutan mo na. Masama iyang babaunin mo pa ang mga iyan."
+
+"Mahirap makalimutan, Tiyo Julio. Natatandaan ba ninyo noon, noong maliit ako? Noong hindi ko matagpuan ang libing ni Ama't Ina? Wala akong mauuwian doon, Tiyo Julio. Mag-iisa rin ako."
+
+Tumungo ang maputing ulo ni Ama; pati siya'y ibig na ring maluha sa sinasabi ni Layo.
+
+"Walang hindi umuuwi sa atin, Layo," nasabi ni Ama. "Walang hindi umuuwi sa kanyang bayan. Mayroon nga riyan, namamatay sa Amerika, pagkatapos manirahan doon nang kay-tagal, ngunit ang huling kahilingan ay ang malibing dito sa atin."
+
+"Maganda ang sinabi ninyo, Tiyo Julio."
+
+"Wala ngang hindi umuuwi sa kanyang bayan, Layo. Ikaw man ay uuwi rin."
+
+Lahat ay umuuwi sa kanyang bayan, ibig ko ring sabihin kay Layo. Maaaring narito ka, ngunit ang iyong kaluluwa ay naglalakbay na pabalik doon. Maaaring naging mapait ang kabataan mo roon, maaaring naging mapait ang karanasan mo roon, ngunit huwag mong sabihing ikaw ay ‘di babalik.
+
+Ngayo'y hindi siya nakatingin sa akin, ni kay Ama, ni kay Ising. Nakatingin siya sa kisame. Nakaangat ang kanyang baba at tila mga mata ng isang bulag ang kanyang mga mata. Alam kong naglalakbay ang kanyang diwa; marahil, nalalaman ko kung saan naglalakbay iyon.`,
+  },
+  {
+    title: "Pahina 6",
+    link: "/pahina-6",
+    content: `Gusto kong isipin na iyo'y sa aming bayan. Gusto kong Isipin na ngayo'y naglalakbay ang kaluluwa ni Layo patungo sa aming bayan; gusto kong isipin na ngayo'y tila mga tuyong dahon nang nalalaglag ang kanyang mga hinanakit; gusto kong isipin na sa paglalakbay ng kanyang kaluluwa, sa paglalakbay na iyong pabalik, ay nakatatagpo siya ng kapayapaan...
+
+Nalagay sa mga pahayagan ang pagkamatay ni Layo.
+
+Ang sabi sa pahayagan ay ilalagak daw ang kanyang bangkay sa San Roque.
+
+Ang kabaong ni Layo ay isinakay sa isang itim na kotse.
+
+Mula sa Maynila, naglakbay iyon sa mga bayan-bayan.
+
+Tumitigil iyon sa mga bahay-pamahalaan. Nananaog ang nakaunipormeng tsuper at ipinagbibigay-alam ang pagdaraan.
+Hapon na nang dumating iyon sa San Roque.
+
+Sa San Roque, marami ang naghihintay na makikipag-libing kay Layo. Naghihintay rin sa kanya ang lupa ng sariling bayan.`,
+  }
+];

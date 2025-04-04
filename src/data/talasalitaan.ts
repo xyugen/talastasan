@@ -209,3 +209,102 @@ export const tataSeloTalasalitaan = [
       "Ang anak ni Tata Selo ay ulila na sa ina kaya’t lalo siyang nag-aalala para rito.",
   },
 ];
+
+export const saLupaNgSarilingBayanTalasalitaan = [
+  {
+    word: "Amain",
+    meaning: "Kapatid ng ama",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Ang kanyang amain ang nag-aruga sa kanya matapos mamatay ang kanyang mga magulang.",
+  },
+  {
+    word: "Api-apihan",
+    meaning: "Pakiramdam ng labis na pang-aapi o kawalan ng katarungan",
+    partOfSpeech: "Pang-uri",
+    sentence:
+      "Ang batang api-apihan noon ay naging isang matagumpay na abogado.",
+  },
+  {
+    word: "Bista",
+    meaning: "Pagdinig sa hukuman",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Palaging dinadaluhan ng kanyang ama ang bista ng kasong nilalakad nila.",
+  },
+  {
+    word: "Hinanakit",
+    meaning: "Sama ng loob",
+    partOfSpeech: "Pangngalan",
+    sentence: "Hindi pa rin niya malimutan ang kanyang hinanakit sa San Roque.",
+  },
+  {
+    word: "Hukom",
+    meaning: "Isang taong may kapangyarihang magpasya sa mga kaso sa hukuman",
+    partOfSpeech: "Pangngalan",
+    sentence: "Marahil ay naging isang hukom siya kung hindi siya nagkasakit.",
+  },
+  {
+    word: "Ituktok",
+    meaning: "Pinakamataas na bahagi o antas ng isang bagay",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Malapit nang maabot ni Layo ang ituktok ng kanyang tagumpay bago siya nagkasakit.",
+  },
+  {
+    word: "Kaawa-awa",
+    meaning: "Nakalulungkot o kahabag-habag",
+    partOfSpeech: "Pang-uri",
+    sentence: "Kaawa-awa ang kanyang kalagayan nang siya’y maospital.",
+  },
+  {
+    word: "Kanser",
+    meaning: "Isang malubhang sakit na maaaring maging sanhi ng kamatayan",
+    partOfSpeech: "Pangngalan",
+    sentence: "Hindi inakala ni Layo na siya’y may kanser sa bituka.",
+  },
+  {
+    word: "Katanyagan",
+    meaning: "Sikat o tanyag na estado",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Bagamat nakamit na niya ang katanyagan, hindi pa rin niya nalimutan ang nakaraan.",
+  },
+  {
+    word: "Malimit",
+    meaning: "Madalas o palagi",
+    partOfSpeech: "Pang-abay",
+    sentence: "Malimit dalawin ni Ben at ng kanyang ama si Layo sa ospital.",
+  },
+  {
+    word: "Mapait",
+    meaning: "Hindi maganda o puno ng pagdurusa",
+    partOfSpeech: "Pang-uri",
+    sentence:
+      "Hindi makalimutan ni Layo ang kanyang mapait na kabataan sa San Roque.",
+  },
+  {
+    word: "Modista",
+    meaning: "Isang babaeng mananahi ng damit",
+    partOfSpeech: "Pangngalan",
+    sentence: "Ang asawa ni Layo ay dating modista sa San Fernando.",
+  },
+  {
+    word: "Peryodiko",
+    meaning: "Diyaryo o pahayagan",
+    partOfSpeech: "Pangngalan",
+    sentence: "Dati siyang city editor sa isang maliit na peryodiko.",
+  },
+  {
+    word: "Puntod",
+    meaning: "Libingan o nitso",
+    partOfSpeech: "Pangngalan",
+    sentence: "Hindi napuntahan ni Layo ang puntod ng kanyang mga magulang.",
+  },
+  {
+    word: "Retirado",
+    meaning: "Tumigil na sa pagtatrabaho dahil sa edad o ibang dahilan",
+    partOfSpeech: "Pang-uri",
+    sentence: "Ang ama ni Ben ay isang retiradong guro.",
+  },
+];

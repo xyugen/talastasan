@@ -1,8 +1,8 @@
 import {
-  ImpengNegro,
-  TataSelo,
-  Pagsalunga,
   DugoSaBukangLiwayway,
+  ImpengNegro,
+  SaLupaNgSarilingBayan,
+  TataSelo,
 } from "@/assets/images/written-works";
 
 const publishedWorks = [
@@ -17,14 +17,14 @@ const publishedWorks = [
     alt: "tata-selo",
   },
   {
-    title: "Pagsalunga",
-    src: Pagsalunga,
-    alt: "pagsalunga",
+    title: "Sa Lupa Ng Sariling Bayan",
+    src: SaLupaNgSarilingBayan,
+    alt: "sa-lupa-ng-sariling-bayan",
   },
   {
-    title: "Dugo Sa Bukang Liwayway",
+    title: "Quentin",
     src: DugoSaBukangLiwayway,
-    alt: "dugo-sa-bukang-liwayway",
+    alt: "quentin",
   },
 ];
 

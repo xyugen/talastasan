@@ -14,13 +14,13 @@ const searchItems: {
     // description: "Isang maikling buod ng kuwento.",
   },
   {
-    title: "Pagsalunga",
-    link: "/#pagsalunga",
+    title: "Sa Lupa Ng Sariling Bayan",
+    link: "/#sa-lupa-ng-sariling-bayan",
     // description: "Ang kuwento sa pamamagitan ng mga larawan.",
   },
   {
-    title: "Dugo sa Bukang Liwayway",
-    link: "/#dugo-sa-bukang-liwayway",
+    title: "Quentin",
+    link: "/#quentin",
   },
   {
     title: "Tungkol sa",

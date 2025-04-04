@@ -59,13 +59,13 @@ export const navLinks: NavLink[] = [
         disabled: false,
       },
       {
-        title: "Pagsalunga",
-        link: PageRoutes.PAGSALUNGA,
+        title: "Sa Lupa Ng Sariling Bayan",
+        link: PageRoutes.SA_LUPA_NG_SARILING_BAYAN,
         disabled: false,
       },
       {
-        title: "Dugo Sa Bukang Liwayway",
-        link: PageRoutes.DUGO_SA_BUKANG_LIWAYWAY,
+        title: "Quentin",
+        link: PageRoutes.QUENTIN,
         disabled: false,
       },
     ],

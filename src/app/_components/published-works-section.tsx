@@ -19,15 +19,15 @@ const publishedWorksStories = [
     baseUrl: PageRoutes.TATA_SELO,
   },
   {
-    title: "Pagsalunga",
+    title: "Sa Lupa Ng Sariling Bayan",
     stories: emptyStories,
-    baseUrl: PageRoutes.PAGSALUNGA,
+    baseUrl: PageRoutes.SA_LUPA_NG_SARILING_BAYAN,
   },
 
   {
-    title: "Dugo sa Bukang Liwayway",
+    title: "Quentin",
     stories: emptyStories,
-    baseUrl: PageRoutes.DUGO_SA_BUKANG_LIWAYWAY,
+    baseUrl: PageRoutes.QUENTIN,
   },
 ];
 

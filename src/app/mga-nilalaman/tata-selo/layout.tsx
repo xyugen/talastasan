@@ -1,16 +1,17 @@
 import { TataSelo } from "@/assets/images/written-works";
 import HeroAnimation from "@/components/animations/hero";
 import React from "react";
+import LayoutSection from "../_components/layout-section";
 import StoryHeroSection from "../_components/story-hero-section";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <HeroAnimation>
-            <section className="bg-surface-100">
-                <StoryHeroSection title="Tata Selo" imageCover={TataSelo.src} />
-                {children}
-            </section>
-        </HeroAnimation>
+      <HeroAnimation>
+        <LayoutSection>
+          <StoryHeroSection title="Tata Selo" imageCover={TataSelo.src} />
+          {children}
+        </LayoutSection>
+      </HeroAnimation>
     );
 };
 

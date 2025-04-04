@@ -7,6 +7,8 @@ import { tataSeloTalasalitaan } from "@/data/talasalitaan";
 import { AccordionStory } from "@/interface/AccordionStory";
 import { useEffect, useState } from "react";
 import AccordionRoot from "../_components/accordion";
+import Buod from "@/components/stories/buod/buod";
+import { tataSeloShortenedStory } from "@/data/shortened-story";
 
 const tataSelo: AccordionStory[] = [
   {
@@ -19,11 +21,7 @@ const tataSelo: AccordionStory[] = [
   },
   {
     title: "Buod",
-    content: () => <div></div>,
-  },
-  {
-    title: "Kuwentong May Larawan",
-    content: () => <div></div>,
+    content: () => <Buod shortenedStory={tataSeloShortenedStory} />,
   },
 ];
 

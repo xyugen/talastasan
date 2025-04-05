@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <HeroAnimation>
       <LayoutSection>
-        <StoryHeroSection title="Tata Selo" imageCover={TataSelo.src} />
+        <StoryHeroSection title="Quentin" imageCover={TataSelo.src} />
         {children}
       </LayoutSection>
     </HeroAnimation>

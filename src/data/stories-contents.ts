@@ -544,5 +544,222 @@ Tumitigil iyon sa mga bahay-pamahalaan. Nananaog ang nakaunipormeng tsuper at ip
 Hapon na nang dumating iyon sa San Roque.
 
 Sa San Roque, marami ang naghihintay na makikipag-libing kay Layo. Naghihintay rin sa kanya ang lupa ng sariling bayan.`,
-  }
+  },
+];
+
+export const quentinStoryContents: StoryChapter[] = [
+  {
+    title: "Pahina 1",
+    link: "/pahina-1",
+    content: `Takipsilim na nang dumating kami ni Ben sa San Fernando. Nakapapagod ang biyaheng iyon mula sa lunsod kung kaya't pagkababa sa bus, natagpuan namin ni Ben na nakapamaywang kami sa gitna ng aming dala-dalahan at saglit na nagpapahinga.
+
+"Iyan ba ang simbahan?" tanong ko kay Ben habang nakatingin sa simbahang aming kaharap. Nasa likuran iyon ng aspaltadong plasa at sa sandaling iyon na malapit na marahil tugtugin ang orasyon ay tila isang matandang kastilyong napakukumot sa lumalatag na dilim.
+
+Tumango si Ben. Binitbit na niya ang kanyang maleta. Binitbit ko na rin ang aking dala-dalahan. Hawak ko sa kaliwa ang makinilya.
+
+"Malaki pala ang simbahan ninyo," wika ko kay Ben habang tumatawid kami ng kalsada. Laylay ang kanang balikat ni Ben dahil sa bitbit na maleta. Dating seminarista si Ben nguni't dahil sa mahina ang katawan ay hindi natupad ang pangarap na pagpapari. Sa halip na sa seminaryo ko siya matagpuan, nakakilala ko siya sa isang klase sa pilosopiya sa pamantasan kong pinapasukan.
+
+"Nakikita mo ba ang simboryo?" tanong ni Ben.
+
+"Оо."
+
+"Isa iyan sa pinakamataas na nakita ko," wika ni Ben. Maaari ngang totoo ang sinabi niya; wala akong nakitang ganoong kalaking simbahan sa mga bayang aming nadaanan.
+
+"Bakit naman kaya pinakataas-taasan?" tanong ko.
+
+Nangipot ang labi ni Ben. Gayon siya kapag ang kahit mumunti at walang katuturang bagay ay aking inuusisa. Ibig ko sanang tanungin si Ben; sabihing kaya tinaasan ang simboryo ay upang makarating sa langit ang tunog ng kampana, at tuloy marinig ng Diyos. Nguni't dating seminarista si Ben; baka isipin niyang ako'y lapastangan.
+
+"Minsan nang tinamaan ng kidlat ang simboryong iyan," wika ni Ben. Malapit na kami sa simbahan. "Mabuti't hindi tinamaan si Quentin."
+
+"Sinong Quentin?" tanong ko.
+
+"Ang kampanero."
+
+Ayaw ko sanang maniwala, nguni't si Ben ang nag-sabi niyon. Hindi na ako kumibo. ‘Di-natagalan, pumasok na kami sa bakuran ng simbahan.
+
+Nakabukas ang pinto ng kumbento. Si Ben ang unang pumasok. Ibinaba niya ang kanyang maleta; ibinaba ko na rin ang aking dala-dalahan. Ang paring nakaupo at nakatalikod sa amin ay napalingon nang kami'y maramdaman. Tumindig ito at kami'y nakangiting sinalubong.`,
+  },
+  {
+    title: "Pahina 2",
+    link: "/pahina-2",
+    content: `"Hola, mga hijos," bati ni Padre Gonzalo. "Akala ko'y hindi na kayo darating. Kangina ko pa kayo hinihintay, a."
+
+Ipinakilala ako ni Ben sa kanyang amain. Kinamayan ako ni Padre Gonzalo.
+
+"Sumusulat siya," wika ni Ben.
+
+Kumunot ang noo ng pari, pagkaraa'y ngumiti ito. "Muy bien, mabuti. Maisusulat niya ako ng magagandang sermon."
+Nagkatawanan kaming tatlo. Niyaya kami ng pari na maupo.
+
+"Inaasahan kong magiging kaaliw-aliw ang pagbabakasyon mo sa San Fernando," wika niya sa akin.
+
+Kinabukasan ay Linggo. Hindi ako nakatulog nang nagdaang gabi sapagka't naninibago ako. Akalain ko bang sa lahat ng mapagbabakasyunan ay makapagbabakasyon ako sa isang simbahan!
+
+Sikat na ang araw nang gumising si Ben.
+
+"Magsimba tayo," yaya niya pagkapagdasal.
+
+Naririnig na namin noon ang tugtog ng kampana. Lumakad ako sa may bintana. Sa pagkakadungaw, nakita kong dumarating na ang mga taong magsisimba.
+
+Marami rin palang relihiyoso sa San Fernando, naisip ko.
+
+Madali kaming nakapagbihis ni Ben. Nanaog kami ng kumbento. May dalang itim na aklat-dasalan si Ben. Sa dakong unahan kami lumuhod. Matapos makapagdasal, at nang mahalata kong hindi ako tatagal ng luhuran kay Ben, ay naupo ako. Nakita kong nagpapakumpisal pa si Padre Gonzalo.
+
+Ang simbahan ng San Fernando ay nakapagpagunita sa akin ng mga nakita kong simbahan sa Ilokos Sur. Nangingitim na ang pader nito. May apat na inaagiw na aranyang nakabitin sa gitna. Maluwang ang loob at parang may nalulumlom na init. Ang estasyon ng kurus ay nakaukit sa pader. Tinalunton ko ng tingin iyon at dumako ang aking tanaw sa koro. Mula sa koro ay tumaas ang aking tingin at nakita ko ang hagdang paakyat sa simboryo.
+
+Narinig kong kumuliling ang kampanilya. Nang ibaling ko ang aking tingin sa harapan, nakita kong pumapasok sa altar si Padre Gonzalo. Nagtindigan ang mga tao at nagsipag-antanda. Nagsimula na ang misa.
+
+Mahaba ang misa ni Padre Gonzalo kaysa mga misa sa lunsod. Ang sermon niya ay tumagal nang may tatlumpung minuto, gayong ang tungkol sa pag-iibigan ng mga tao ay matatalakay naman sa labinlimang sandali.`,
+  },
+  {
+    title: "Pahina 3",
+    link: "/pahina-3",
+    content: `Pagkatapos ng misa ay lumabas kami ni Ben sa may pinto ng simbahan. Nahinuha kong humahanap ng kakilala si Ben. Nakakita siya ng ilan at mga ito'y ipinakilala niya sa akin.
+
+Sa mga taong lumalabas ay nakita kong napatingin kay Ben ang isang babae. Nakaputi ito at may kasamang isang manang na ang abito ay ang isinusuot ng mga deboto ni San Antonio de Padua.
+
+"Ben!" mahina nguni't masiglang bati ng babae.
+
+"Fely!" tugon ni Ben.
+
+Lumapit si Ben sa dalawang babae. Kinamayan ni Ben ang bumati sa kanya at magalang na yumukod sa kasama nito. Maganda ang babaing tumawag kay Ben. Mestisang-Kastila, naisip ko, sapagka't ang San Fernando ay pinanahanan din ng mga Kastila. Malago ang kilay ng babae, na gayong hindi inaayos ay tila iginuhit sa ibabaw ng maiitim na mata. Maputi ito at may biloy sa pisngi.
+
+Sa lahat ng kinamumuhian ko ay ang maging senti-mental. Kapag nawala sa akin ang isang bagay, sinisikap kong limutin iyon sa lalong madaling panahon. Nguni't nang makita ko ang babaing tumawag kay Ben, muli kong naalaala ang naging katipan ko sa San Roque. Nadama kong parang may hinahanap na naman ang aking puso; nadama ko na namang ako'y nalulungkot.
+
+Saglit akong nakalimot sa sarili sa pagkakataong iyon.
+
+"Felicidad," ito pala ang pangalan ng babae, "ang aking kaibigan, si Nes. Nes, si Fely. Fely, magbabakasyon siya rito."
+
+Nginitian ako ng babae. Bagay na bagay sa kanya ang kanyang pangalan. Tila hindi siya maaaring malungkot.
+
+"Maganda si Fely," wika ko kay Ben nang magpaalam ang dalawang babae at ang mga ito'y inihahatid na namin ng tanaw.
+
+"Mabait siya," dagdag ni Ben.
+
+Pumasok kami uli sa simbahan. May pinto sa gilid niyon na madaraanang pabalik sa kumbento. Papunta na kami ni Ben sa kumbento nang may marinig akong tumatawag sa kanya. Nakita kong nananaog iyon mula sa koro.
+
+"Quentin!" bulalas ni Ben. "Siya ang kampanero," baling niya sa akin.
+
+Ito pala si Quentin, naisip ko habang lumalapit sa amin ang nakangising kampanero. Una kong napansin ang baluktot niyang kaliwang kamay. Higit siyang mababa sa aming dalawa ni Ben, at higit na matanda pa kaipala. Nakaternong kupas na kaki siya, nanlalampot, at ang manggas ay nakabolga sa mga galang. Mahaba ang kanyang buhok na halos ay tumakip sa noo. Nakatapak siya at malalapad ang kanyang paa.
+
+"Nakita ba ninyo siya?" salubong na tanong ni Quentin. Kapwa kami napalingon ni Ben sa pinto ng simbahan. Nakita namin na naglalakad na sa plasa sina Felicidad.`,
+  },
+  {
+    title: "Pahina 4",
+    link: "/pahina-4",
+    content: `"Sinong siya?" tanong ni Ben.
+
+"Si Felicidad," nakangiting tugon ni Quentin. "A, matagal ka na ngang nawala rito. May apat na taon ka ring hindi nauwi, ano? Dalaga na si Felicidad," At umiling-iling pa si Quentin. "Maganda. Kamukha niyon."
+
+Itinuro niya ang birhen sa altar.
+
+Nabasa ko ang pagkayamot sa mukha ni Ben. Niyaya na niya akong bumalik sa kumbento. Tumalikod naman ang kampanero, at nang ako'y lumingon, nakita ko siyang tumigil sa pinto ng simbahan, parang may sinusubukang yumakap sa haligi, at inihatid ng tanaw ang malayo nang sina Felicidad.
+
+Pinaikot ni Ben ang hintuturo sa tapat ng ulo. Agad ko naman siyang naunawaan. Si Quentin pala ay walang nagisnang ama; ang ina niya ay isang baliw na palabuy-laboy sa San Fernando. Nang mamatay ito, inampon ni Padre Gonzalo si Quentin, na tulad ng namatay na ina'y palabuy-laboy rin. Paglaki nga ni Quentin, siya na ang naging kampanero.
+
+Kung nakamihasnan mong mamuhay sa lunsod at ikaw ay makapagbabakasyon sa isang malayong bayan, matutuklasan mong sandali lamang ang iyong pananabik. Ganito ang nararamdaman ko nang yayain ko si Ben nang hapong iyon. Lumabas 'ka ko kami ng kumbento. 
+
+"Saan tayo pupunta?" tanong ni Ben.
+
+"Kahit saan," tugon ko. "Umakyat tayo sa simboryo."
+
+Manawa-nawa si Ben.
+
+"Bakit?"
+
+Hindi ako sumagot. Nguni't naunawaan ako ni Ben. "Kayong mga manunulat, oo," umiiling na wika ni Ben.
+
+Umakyat kami sa simboryo. Kumakalog ang aking tuhod pagdating namin sa itaas. Kung ganito ang daan patungo sa langit, mapapagod ang lahat ng pupunta roon, naisip ko. Nguni't ang aking pagod ay dagling nawala pagkalapit ko sa bintana ng simboryo. Nakita ko ang nabulabog at nagliparang mayang-bahay; naghuhunihang sumisid ang mga iyon at dumapo sa punong kabalyerong nasa harap ng simbahan. Nakita ko rin ang maluwang na plasa. Napabuntunghininga ako; tila madadakot ko na ang bantayog doon ng isang bayani, napakaliit niyon sa aking tingin. Sa kauna-unahang pagkakataon, nakaakyat ako sa isang pook na wari'y bahagi na ako ng kalawakan. Ginintuan ang sikat ng araw na tumatama sa mga atip na yero, tisa, gayon din sa mga bubong na pawid. Nakita ko ang kabuuan ng San Fernando; nakita ko ang mga daan nito – kay-lalapad niyon sa ibaba nguni't kay-kikitid sa itaas. Inilayo ko ang aking tanaw. Nakita ko ang nakapaligid na bundok.
+
+"Ang ganda rito, Ben," nasabi ko.`,
+  },
+  {
+    title: "Pahina 5",
+    link: "/pahina-5",
+    content: `Nakita kong hawak ni Ben ang lubid ng kampana at idinadaiti ang dilang bakal sa labi ng malaking batingaw.
+
+"Ang taas dito, Ben!" natatawa kong naibulalas. Muli akong dumunghal sa bintana; muli akong tumingala sa langit. "Ang taas pala rito, Ben," wika ko. "Dito," at natawa ako, nakita kong nakangiti si Ben at ibig akong pagtawanan, "dito, maririnig ka ng Diyos, Ben."
+
+Tuluyan nang natawa si Ben. Tinugtog niya ang kampana. Mabagal bago napawi ang alingawngaw ng tunog niyon.
+
+Pilitin ko man ang aking sarili ay wala akong masulat sa mga unang araw namin ni Ben sa San Fernando. May paksang naglalaro sa aking isip, nguni't yao'y hindi ko madama. Hindi ko iyon lubos na mahawakan; hindi ko ganap na makita ang anyo. Noon, sinasabi ko sa aking sarili: kung ako'y susulat, susulat ako mula sa aking puso; at kung ako'y aawit, ang aawitin ko'y awit ng aking puso.
+
+Tuwing Linggo at kung araw na may pulong ang mga Hijas de Maria ay nakikita ko si Felicidad. Siya ang puno ng samahang iyon. Malimit silang makipagpulong kay Padre Gonzalo. Masayang lagi si Felicidad; kapag siya'y nagsasalita, tila naaakit niyang maging masaya ang mga kaharap; at kapag siya'y aking nakikita, nagugunita ko ang aking naging katipan sa San Roque.
+
+Isang gabi, naisipan namin ni Ben na maglakad-lakad sa harap ng simbahan. Naupo kami sa bangkong nasa lilim ng punong kabalyero. May bahagyang liwanag doon. Umaabot doon ang liwanag ng nag-iisang ilaw sa plasa. Hindi pa kami gaanong nagtatagal doon ay nilapitan na kami ni Quentin.
+
+"Nagpunta ako kina Felicidad kangina," narinig kong pagbabalita ni Quentin kay Ben. "Binigyan ko siya ng sampagita."
+Hindi sumagot si Ben. Ni hindi niya tiningnan si Quentin. Kausapin mo na, Ben, ibig kong hilingin sa kanya. Nguni't nanatiling hindi kumikibo si Ben.
+
+"Hindi na ba tayo magkaibigan, Ben?" walang anu-ano'y narinig kong mahinang tanong ni Quentin.
+
+"Kung anu-ano ang sinasabi mo, e," nayayamot na pakli ni Ben.
+
+Sa bahagyang liwanag na naglalagos sa amin, nakita kong tumawa si Quentin. Dagling namatay ang tawang iyon.
+
+"Iniibig ko si Felicidad, Ben," wika ni Quentin. "Tulungan mo ako. Tulungan mo akong sabihin sa kanya na iniibig ko siya."
+
+Tumindig si Ben at lumayo kay Quentin. Nakita kong nilapitan siya ng kampanero. "Hindi na ba tayo magkaibigan, Ben?" tanong ni Quentin. "Ayaw mo na ba akong maging kaibigan?"`,
+  },
+  {
+    title: "Pahina 6",
+    link: "/pahina-6",
+    content: `Paulit-ulit niyang itinanong iyon hanggang sa yayain na ako ni Ben na pumanhik sa kumbento.
+
+Hindi ako nagtaka nang sa mga sumunod na araw ay ako na ang kausapin ni Quentin.
+
+"Wala na akong kaibigan," malungkot niyang wika. "Gusto mo bang maging kaibigan ako?"
+
+Nasa lilim kami ng punong kabalyero. Gabi noon at nang makita ni Ben na dumarating si Quentin ay iniwan na niya ako. Nasa tinig ni Quentin ang katapatan; sino ba akong magkakait ng pakikipagkaibigan sa kanya?
+
+"Magkaibigan tayo, Quentin," wika ko.
+
+"Salamat," wika niya at hinawakan ang aking mga kamay.
+
+Mula nga noon ay ako na lamang ang nilalapitan ni Quentin. Wala na akong nabatid sa kanyang nakaraan; tila nakalimutan na niya iyon. Ang naisasalaysay niya sa akin ay tungkol sa kampana at sa kanyang pagiging kampanero.
+
+"Mahina na ito," wika ni Quentin at tinukop ang malalaking tainga. "Sa katutugtog. Napakalakas na kampana. Dinig sa buong San Fernando. Ako lang ang nakatutugtog niyon nang maganda."
+
+Walang kaisahan ang pagsasalaysay ni Quentin, nguni't sa kanyang tinig, tila nauulinigan ko ang mga tunog na ibig niyang ilarawan.
+
+Kung may binibinyagan, ang tunog ng kanyang kampana ay mataginting, parang ibinabadya sa buong daigdig ang pagsilang ng isang sanggol; kung may pinag-uukulan ng agunyas, wala yaong kasing-panglaw-bahagya na marahil dumaiti ang dilang bakal sa labi ng kampana matimpi ang tinig, tila sinusupil na hikbi ng isang naulila; kung may ikinakasal, ang tinig ng kanyang kampana ay walang kasinsaya tila iyon na ang tibok ng puso ng mga pinag-iisang dibdib.
+
+Nang ganap nang mahulo ni Quentin na ako'y kanya na ngang kaibigan ay binanggit na niya si Felicidad.
+
+"Nakausap ko siya noon at alam kong mahal niya ako," wika ni Quentin.
+
+Kung ako si Ben, iiwan ko si Quentin. Nguni't hindi ko siya maiwan. Namalagi akong nakikinig sa kanya. Anong uri ng pagmamahal ang iniuukol sa iyo ni Felicidad? nais kong itanong kay Quentin. Ano ngang uri ng pagmamahal ang maiuukol sa kanya ni Felicidad? Pagmamahal na pagkahabag lamang ang maiuukol niya sa iyo, Quentin, nais kong sabihin.
+
+Nguni't lagi rin niyang binabanggit si Felicidad. Si Felicidad, nais kong sabihin sa kanya, ay hindi kailanman iibig sa iyo, Quentin. Pitasin mo man ang lahat ng sampagita sa San Fernando at ihandog sa kanya ay hindi siya iibig sa iyo. Ang inaabot mo'y langit at ang sinasamba mo'y birhen; tingalain mo na lamang ang langit, Quentin, sambahin mo na lamang ang birhen.`,
+  },
+  {
+    title: "Pahina 7",
+    link: "/pahina-7",
+    content: `Katulad mo rin ako, ibig kong sabihin kay Quentin. Katulad din ni Felicidad ang aking iniibig. Siya'y taga-langit din at siya'y ‘di ko maabot; siya'y isang birhen din at siya'y naaabot lamang ng aking dalangin. Siya'y sinasamba ko, ‘pagka't tanging pagsamba lamang ang maiuukol ko sa kanya. Siya'y aawitan ko na lamang, Quentin, sapagka't siya'y hindi ko na makakaulayaw; sa kanya, Quentin, ako'y aawit, aawit ako, kahit dumugo ang aking puso.
+
+Halos mag-iisang buwan na ako sa San Fernando nang ibalita sa akin ni Ben na ikakasal si Felicidad sa isang anak-mayamang taga-San Fernando rin. Nagsabi na raw ang mga ito kay Padre Gonzalo.
+
+Nauna pa akong makaalam ng bagay na ito kaysa kay Quentin. At nang gabi ngang iyon, samantalang ako'y nag-iisang nakaupo sa lilim ng kabalyero ay ipinasiya kong sabihin na ang lahat sa kanya.
+
+"Si Felicidad ay ikakasal sa iba," wika ko. "Nagsabi na sila kay Padre Gonzalo."
+
+Matagal akong tinitigan ni Quentin. Walang anu-ano, nakita kong bigla niyang sinapo ang mukha. Umiiyak siya. Iniwan ko siya sa gayong kalagayan. Nagbalik ako sa kumbento.
+
+Tinangka kong sumulat nang gabing iyon. Nakadadalawang pahina na ako nang makarinig ako ng malakas at sunud-sunod na palahaw. 
+
+Dumungaw ako, at sa liwanag ng nag-iisang ilaw sa plasa, nakita ko si Quentin. Susuray-suray siya at may tinatawag.
+
+Hinintay ko ang kasal ni Felicidad bago ako tumulak na pabalik sa lunsod. Marangya ang kasal. May palamuti ang buong simbahan. Ang kasal ay pinag-uusapan sa buong San Fernando. Mapalad daw si Felicidad. Ang lalaking mapapangasawa raw niya ay siya lamang bagay sa kanya.
+
+Si Felicidad ay tila isang bulaklak sa araw ng kanyang kasal. Tila siya isang birheng aakyat sa langit.
+
+Si Quentin ang tumugtog ng kampana sa kanyang kasal.
+
+"Tutugtugin ko ang kampana," wika sa akin ni Quentin. "Iyan ang handog ko sa kanya."
+
+Tugtugin mo ang kampana, Quentin, nais kong sabihin sa kanya. Ilakas mo. Tugtugin mo rin ang kampana para sa akin, Quentin.
+Ilakas mo.
+
+Nakasakay na ako sa bus na pabalik sa lunsod ay tila naririnig ko pa ang alingawngaw ng kampanang tinutugtog ni Quentin.`,
+  },
 ];

@@ -308,3 +308,108 @@ export const saLupaNgSarilingBayanTalasalitaan = [
     sentence: "Ang ama ni Ben ay isang retiradong guro.",
   },
 ];
+
+export const quentinTalasalitaan = [
+  {
+    word: "Aklat-dasalan",
+    meaning: "Isang aklat na naglalaman ng mga dasal at panrelihiyong gabay",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Mahigpit na hawak ng seminarista ang kanyang aklat-dasalan habang papasok sa kumbento.",
+  },
+  {
+    word: "Alingawngaw",
+    meaning: "Paulit-ulit o bumabalik na tunog",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Ang alingawngaw ng kampana ay nagbigay ng misteryo sa katahimikan ng gabi.",
+  },
+  {
+    word: "Bulalas",
+    meaning: "Bigla o padalos-dalos na pagsabi ng isang bagay",
+    partOfSpeech: "Pandiwa",
+    sentence: "“Santo Dios!” ang kanyang bulalas sa tindi ng takot.",
+  },
+  {
+    word: "Kampana",
+    meaning:
+      "Malaking batingaw na ginagamit sa simbahan upang ipahiwatig ang oras o pagtawag sa misa",
+    partOfSpeech: "Pangngalan",
+    sentence: "Tumunog ang kampana bilang hudyat ng pagsisimula ng misa.",
+  },
+  {
+    word: "Kampanero",
+    meaning: "Taong namamahala sa pagtunog ng kampana",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Si Quentin ang naging bagong kampanero ng simbahan ng San Joaquin.",
+  },
+  {
+    word: "Kumbento",
+    meaning: "Bahay ng mga madre o pari",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Tahimik na pumasok si Quentin sa lumang kumbento upang magdasal.",
+  },
+  {
+    word: "Nakamihasnan",
+    meaning: "Nakasanayan o naging karaniwan",
+    partOfSpeech: "Pandiwa",
+    sentence:
+      "Ang katahimikan sa loob ng simbahan ay isang bagay na nakamihasnan na niya.",
+  },
+  {
+    word: "Pumanhik",
+    meaning: "Umakyat, lalo na sa isang matataas na lugar",
+    partOfSpeech: "Pandiwa",
+    sentence: "Pumanhik si Quentin sa kampanaryo upang patunugin ang kampana.",
+  },
+  {
+    word: "Samba",
+    meaning:
+      "Pagsamba o paggalang sa Diyos sa pamamagitan ng panalangin o ritwal",
+    partOfSpeech: "Pandiwa",
+    sentence: "Lumuhod siya sa harap ng altar upang samba sa Panginoon.",
+  },
+  {
+    word: "Seminarista",
+    meaning: "Isang lalaking nag-aaral upang maging pari",
+    partOfSpeech: "Pangngalan",
+    sentence: "Isang seminarista si Quentin na punong-puno ng pananalig.",
+  },
+  {
+    word: "Sermon",
+    meaning:
+      "Pangaral ng pari sa misa o sa panahon ng pagtuturo ng pananampalataya",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Napalalim ang kanyang pagninilay matapos pakinggan ang sermon ng pari.",
+  },
+  {
+    word: "Simboryo",
+    meaning: "Bilog at mataas na bahagi ng simbahan o gusali",
+    partOfSpeech: "Pangngalan",
+    sentence: "Pinagmamasdan niya ang simboryo ng simbahan mula sa malayo.",
+  },
+  {
+    word: "Takipsilim",
+    meaning: "Panahon ng paglubog ng araw; dapit-hapon",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Sa oras ng takipsilim, marahang tumunog ang kampana ng simbahan.",
+  },
+  {
+    word: "Tinalunton",
+    meaning: "Tinahak o dinaanan",
+    partOfSpeech: "Pandiwa",
+    sentence:
+      "Tinalunton ni Quentin ang makipot na daan papunta sa kampanaryo.",
+  },
+  {
+    word: "Ulila",
+    meaning: "Taong nawalan ng magulang",
+    partOfSpeech: "Pangngalan",
+    sentence:
+      "Lumaki si Quentin na isang ulila, ngunit hindi siya nawala sa landas ng pananampalataya.",
+  },
+];

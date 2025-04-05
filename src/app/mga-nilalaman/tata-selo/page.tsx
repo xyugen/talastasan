@@ -10,7 +10,7 @@ import AccordionRoot from "../_components/accordion";
 import Buod from "@/components/stories/buod/buod";
 import { tataSeloShortenedStory } from "@/data/shortened-story";
 
-const tataSelo: AccordionStory[] = [
+const tataSeloStories: AccordionStory[] = [
   {
     title: "Talasalitaan",
     content: () => <Talasalitaan words={tataSeloTalasalitaan} />,
@@ -32,7 +32,7 @@ const Page = () => {
     setHash(window.location.hash.replace("#", ""));
   }, []);
 
-  return <AccordionRoot hash={hash} stories={tataSelo} />;
+  return <AccordionRoot hash={hash} stories={tataSeloStories} />;
 };
 
 export default Page;

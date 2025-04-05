@@ -18,7 +18,7 @@ const BuongKuwento = dynamic(
   () => import("@/components/stories/buong-kuwento/buong-kuwento")
 );
 
-const impengNegroStories: AccordionStory[] = [
+const saLupaNgSarilingBayanStories: AccordionStory[] = [
   {
     title: "Talasalitaan",
     content: () => <Talasalitaan words={saLupaNgSarilingBayanTalasalitaan} />,
@@ -44,7 +44,7 @@ const Page = () => {
     setHash(window.location.hash.replace("#", "")); // Remove the '#' if needed.
   }, []);
 
-  return <AccordionRoot hash={hash} stories={impengNegroStories} />;
+  return <AccordionRoot hash={hash} stories={saLupaNgSarilingBayanStories} />;
 };
 
 export default Page;

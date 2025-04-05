@@ -1,14 +1,20 @@
+import { cn } from "@/lib/utils";
 
 const StoryHeroSection = ({
   imageCover,
   title,
+  className,
 }: {
   imageCover: string;
   title: string;
+  className?: string;
 }) => {
   return (
     <div
-      className="relative flex h-96 flex-col items-center justify-center bg-cover bg-no-repeat text-surface-100"
+      className={cn(
+        "relative flex h-96 flex-col items-center justify-center bg-cover bg-no-repeat text-surface-100",
+        className
+      )}
       style={{
         backgroundImage: `url(${imageCover})`,
         backgroundPosition: "center",

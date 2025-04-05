@@ -1,8 +1,7 @@
 import {
-  DugoSaBukangLiwayway,
   ImpengNegro,
   SaLupaNgSarilingBayan,
-  TataSelo,
+  TataSelo
 } from "@/assets/images/written-works";
 
 const publishedWorks = [
@@ -23,7 +22,7 @@ const publishedWorks = [
   },
   {
     title: "Quentin",
-    src: DugoSaBukangLiwayway,
+    src: SaLupaNgSarilingBayan,
     alt: "quentin",
   },
 ];

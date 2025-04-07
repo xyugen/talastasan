@@ -5,7 +5,7 @@ import WordCard from './word-card';
 
 const WordCards = ({ words }: { words: Salita[] }) => {
   return (
-    <div className="space-y-4">
+    <div className="flex flex-row flex-wrap gap-4 justify-center">
       {words
         .sort((a, b) => a.word.localeCompare(b.word))
         .map((word) => (

@@ -73,10 +73,15 @@ export default {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        floatUpLeft: {
+          '0%, 100%': { transform: 'translate(0, 4px)' },
+          '50%': { transform: 'translate(-4px, -4px)' }, // 4 = 1rem in Tailwind
+        },
       },
       animation: {
         "slide-down": 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);',
         "slide-up": 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);',
+        "click-in": 'floatUpLeft 2.25s ease-in-out infinite;',
       },
     },
   },

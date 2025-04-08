@@ -14,7 +14,7 @@ interface PaginatedChapterReaderProps {
 const splitIntoPages = (text: string, maxChars: number): string[] => {
     const nodes = split(text, {
         SeparatorParser: {
-            separatorCharacters: ["”"],
+            separatorCharacters: ["”", ".", "!", "?"],
         },
     });
 

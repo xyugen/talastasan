@@ -1,4 +1,4 @@
-import { TataSelo } from "@/assets/images/written-works";
+import { TataSeloCover } from "@/assets/images/covers";
 import HeroAnimation from "@/components/animations/hero";
 import React from "react";
 import LayoutSection from "../_components/layout-section";
@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
       <HeroAnimation>
         <LayoutSection>
-          <StoryHeroSection title="Tata Selo" imageCover={TataSelo.src} />
+          <StoryHeroSection title="Tata Selo" imageCover={TataSeloCover.src} />
           {children}
         </LayoutSection>
       </HeroAnimation>

@@ -1,4 +1,4 @@
-import { SaLupaNgSarilingBayan } from "@/assets/images/written-works";
+import { SaLupaNgSarilingBayanCover } from "@/assets/images/covers";
 import HeroAnimation from "@/components/animations/hero";
 import React from "react";
 import LayoutSection from "../_components/layout-section";
@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <LayoutSection>
         <StoryHeroSection
           title="Sa Lupa Ng Sariling Bayan"
-          imageCover={SaLupaNgSarilingBayan.src}
+          imageCover={SaLupaNgSarilingBayanCover.src}
         />
         {children}
       </LayoutSection>

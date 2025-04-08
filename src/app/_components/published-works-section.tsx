@@ -1,11 +1,16 @@
 "use client";
 
 import PublishedWorkCard from "@/components/cards/published-work-card";
+import { PageRoutes } from "@/constants/page-routes";
 import publishedWorks from "@/data/published-works";
+import {
+  impengNegroStories,
+  quentinStories,
+  saLupaNgSarilingBayanStories,
+  tataSeloStories,
+} from "@/data/stories";
 import { useState } from "react";
 import StoriesSection from "./stories-section";
-import { emptyStories, impengNegroStories } from "@/data/stories";
-import { PageRoutes } from "@/constants/page-routes";
 
 const publishedWorksStories = [
   {
@@ -15,22 +20,21 @@ const publishedWorksStories = [
   },
   {
     title: "Tata Selo",
-    stories: emptyStories,
+    stories: tataSeloStories,
     baseUrl: PageRoutes.TATA_SELO,
   },
   {
     title: "Sa Lupa Ng Sariling Bayan",
-    stories: emptyStories,
+    stories: saLupaNgSarilingBayanStories,
     baseUrl: PageRoutes.SA_LUPA_NG_SARILING_BAYAN,
   },
 
   {
     title: "Quentin",
-    stories: emptyStories,
+    stories: quentinStories,
     baseUrl: PageRoutes.QUENTIN,
   },
 ];
-
 
 type PublishedWorksStory = (typeof publishedWorksStories)[number];
 

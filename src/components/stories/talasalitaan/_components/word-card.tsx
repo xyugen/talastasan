@@ -1,17 +1,16 @@
 import { Badge } from "@/components/ui/badge";
 import { Salita } from "@/data/talasalitaan";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
 
-const WordCard = ({ word }: { word: Salita }) => {
-    const [isFlipped, setIsFlipped] = useState(false);
+type WordCardProps = {
+    word: Salita;
+    isFlipped: boolean;
+    onFlip: () => void;
+};
 
-    const ROTATION_DURATION = 0.25;
+const ROTATION_DURATION = 0.25;
 
-    const handleFlip = () => {
-        setIsFlipped(!isFlipped);
-    };
-
+const WordCard = ({ word, isFlipped, onFlip }: WordCardProps) => {
     return (
         <motion.div
             className="w-full lg:md:w-[49%]"
@@ -20,7 +19,7 @@ const WordCard = ({ word }: { word: Salita }) => {
         >
             <div
                 className="relative cursor-pointer"
-                onClick={handleFlip}
+                onClick={onFlip}
                 style={{
                     transformStyle: "preserve-3d",
                     perspective: "1000px",
@@ -28,7 +27,6 @@ const WordCard = ({ word }: { word: Salita }) => {
             >
                 <AnimatePresence initial={false} mode="wait">
                     {!isFlipped ? (
-                        // Front of card - just the word
                         <motion.div
                             key="front"
                             initial={{ rotateY: 90 }}
@@ -45,7 +43,6 @@ const WordCard = ({ word }: { word: Salita }) => {
                             </h2>
                         </motion.div>
                     ) : (
-                        // Back of card - full details
                         <motion.div
                             key="back"
                             initial={{ rotateY: 90 }}

@@ -92,7 +92,7 @@ const KuwentongMayLarawan = ({
                                 )}
 
                                 <small className="absolute bottom-0 w-full text-secondary text-center">
-                                    Page {i + 1} / {storyWithImages.length}
+                                    Pahina {i + 1} / {storyWithImages.length}
                                 </small>
                             </div>
                         );

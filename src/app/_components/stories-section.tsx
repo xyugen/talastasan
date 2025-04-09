@@ -37,16 +37,22 @@ const StoriesSection = ({ title, stories, baseUrl }: StoriesSectionProps) => {
                 </h2>
             </BlurFade>
             <div className="mx-auto grid gap-2 px-2 w-full lg:grid-cols-3">
-                {stories.map(({ title, description, image, link }, i) => (
-                    <StoryCard
-                        key={title}
-                        title={title}
-                        description={description}
-                        image={image}
-                        href={`${baseUrl}${link}`}
-                        index={i}
-                    />
-                ))}
+                {stories.map(
+                    (
+                        { title, description, image, link, imageClassName },
+                        i
+                    ) => (
+                        <StoryCard
+                            key={title}
+                            title={title}
+                            description={description}
+                            image={image}
+                            href={`${baseUrl}${link}`}
+                            imageClassName={imageClassName}
+                            index={i}
+                        />
+                    )
+                )}
             </div>
         </section>
     );

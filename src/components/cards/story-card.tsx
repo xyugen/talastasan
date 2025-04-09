@@ -5,12 +5,14 @@ import { ArrowRight } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import BlurFade from "../ui/blur-fade";
+import { cn } from "@/lib/utils";
 interface StoryCardProps {
     title: string;
     description: string;
     image?: StaticImageData | string;
     href?: string;
     index?: number;
+    imageClassName?: string;
 }
 
 const StoryCard: React.FC<StoryCardProps> = ({
@@ -18,13 +20,14 @@ const StoryCard: React.FC<StoryCardProps> = ({
     description,
     image,
     href,
+    imageClassName,
     index = 0,
 }) => {
     const { setIsSearchExpanded, setSearchValue } = useStateStore();
+    console.log(imageClassName);
     return (
         <BlurFade
             className="group relative overflow-hidden rounded-lg border-4 border-secondary bg-white transition-transform"
-
             delay={0.3 * index}
             inView
         >
@@ -38,12 +41,14 @@ const StoryCard: React.FC<StoryCardProps> = ({
             >
                 <div className="relative aspect-[16/11] overflow-hidden">
                     <Image
-
                         src={image ? image : ""}
                         alt={title}
                         layout="fill"
                         objectFit="cover"
-                        className="transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300"
+                        className={cn(
+                            "transition-[scale_filter] grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300",
+                            imageClassName
+                        )}
                     />
                     <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
                 </div>

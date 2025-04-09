@@ -25,6 +25,7 @@ export interface Story {
   link?: string;
   title: string;
   description: string;
+  imageClassName?: string;
 }
 
 const impengNegroStories: Story[] = [
@@ -112,6 +113,7 @@ const quentinStories: Story[] = [
     title: "Kuwentong May Larawan",
     description:
       "Tingnan ang detalyadong pangyayari sa pamamagitan ng mga larawan.",
+    imageClassName: "object-top"
   },
 ];
 

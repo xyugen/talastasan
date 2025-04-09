@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import BlurFade from "../ui/blur-fade";
 import { cn } from "@/lib/utils";
+import React from "react";
 interface StoryCardProps {
     title: string;
     description: string;
@@ -13,6 +14,7 @@ interface StoryCardProps {
     href?: string;
     index?: number;
     imageClassName?: string;
+    imageStyle?: React.CSSProperties;
 }
 
 const StoryCard: React.FC<StoryCardProps> = ({
@@ -21,6 +23,7 @@ const StoryCard: React.FC<StoryCardProps> = ({
     image,
     href,
     imageClassName,
+    imageStyle,
     index = 0,
 }) => {
     const { setIsSearchExpanded, setSearchValue } = useStateStore();
@@ -46,9 +49,10 @@ const StoryCard: React.FC<StoryCardProps> = ({
                         layout="fill"
                         objectFit="cover"
                         className={cn(
-                            "transition-[scale_filter] grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300",
+                            "transition-all grayscale brightness-75 group-hover:grayscale-0 group-hover:scale-105 duration-300",
                             imageClassName
                         )}
+                        style={imageStyle}
                     />
                     <ArrowRight className="absolute transition-transform top-2 right-2 group-hover:-rotate-45  duration-300 text-primary-foreground size-6" />
                 </div>

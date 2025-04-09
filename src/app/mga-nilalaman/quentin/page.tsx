@@ -9,28 +9,32 @@ import { useEffect, useState } from "react";
 import AccordionRoot from "../_components/accordion";
 
 const quentinStories: AccordionStory[] = [
-  {
-    title: "Talasalitaan",
-    content: () => <Talasalitaan words={quentinTalasalitaan} />,
-  },
-  {
-    title: "Buong Kuwento",
-    content: () => <BuongKuwento storiesContents={quentinStoryContents} />,
-  },
-  // {
-  //   title: "Buod",
-  //   content: () => <Buod shortenedStory={} />,
-  // },
+    {
+        title: "Talasalitaan",
+        content: () => <Talasalitaan words={quentinTalasalitaan} />,
+    },
+    {
+        title: "Buong Kuwento",
+        content: () => <BuongKuwento storiesContents={quentinStoryContents} />,
+    },
+    {
+        title: "Buod",
+        content: () => <div />,
+    },
+    {
+        title: "Kuwentong May Larawan",
+        content: () => <div />,
+    },
 ];
 
 const Page = () => {
-  const [hash, setHash] = useState("");
+    const [hash, setHash] = useState("");
 
-  useEffect(() => {
-    setHash(window.location.hash.replace("#", ""));
-  }, []);
+    useEffect(() => {
+        setHash(window.location.hash.replace("#", ""));
+    }, []);
 
-  return <AccordionRoot hash={hash} stories={quentinStories} />;
+    return <AccordionRoot hash={hash} stories={quentinStories} />;
 };
 
 export default Page;

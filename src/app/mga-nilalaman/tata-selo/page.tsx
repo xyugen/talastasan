@@ -11,28 +11,32 @@ import Buod from "@/components/stories/buod/buod";
 import { tataSeloShortenedStory } from "@/data/shortened-story";
 
 const tataSeloStories: AccordionStory[] = [
-  {
-    title: "Talasalitaan",
-    content: () => <Talasalitaan words={tataSeloTalasalitaan} />,
-  },
-  {
-    title: "Buong Kuwento",
-    content: () => <BuongKuwento storiesContents={tataSeloStoryContents} />,
-  },
-  {
-    title: "Buod",
-    content: () => <Buod shortenedStory={tataSeloShortenedStory} />,
-  },
+    {
+        title: "Talasalitaan",
+        content: () => <Talasalitaan words={tataSeloTalasalitaan} />,
+    },
+    {
+        title: "Buong Kuwento",
+        content: () => <BuongKuwento storiesContents={tataSeloStoryContents} />,
+    },
+    {
+        title: "Buod",
+        content: () => <Buod shortenedStory={tataSeloShortenedStory} />,
+    },
+    {
+        title: "Kuwentong May Larawan",
+        content: () => <div />,
+    },
 ];
 
 const Page = () => {
-  const [hash, setHash] = useState("");
+    const [hash, setHash] = useState("");
 
-  useEffect(() => {
-    setHash(window.location.hash.replace("#", ""));
-  }, []);
+    useEffect(() => {
+        setHash(window.location.hash.replace("#", ""));
+    }, []);
 
-  return <AccordionRoot hash={hash} stories={tataSeloStories} />;
+    return <AccordionRoot hash={hash} stories={tataSeloStories} />;
 };
 
 export default Page;

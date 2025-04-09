@@ -19,22 +19,30 @@ const BuongKuwento = dynamic(
 );
 
 const saLupaNgSarilingBayanStories: AccordionStory[] = [
-  {
-    title: "Talasalitaan",
-    content: () => <Talasalitaan words={saLupaNgSarilingBayanTalasalitaan} />,
-  },
-  {
-    title: "Buong Kuwento",
-    content: () => (
-      <BuongKuwento storiesContents={saLupaNgSarilingBayanStoryContents} />
-    ),
-  },
-  {
-    title: "Buod",
-    content: () => (
-      <Buod shortenedStory={saLupaNgSarilingBayanShortenedStory} />
-    ),
-  },
+    {
+        title: "Talasalitaan",
+        content: () => (
+            <Talasalitaan words={saLupaNgSarilingBayanTalasalitaan} />
+        ),
+    },
+    {
+        title: "Buong Kuwento",
+        content: () => (
+            <BuongKuwento
+                storiesContents={saLupaNgSarilingBayanStoryContents}
+            />
+        ),
+    },
+    {
+        title: "Buod",
+        content: () => (
+            <Buod shortenedStory={saLupaNgSarilingBayanShortenedStory} />
+        ),
+    },
+    {
+        title: "Kuwentong May Larawan",
+        content: () => <div />,
+    },
 ];
 
 const Page = () => {

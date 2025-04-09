@@ -12,7 +12,8 @@ const KuwentongMayLarawan = ({
 }: {
     storyWithImages: StoryWithImage[];
 }) => {
-    const flipBookRef = useRef(null);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const flipBookRef = useRef<any>(null);
     const [isFlipPrevDisabled, setIsFlipPrevDisabled] = useState<boolean>(true);
     const [isFlipNextDisabled, setIsFlipNextDisabled] =
         useState<boolean>(false);

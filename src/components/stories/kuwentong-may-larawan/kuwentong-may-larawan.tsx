@@ -1,6 +1,7 @@
 "use client";
 
 import { StoryWithImage } from "@/data/story-with-images";
+import parse from "html-react-parser";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState } from "react";
@@ -39,12 +40,13 @@ const KuwentongMayLarawan = ({
 
         setIsFlipPrevDisabled(pageFlip.getCurrentPageIndex() === 0);
         setIsFlipNextDisabled(
-            pageFlip.getCurrentPageIndex() + 1 === storyWithImages.length - 1
+            pageFlip.getCurrentPageIndex() + 1 ===
+                storyWithImages.length * 2 - 1
         );
     };
 
     return (
-        <div className="w-[90%] mx-auto p-2">
+        <div className="overflow-x-clip w-[90%] mx-auto p-2">
             <div className="hidden md:block">
                 {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
                 {/* @ts-expect-error */}
@@ -60,42 +62,84 @@ const KuwentongMayLarawan = ({
                     onFlip={handleFlip}
                     ref={flipBookRef}
                 >
-                    {storyWithImages.map((story, i) => {
-                        const spreadIndex = Math.floor(i / 2);
-                        const isEvenSpread = spreadIndex % 2 === 0;
-                        const isLeftPage = i % 2 === 0;
+                    {storyWithImages.flatMap((story, index) => {
+                        const isEvenSpread = index % 2 === 0;
 
-                        // Decide which to show on this page
-                        const showContent =
-                            (isEvenSpread && isLeftPage) ||
-                            (!isEvenSpread && !isLeftPage);
-
-                        return (
-                            <div
-                                key={i}
-                                className="bg-white border-2 border-secondary pb-6"
-                            >
-                                {showContent ? (
-                                    <div className="overflow-y-auto overflow-x-hidden max-h-full p-4">
-                                        <p className="whitespace-pre-wrap">
-                                            {story.content}
-                                        </p>
-                                    </div>
-                                ) : (
-                                    <div className="p-4">
-                                        <Image
-                                            src={story.image}
-                                            alt={`Slide ${i + 1}`}
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
-                                )}
-
-                                <small className="absolute bottom-0 w-full text-secondary text-center">
-                                    Pahina {i + 1} / {storyWithImages.length}
-                                </small>
-                            </div>
-                        );
+                        return isEvenSpread
+                            ? [
+                                  // Even spread: content first, image second
+                                  <div
+                                      key={`${index}-content`}
+                                      className="bg-white border-2 border-secondary pb-6 relative"
+                                  >
+                                      <div className="overflow-y-auto overflow-x-hidden max-h-full p-4">
+                                          <p className="whitespace-pre-wrap">
+                                              {story.parseHTML
+                                                  ? parse(story.content)
+                                                  : story.content}
+                                          </p>
+                                      </div>
+                                      <small className="absolute bottom-0 w-full text-secondary text-center">
+                                          Pahina {index * 2 + 1} /{" "}
+                                          {storyWithImages.length * 2}
+                                      </small>
+                                  </div>,
+                                  <div
+                                      key={`${index}-image`}
+                                      className="bg-white border-2 border-secondary pb-6 relative"
+                                  >
+                                      <div className="p-4">
+                                          <Image
+                                              src={story.image}
+                                              alt={`Image for slide ${
+                                                  index + 1
+                                              }`}
+                                              className="w-full h-full object-cover"
+                                          />
+                                      </div>
+                                      <small className="absolute bottom-0 w-full text-secondary text-center">
+                                          Pahina {index * 2 + 2} /{" "}
+                                          {storyWithImages.length * 2}
+                                      </small>
+                                  </div>,
+                              ]
+                            : [
+                                  // Odd spread: image first, content second
+                                  <div
+                                      key={`${index}-image`}
+                                      className="bg-white border-2 border-secondary pb-6 relative"
+                                  >
+                                      <div className="p-4">
+                                          <Image
+                                              src={story.image}
+                                              alt={`Image for slide ${
+                                                  index + 1
+                                              }`}
+                                              className="w-full h-full object-cover"
+                                          />
+                                      </div>
+                                      <small className="absolute bottom-0 w-full text-secondary text-center">
+                                          Pahina {index * 2 + 1} /{" "}
+                                          {storyWithImages.length * 2}
+                                      </small>
+                                  </div>,
+                                  <div
+                                      key={`${index}-content`}
+                                      className="bg-white border-2 border-secondary pb-6 relative"
+                                  >
+                                      <div className="overflow-y-auto overflow-x-hidden max-h-full p-4">
+                                          <p className="whitespace-pre-wrap">
+                                              {story.parseHTML
+                                                  ? parse(story.content)
+                                                  : story.content}
+                                          </p>
+                                      </div>
+                                      <small className="absolute bottom-0 w-full text-secondary text-center">
+                                          Pahina {index * 2 + 2} /{" "}
+                                          {storyWithImages.length * 2}
+                                      </small>
+                                  </div>,
+                              ];
                     })}
                 </HTMLFlipBook>
 

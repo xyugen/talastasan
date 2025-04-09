@@ -105,11 +105,11 @@ export const impengNegroTalasalitaan: Salita[] = [
     sentence: "Parang pagkit ang kapit ni Impen sa braso ni Ogor.",
   },
   {
-    word: "Talinhaga",
+    word: "Talinghaga",
     syllabication: "ta•ling•ha•gà",
     meaning: "Malalim na kahulugan o di-tuwirang pahayag.",
     partOfSpeech: "Pangngalan",
-    sentence: "Ang sinabi ni Ogor ay puno ng talinhagang mapanukso.",
+    sentence: "Ang sinabi ni Ogor ay puno ng talinghagang mapanukso.",
   },
   {
     word: "Umigting",
@@ -260,7 +260,7 @@ export const saLupaNgSarilingBayanTalasalitaan: Salita[] = [
   },
   {
     word: "Bista",
-    syllabication: "bi•sí•ta",
+    syllabication: "bís•ta",
     meaning: "Pagdinig sa hukuman",
     partOfSpeech: "Pangngalan",
     sentence:

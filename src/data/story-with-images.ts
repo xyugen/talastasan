@@ -50,6 +50,7 @@ export interface StoryWithImage {
   image: StaticImageData;
   alt: string;
   content: string;
+  parseHTML?: boolean;
 }
 
 export const impengNegroStoryWithImages: StoryWithImage[] = [
@@ -377,6 +378,14 @@ Pinangingimian siya!`,
   {
     image: Image44,
     alt: "Image 44 description",
-    content: `Sa matinding sikat ng araw, tila siya’y isang mandirigmang sugatan, ngunit matatag na nakatindig sa pinagwagiang larangan.`,
+    content: `<span class='w-full font-semibold'>Sa matinding sikat ng araw, tila siya’y isang mandirigmang sugatan, ngunit matatag na nakatindig sa pinagwagiang larangan.
+    
+
+
+<i class='text-center'>Wakas!</i>
+    
+<span class='text-center'>I M P E N G  N E G R O</span>
+</span>`,
+    parseHTML: true
   },
 ];

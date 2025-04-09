@@ -1,13 +1,15 @@
 export interface Salita {
   word: string;
+  syllabication: string;
   meaning: string;
   partOfSpeech: string;
   sentence: string;
 }
 
-export const impengNegroTalasalitaan = [
+export const impengNegroTalasalitaan: Salita[] = [
   {
     word: "Alimpuyo",
+    syllabication: "a•lim•pu•yó",
     meaning: "Damdaming nag-aalab o nag-aapoy.",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -15,12 +17,14 @@ export const impengNegroTalasalitaan = [
   },
   {
     word: "Batalan",
+    syllabication: "ba•ta•lán",
     meaning: "Bahagi ng bahay na ginagamit sa paghuhugas o paliguan.",
     partOfSpeech: "Pangngalan",
     sentence: "Sa batalan nagsimula ang pangaral ng ina ni Impen.",
   },
   {
     word: "Giray",
+    syllabication: "gí•ray",
     meaning: "Pagkatagilid na halos mabubuwal na.",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -28,12 +32,14 @@ export const impengNegroTalasalitaan = [
   },
   {
     word: "Himlay",
+    syllabication: "him•láy",
     meaning: "Madali o mababaw na pagtulog.",
     partOfSpeech: "Pangngalan",
     sentence: "Napahimlay si Ogor matapos ang laban nila ni Impen.",
   },
   {
     word: "Kamiseta",
+    syllabication: "ka•mi•sé•ta",
     meaning: "Pang-itaas na damit na karaniwang manipis.",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -41,6 +47,7 @@ export const impengNegroTalasalitaan = [
   },
   {
     word: "Kutod",
+    syllabication: "ku•tód",
     meaning: "Sira-sirang damit o pantalong pinaglumaan.",
     partOfSpeech: "Pang-uri",
     sentence:
@@ -48,18 +55,21 @@ export const impengNegroTalasalitaan = [
   },
   {
     word: "Kuyom",
+    syllabication: "kú•yom",
     meaning: "Mahigpit na pagkakahawak.",
     partOfSpeech: "Pangngalan",
     sentence: "Kuyom ni Impen ang kanyang palad sa matinding galit kay Ogor.",
   },
   {
     word: "Lankay",
+    syllabication: "lan•káy",
     meaning: "Pangkat ng mga tao.",
     partOfSpeech: "Pangngalan",
     sentence: "Nakikita na ni Impen ang langkay ng mga agwador sa gripo.",
   },
   {
     word: "Laylay",
+    syllabication: "lay•láy",
     meaning: "Malambot na bahagi ng katawan na nakababa.",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -67,18 +77,21 @@ export const impengNegroTalasalitaan = [
   },
   {
     word: "Nagkakalugkugan",
+    syllabication: "nag•ka•ka•lug•kú•gan",
     meaning: "Tunog ng mga bagay na nagkakabanggaan.",
     partOfSpeech: "Pang-uri",
     sentence: "Nagkakalugkugan ang mga balde nang bumagsak si Impen.",
   },
   {
     word: "Nangangalirang",
+    syllabication: "na•nga•nga•lí•rang",
     meaning: "Pakiramdam ng pangangati dahil sa init.",
     partOfSpeech: "Pang-uri",
     sentence: "Nangangalirang ang balat ni Impen habang nakabilad sa araw.",
   },
   {
     word: "Nanggigimalmal",
+    syllabication: "nang•gi•gi•mal•mál",
     meaning: "Halos masira o magkabuhul-buhol.",
     partOfSpeech: "Pang-uri",
     sentence:
@@ -86,18 +99,21 @@ export const impengNegroTalasalitaan = [
   },
   {
     word: "Pagkit",
+    syllabication: "pag•kít",
     meaning: "Dikit o kapit na mahigpit.",
     partOfSpeech: "Pangngalan",
     sentence: "Parang pagkit ang kapit ni Impen sa braso ni Ogor.",
   },
   {
     word: "Talinhaga",
+    syllabication: "ta•ling•ha•gà",
     meaning: "Malalim na kahulugan o di-tuwirang pahayag.",
     partOfSpeech: "Pangngalan",
     sentence: "Ang sinabi ni Ogor ay puno ng talinhagang mapanukso.",
   },
   {
     word: "Umigting",
+    syllabication: "u•mig•tíng",
     meaning: "Pagkakaroon ng matinding puwersa o lakas.",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -105,9 +121,10 @@ export const impengNegroTalasalitaan = [
   },
 ];
 
-export const tataSeloTalasalitaan = [
+export const tataSeloTalasalitaan: Salita[] = [
   {
     word: "Balanggot",
+    syllabication: "ba•lang•gót",
     meaning: "Malapad na sombrero na karaniwang ginagamit ng mga magsasaka",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -115,6 +132,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Halas",
+    syllabication: "há•las",
     meaning: "Makapal na patse ng kalyo sa balat",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -122,6 +140,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Istaked",
+    syllabication: "is•ta•ked",
     meaning: "Kulungan o piitan na yari sa rehas",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -129,6 +148,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Kahangga",
+    syllabication: "ka•hang•gà",
     meaning: "Kapitbahay o taong malapit sa tirahan",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -136,6 +156,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Kalumpon",
+    syllabication: "ka•lum•pón",
     meaning: "Pangkat o grupo ng mga tao",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -143,6 +164,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Naembargo",
+    syllabication: "na•em•bár•go",
     meaning: "Nakuha o kinamkam dahil sa utang o pagkakautang",
     partOfSpeech: "Pandiwa",
     sentence:
@@ -150,12 +172,14 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Naggitgitan",
+    syllabication: "nag•git•gí•tan",
     meaning: "Nagsisiksikan at nagtutulakan",
     partOfSpeech: "Pandiwa",
     sentence: "Naggitgitan ang mga tao upang makalapit sa istaked.",
   },
   {
     word: "Nakasungaw",
+    syllabication: "na•ka•su•ngáw",
     meaning: "Nakalabas o nakausli",
     partOfSpeech: "Pandiwa",
     sentence:
@@ -163,6 +187,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Napadukmo",
+    syllabication: "na•pa•duk•mô",
     meaning: "Napayuko o napahilig ang ulo sa balikat dahil sa lungkot",
     partOfSpeech: "Pandiwa",
     sentence:
@@ -170,6 +195,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Payapain",
+    syllabication: "pa•ya•pa•ín",
     meaning: "Patahimikin o pakalmahin ang isang sitwasyon",
     partOfSpeech: "Pandiwa",
     sentence:
@@ -177,6 +203,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Pinangko",
+    syllabication: "pi•náng•ko",
     meaning: "Maliit na bahagi ng ani o pananim",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -184,6 +211,7 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Propitaryo",
+    syllabication: "pro•pri•tá•ryo",
     meaning: "May-ari ng lupa o negosyo",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -191,18 +219,21 @@ export const tataSeloTalasalitaan = [
   },
   {
     word: "Sumasawata",
+    syllabication: "su•ma•sa•wa•tá",
     meaning: "Pumipigil o humahadlang",
     partOfSpeech: "Pandiwa",
     sentence: "Ang mga pulis ay sumasawata sa mga nagkakagulong tao.",
   },
   {
     word: "Tinaga",
+    syllabication: "ti•ná•ga",
     meaning: "Pagtaga gamit ang matalim na bagay tulad ng itak",
     partOfSpeech: "Pandiwa",
     sentence: "Dahil sa matinding galit, tinaga ni Tata Selo si Kabesang Tano.",
   },
   {
     word: "Ulila",
+    syllabication: "u•lí•la",
     meaning: "Isang tao na nawalan ng magulang",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -210,9 +241,10 @@ export const tataSeloTalasalitaan = [
   },
 ];
 
-export const saLupaNgSarilingBayanTalasalitaan = [
+export const saLupaNgSarilingBayanTalasalitaan: Salita[] = [
   {
     word: "Amain",
+    syllabication: "a•ma•ín",
     meaning: "Kapatid ng ama",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -220,6 +252,7 @@ export const saLupaNgSarilingBayanTalasalitaan = [
   },
   {
     word: "Api-apihan",
+    syllabication: "a•pí-a•pí•han",
     meaning: "Pakiramdam ng labis na pang-aapi o kawalan ng katarungan",
     partOfSpeech: "Pang-uri",
     sentence:
@@ -227,6 +260,7 @@ export const saLupaNgSarilingBayanTalasalitaan = [
   },
   {
     word: "Bista",
+    syllabication: "bi•sí•ta",
     meaning: "Pagdinig sa hukuman",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -234,18 +268,21 @@ export const saLupaNgSarilingBayanTalasalitaan = [
   },
   {
     word: "Hinanakit",
+    syllabication: "hi•na•na•kít",
     meaning: "Sama ng loob",
     partOfSpeech: "Pangngalan",
     sentence: "Hindi pa rin niya malimutan ang kanyang hinanakit sa San Roque.",
   },
   {
     word: "Hukom",
+    syllabication: "hu•kóm",
     meaning: "Isang taong may kapangyarihang magpasya sa mga kaso sa hukuman",
     partOfSpeech: "Pangngalan",
     sentence: "Marahil ay naging isang hukom siya kung hindi siya nagkasakit.",
   },
   {
     word: "Ituktok",
+    syllabication: "i•tuk•tók",
     meaning: "Pinakamataas na bahagi o antas ng isang bagay",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -253,18 +290,21 @@ export const saLupaNgSarilingBayanTalasalitaan = [
   },
   {
     word: "Kaawa-awa",
+    syllabication: "ka•a•wà-a•wà",
     meaning: "Nakalulungkot o kahabag-habag",
     partOfSpeech: "Pang-uri",
     sentence: "Kaawa-awa ang kanyang kalagayan nang siya’y maospital.",
   },
   {
     word: "Kanser",
+    syllabication: "kán•ser",
     meaning: "Isang malubhang sakit na maaaring maging sanhi ng kamatayan",
     partOfSpeech: "Pangngalan",
     sentence: "Hindi inakala ni Layo na siya’y may kanser sa bituka.",
   },
   {
     word: "Katanyagan",
+    syllabication: "ka•tan•ya•gán",
     meaning: "Sikat o tanyag na estado",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -272,12 +312,14 @@ export const saLupaNgSarilingBayanTalasalitaan = [
   },
   {
     word: "Malimit",
+    syllabication: "ma•lí•mit",
     meaning: "Madalas o palagi",
     partOfSpeech: "Pang-abay",
     sentence: "Malimit dalawin ni Ben at ng kanyang ama si Layo sa ospital.",
   },
   {
     word: "Mapait",
+    syllabication: "ma•pa•ít",
     meaning: "Hindi maganda o puno ng pagdurusa",
     partOfSpeech: "Pang-uri",
     sentence:
@@ -285,33 +327,38 @@ export const saLupaNgSarilingBayanTalasalitaan = [
   },
   {
     word: "Modista",
+    syllabication: "mo•dís•ta",
     meaning: "Isang babaeng mananahi ng damit",
     partOfSpeech: "Pangngalan",
     sentence: "Ang asawa ni Layo ay dating modista sa San Fernando.",
   },
   {
     word: "Peryodiko",
+    syllabication: "per•yó•di•kó",
     meaning: "Diyaryo o pahayagan",
     partOfSpeech: "Pangngalan",
     sentence: "Dati siyang city editor sa isang maliit na peryodiko.",
   },
   {
     word: "Puntod",
+    syllabication: "pun•tód",
     meaning: "Libingan o nitso",
     partOfSpeech: "Pangngalan",
     sentence: "Hindi napuntahan ni Layo ang puntod ng kanyang mga magulang.",
   },
   {
     word: "Retirado",
+    syllabication: "re•ti•rá•do",
     meaning: "Tumigil na sa pagtatrabaho dahil sa edad o ibang dahilan",
     partOfSpeech: "Pang-uri",
     sentence: "Ang ama ni Ben ay isang retiradong guro.",
   },
 ];
 
-export const quentinTalasalitaan = [
+export const quentinTalasalitaan: Salita[] = [
   {
     word: "Aklat-dasalan",
+    syllabication: "ak•lát-da•sá•lan",
     meaning: "Isang aklat na naglalaman ng mga dasal at panrelihiyong gabay",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -319,6 +366,7 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Alingawngaw",
+    syllabication: "a•li•ngaw•ngáw",
     meaning: "Paulit-ulit o bumabalik na tunog",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -326,12 +374,14 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Bulalas",
+    syllabication: "bu•lá•las",
     meaning: "Bigla o padalos-dalos na pagsabi ng isang bagay",
     partOfSpeech: "Pandiwa",
     sentence: "“Santo Dios!” ang kanyang bulalas sa tindi ng takot.",
   },
   {
     word: "Kampana",
+    syllabication: "kam•pa•nà",
     meaning:
       "Malaking batingaw na ginagamit sa simbahan upang ipahiwatig ang oras o pagtawag sa misa",
     partOfSpeech: "Pangngalan",
@@ -339,6 +389,7 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Kampanero",
+    syllabication: "kam•pa•né•ro",
     meaning: "Taong namamahala sa pagtunog ng kampana",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -346,6 +397,7 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Kumbento",
+    syllabication: "kum•bén•to",
     meaning: "Bahay ng mga madre o pari",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -353,6 +405,7 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Nakamihasnan",
+    syllabication: "na•ka•mi•hás•nan",
     meaning: "Nakasanayan o naging karaniwan",
     partOfSpeech: "Pandiwa",
     sentence:
@@ -360,12 +413,14 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Pumanhik",
+    syllabication: "pu•man•hík",
     meaning: "Umakyat, lalo na sa isang matataas na lugar",
     partOfSpeech: "Pandiwa",
     sentence: "Pumanhik si Quentin sa kampanaryo upang patunugin ang kampana.",
   },
   {
     word: "Samba",
+    syllabication: "sam•bá",
     meaning:
       "Pagsamba o paggalang sa Diyos sa pamamagitan ng panalangin o ritwal",
     partOfSpeech: "Pandiwa",
@@ -373,12 +428,14 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Seminarista",
+    syllabication: "se•mi•na•rís•ta",
     meaning: "Isang lalaking nag-aaral upang maging pari",
     partOfSpeech: "Pangngalan",
     sentence: "Isang seminarista si Quentin na punong-puno ng pananalig.",
   },
   {
     word: "Sermon",
+    syllabication: "sér•mon",
     meaning:
       "Pangaral ng pari sa misa o sa panahon ng pagtuturo ng pananampalataya",
     partOfSpeech: "Pangngalan",
@@ -387,12 +444,14 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Simboryo",
+    syllabication: "sim•bór•yo",
     meaning: "Bilog at mataas na bahagi ng simbahan o gusali",
     partOfSpeech: "Pangngalan",
     sentence: "Pinagmamasdan niya ang simboryo ng simbahan mula sa malayo.",
   },
   {
     word: "Takipsilim",
+    syllabication: "ta•kip•sí•lim",
     meaning: "Panahon ng paglubog ng araw; dapit-hapon",
     partOfSpeech: "Pangngalan",
     sentence:
@@ -400,6 +459,7 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Tinalunton",
+    syllabication: "ti•na•lun•tón",
     meaning: "Tinahak o dinaanan",
     partOfSpeech: "Pandiwa",
     sentence:
@@ -407,6 +467,7 @@ export const quentinTalasalitaan = [
   },
   {
     word: "Ulila",
+    syllabication: "u•lí•la",
     meaning: "Taong nawalan ng magulang",
     partOfSpeech: "Pangngalan",
     sentence:

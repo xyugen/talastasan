@@ -36,11 +36,12 @@ const WordCard = ({ word, isFlipped, onFlip }: WordCardProps) => {
                                 duration: ROTATION_DURATION,
                                 ease: "easeInOut",
                             }}
-                            className="flex items-center justify-center min-h-[18rem] rounded-lg border-2 bg-card text-card-foreground shadow p-4 border-secondary hover:shadow-lg transition-shadow"
+                            className="flex flex-col items-center justify-center gap-2 min-h-[18rem] rounded-lg border-2 bg-card text-card-foreground shadow p-4 border-secondary hover:shadow-lg transition-shadow"
                         >
                             <h2 className="text-4xl font-bold text-center">
                                 {word.word}
                             </h2>
+                            <p>({word.syllabication})</p>
                         </motion.div>
                     ) : (
                         <motion.div
@@ -54,10 +55,13 @@ const WordCard = ({ word, isFlipped, onFlip }: WordCardProps) => {
                             }}
                             className="min-h-[200px] rounded-lg border-2 bg-card text-card-foreground shadow p-4 border-secondary hover:shadow-lg transition-shadow"
                         >
-                            <div className="bg-secondary/10 p-4 mb-4 rounded-lg">
-                                <h2 className="text-2xl font-normal">
+                            <div className="space-x-1 bg-secondary/10 p-4 mb-4 rounded-lg">
+                                <h2 className="inline text-2xl font-normal">
                                     {word.word}
                                 </h2>
+                                <p className="inline">
+                                    ({word.syllabication})
+                                </p>
                             </div>
 
                             <div className="px-4">

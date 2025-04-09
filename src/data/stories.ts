@@ -19,6 +19,7 @@ import {
   TataSeloKuwentongMayLarawanCover,
 } from "@/assets/images/written-works/kuwentong-may-larawan";
 import { StaticImageData } from "next/image";
+import React from "react";
 
 export interface Story {
   image?: StaticImageData;
@@ -26,6 +27,7 @@ export interface Story {
   title: string;
   description: string;
   imageClassName?: string;
+  imageStye?: React.CSSProperties;
 }
 
 const impengNegroStories: Story[] = [
@@ -113,7 +115,8 @@ const quentinStories: Story[] = [
     title: "Kuwentong May Larawan",
     description:
       "Tingnan ang detalyadong pangyayari sa pamamagitan ng mga larawan.",
-    imageClassName: "object-top"
+    imageClassName: "!object-top",
+    imageStye: { objectPosition: "top" },
   },
 ];
 

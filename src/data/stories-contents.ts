@@ -16,7 +16,7 @@ May iba pang sinasabi ang kaniyang ina ngunit hindi na niya pinakinggan. Alam na
 
 Isinaboy niya ang tubig na nasa harap. Muli siyang tumabo. Isinawak niya ang kamay, pinagkiskis ang mga palad at pagkaraa’y naghilamos.”
 
-“Dumaan ka kay Taba mamayang pag-uwi mo,” narinig niyang bilin ng ina. “Wala nang gatas si Boy. Ito ang pambili.”
+“Dumaan ka kay Taba mamayang pag-uwi mo,” narinig niyang bilin ng ina. “Wala ng gatas si Boy. Ito ang pambili.”
 
 Tumindig na siya. Naghihimas at naghihikab na iniunat ang mahahabang kamay. Inaantok pa siya. Gusto pa niyang magbalik sa sulok na kaniyang higaan. Ngunit kailangang lumakad na siya. Tatanghaliin na naman bago siya makasahod. At naroon na naman marahil si Ogor. Kahit siya ang nauna ay lagi siyang inuunahan ni Ogor sa pagsahod. Umiingit ang sahig ng kanilang bárong-bárong nang siya’y pumasok.
 
@@ -26,7 +26,7 @@ Sa sulok ng kaniyang kaliwang mata’y nasulyapan niya ang kaniyang ina. Nakaupo
 
 “Mamaya, baka umuwi ka na namang… basag ang mukha.”
 
-Bahagya na niyang maulinigan ang ina. Nakatitig siya sa tatlo niyang kapatid. Sunod-sunod na nakatungo ang mga ito sa isa pang bangong nasa tagiliran ng nanggigimalmal na mesang kainan. Nagsisikain pa.
+Bahagya na niyang naulinigan ang ina. Nakatitig siya sa tatlo niyang kapatid. Sunod-sunod na nakatungo ang mga ito sa isa pang bangkong nasa tagiliran ng nanggigimalmal na mesang kainan. Nagsisikain pa.
 
 Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si Kano, kaya ganito ang tawag dito sa kanilang pook. Kakutis ni Kano ang iba pa niyang kapatid. Marurusing ngunit mapuputi. May pitong taon na si Kano. Siya nama’y maglalabing-anim na. Payat siya ngunit mahahaba ang kaniyang biyas.`,
   },
@@ -37,9 +37,8 @@ Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si
 
 “Iyan ang isuot mo.” Parang nahulaan ng kaniyang ina ang kaniyang iniisip.
 
-Isinuot niya ang kamiseta. Lapat na lapat sa kaniya ang kamisetang iyon noong bagong bili ngunit ngayo’y maluwag na. Nagmumukha siyang Intsik-beho kapag suot iyon ngunit wala naman siyang maraming kamisetang maisusuot. Mahina ang kita ng kaniyang ina sa paglalaba at mahina rin ang kaniyang kita sa pag-aagwador.
-
-Nagbalik siya sa batalan. Nang siya’y lumabas, pasan na niya ang kargahan. Tuloy-tuloy niyang tiningo ang hagdan.
+Isinuot niya ang kamiseta. Lapat na lapat sa kaniya ang kamisetang iyon noong bagong bili ngunit ngayo’y maluwag na. Nagmumukha siyang intsik-beho kapag suot iyon ngunit wala naman siyang maraming kamisetang maisusuot. Mahina ang kita ng kaniyang ina sa paglalaba at mahina rin ang kaniyang kita sa pag-aagwador.
+Nagbalik siya sa batalan. Nang siya’y lumabas, pasan na niya ang kargahan. Tuloy-tuloy niyang tinungo ang hagdan.
 
 “Si Ogor, Impen,” pahabol na bilin ng kaniyang ina. “Huwag mo nang papansinin.”
 
@@ -80,7 +79,7 @@ Nanunuri ang mga mata at nakangising iikutan siya ni Ogor. Pagkuwa’y bigla na 
 
 Sa katagalan, natanggap na niya ang panunuksong ito. Iyon ang totoo, sinasabi niya sa sarili. Negro nga siya. Ano kung Negro? Ngunit napapikit siya. Ang tatay niya’y isang sundalong negro na nang maging anak siya’y biglang nawala sa Pilipinas.
 
-Ang panunuksong hindi niya matanggap, at siya ngang pinagmulan ng nakaraan nilang pagbababag ni Ogor ay sinabi nito tungkol sa kaniyang ina. (Gayon nga kaya kasama ang kaniyang ina?)
+Ang panunuksong hindi niya matanggap, at siya ngang pinagmulan ng nakaraan nilang pagbababag ni Ogor ay sinabi nito tungkol sa kaniyang ina. (Gayon nga kaya kasama ang kaniyang ina?) 
 
 “Sari-sari ang magiging kapatid mo Negro,” sinabi ni Ogor. “Baka makatatlo pa ang kaniyang nanay ngayon!”
 
@@ -109,7 +108,7 @@ Kapag tag-araw ay malaki-laki rin ang kinikita ng mga agwador. Mahina ang tulo n
 
 Sa kalawanging medyo-agwa niyon ay nakasilong ang iba pang agwador. May naghubad na ng damit at isinampay na lamang sa balikat. May nagpapaypay. May kumakain ng halo-halo.
 
-Sa pangkat na iyon ay kay Ogor agad natutok ang kaniyang tingin. Pinilit niyang supilin ang hangaring makasilong. Naroon sa tindahan si Ogor. Hubad-baro at ngumingisi. Mauupo na lamang siya sa kaniyang balde. Mabuti pa roon, kahit nakabilad sa init. Pasasaan ba’t di iikli ang pila? Naisip niya.
+Sa pangkat na iyon ay kay Ogor agad natutok ang kaniyang tingin. Pinilit niyang supilin ang hangaring makasilong. Naroon sa tindahan si Ogor. Hubad-baro at ngumingisi. Mauupo na lamang siya sa kaniyang balde. Mabuti pa roon, kahit nakabilad sa init. Pasasaan ba’t ‘di iikli ang pila? Naisip niya.
 
 Kasalukuyan siyang nagtitiis sa init nang may maulinigan siyang sigaw mula sa tindahan;
 
@@ -139,13 +138,13 @@ Iginitgit ni Ogor ang bitbit na balde at kumalantog ang kanilang mga balde. Igin
   {
     title: "Pahina 6",
     link: "/pahina-6",
-    content: `Bantulot niyang binawi ang balde, nakatingin pa rin kay Ogor. Itinaob niya ang kaunting nasahod na balde at ang tubig ay gumapang sa semento at umabot sa kanilang mga paa ni Ogor. 
+    content: `Bantulot niyang binawi ang balde, nakatingin pa rin kay Ogor. Itinaob niya ang kaunting nasahod na balde at ang tubig ay gumapang sa semento at umabot sa kanilang mga paa ni Ogor.
 
 Uuwi na ako, bulong sa sarili. Uuwi na ako. Mamaya na lang ako iigib ulit. Nakatingin sa araw, humakbang siya upang kunin ang pingga ngunit paghakbang na iyon, bigla siyang pinatid ni Ogor.
 
 “Ano pa ba’ng ibinubulong mo?”
 
-Hindi na niya marinig iyon. Nabuwal siya. Tumama ang kanan niyang pisngi sa labi ng nabwang balde. Napasigaw siya. Malakas. Napaluhod siya sa madulas na semento. Kagyat na bumaha ang nakaliliyong dilim sa kaniyang utak. 
+Hindi na niya marinig iyon. Nabuwal siya. Tumama ang kanan niyang pisngi sa labi ng nabwang balde. Napasigaw siya. Malakas. Napaluhod siya sa madulas na semento. Kagyat na bumaha ang nakaliliyong dilim sa kaniyang utak.
 
 Habang nakaluhod, dalawang kamay niyang tinutop ang pisngi. Takot, nanginginig ang kaniyang mga daliri. Dahan-dahan niyang inangat iyon. Basa…Mapula… Dugo!
 
@@ -163,7 +162,7 @@ Bigla siyang bumaligtad. Nakita niya ang naghuhumindig na anyo ni Ogor. Naakma a
 
 “O-ogor..”
 
-Tumawa nang malakas si Ogor. Humihingal at nakatangangang napapikit siya. Pumuslit ang lahat ng luha sa sulok ng kaniyang mga mata. Nasa ganito siyang kalagayan nang bigla niyang maramdaman ang isang ubos-lakas na sipa sa kaniyang pigi. Napasigaw siya. Umiiyak siyang gumugulong sa basa at madulas na semento. Namimilipit siya. Tangan ang sinipang pigi, ang buong anyo ng nakaangat niyang mukha’y naglalarawan ng matinding sakit. 
+Tumawa nang malakas si Ogor. Humihingal at nakatangangang napapikit siya. Pumuslit ang lahat ng luha sa sulok ng kaniyang mga mata. Nasa ganito siyang kalagayan nang bigla niyang maramdaman ang isang ubos-lakas na sipa sa kaniyang pigi. Napasigaw siya. Umiiyak siyang gumugulong sa basa at madulas na semento. Namimilipit siya. Tangan ang sinipang pigi, ang buong anyo ng nakaangat niyang mukha’y naglalarawan ng matinding sakit.
 
 Matagal din bago napawi ang paninigas ng kaniyang pigi. Humihingal siya. Malikot ang kaniyang mga mata nang siya’y bumangon at itinukod ang mga kamay sa semento.`,
   },
@@ -192,7 +191,7 @@ Gumagalaw-galaw ang sabog na labi ni Ogor.
 
 “Impen..” Muli niyang itinaas ang kamay.
 
-“I-Impen…” Halos hindi niya narinig ang halingling ni Ogor. “I-Impen…s-suko n-na… a-ako…s-suko…n-na…a-ako!”`,
+“I-Impen…” Halos hindi niya narinig ang halinghing ni Ogor. “I-Impen…s-suko n-na… a-ako…s-suko…n-na…a-ako!”`,
   },
   {
     title: "Pahina 8",
@@ -201,7 +200,7 @@ Gumagalaw-galaw ang sabog na labi ni Ogor.
 
 Maraming sandaling walang nagmangahas magsalita. Walang makakibo sa mga agwador. Hindi makapaniwala ang lahat. Lahat ay nakatingin sa kaniya.
 
-Isa-sa niyang tiningnan ang mga nakapaligid sa kaniya. Walang pagtutol sa mga mata ng mga ito. Ang nababakas niya’y paghanga. Ang nakita niya’y pangingimi.
+Isa-isa niyang tiningnan ang mga nakapaligid sa kaniya. Walang pagtutol sa mga mata ng mga ito. Ang nababakas niya’y paghanga. Ang nakita niya’y pangingimi.
 
 Pinangingimian siya!
 

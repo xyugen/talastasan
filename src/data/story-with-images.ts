@@ -72,7 +72,7 @@ Isinaboy niya ang tubig na nasa harap. Muli siyang tumabo. Isinawak niya ang kam
   {
     image: Image2,
     alt: "Image 2 description",
-    content: `“Dumaan ka kay Taba mamayang pag-uwi mo,” narinig niyang bilin ng ina. “Wala nang gatas si Boy. Ito ang pambili.”
+    content: `“Dumaan ka kay Taba mamayang pag-uwi mo,” narinig niyang bilin ng ina. “Wala ng gatas si Boy. Ito ang pambili.”
 
 Tumindig na siya. Naghihimas at naghihikab na iniunat ang mahahabang kamay. Inaantok pa siya. Gusto pa niyang magbalik sa sulok na kaniyang higaan. Ngunit kailangang lumakad na siya. Tatanghaliin na naman bago siya makasahod. At naroon na naman marahil si Ogor. Kahit siya ang nauna ay lagi siyang inuunahan ni Ogor sa pagsahod.`,
   },
@@ -93,7 +93,7 @@ Sa sulok ng kaniyang kaliwang mata’y nasulyapan niya ang kaniyang ina. Nakaupo
   {
     image: Image5,
     alt: "Image 5 description",
-    content: `Bahagya na niyang maulinigan ang ina. Nakatitig siya sa tatlo niyang kapatid. Sunod-sunod na nakatungo ang mga ito sa isa pang bangong nasa tagiliran ng nanggigimalmal na mesang kainan. Nagsisikain pa.
+    content: `Bahagya na niyang naulinigan ang ina. Nakatitig siya sa tatlo niyang kapatid. Sunod-sunod na nakatungo ang mga ito sa isa pang bangkong nasa tagiliran ng nanggigimalmal na mesang kainan. Nagsisikain pa.
 
 Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si Kano, kaya ganito ang tawag dito sa kanilang pook. Kakutis ni Kano ang iba pa niyang kapatid. Marurusing ngunit mapuputi. May pitong taon na si Kano. Siya nama’y maglalabing-anim na. Payat siya ngunit mahahaba ang kaniyang biyas.`,
   },
@@ -104,9 +104,9 @@ Matagal na napako ang kaniyang tingin kay Kano, ang sumunod sa kaniya. Maputi si
 
 “Iyan ang isuot mo.” Parang nahulaan ng kaniyang ina ang kaniyang iniisip.
 
-Isinuot niya ang kamiseta. Lapat na lapat sa kaniya ang kamisetang iyon noong bagong bili ngunit ngayo’y maluwag na. Nagmumukha siyang Intsik-beho kapag suot iyon ngunit wala naman siyang maraming kamisetang maisusuot. Mahina ang kita ng kaniyang ina sa paglalaba at mahina rin ang kaniyang kita sa pag-aagwador.
+Isinuot niya ang kamiseta. Lapat na lapat sa kaniya ang kamisetang iyon noong bagong bili ngunit ngayo’y maluwag na. Nagmumukha siyang intsik-beho kapag suot iyon ngunit wala naman siyang maraming kamisetang maisusuot. Mahina ang kita ng kaniyang ina sa paglalaba at mahina rin ang kaniyang kita sa pag-aagwador.
 
-Nagbalik siya sa batalan. Nang siya’y lumabas, pasan na niya ang kargahan. Tuloy-tuloy niyang tiningo ang hagdan.
+Nagbalik siya sa batalan. Nang siya’y lumabas, pasan na niya ang kargahan. Tuloy-tuloy niyang tinungo ang hagdan.
 
 “Si Ogor, Impen,” pahabol na bilin ng kaniyang ina. “Huwag mo nang papansinin.”
 
@@ -115,7 +115,7 @@ Naulinigan niya ang biling iyon at aywan kung dahil sa inaantok pa siya, muntik 
   {
     image: Image7,
     alt: "Image 7 description",
-    content: `Tuwing umagang mananog upang umigib, pinagpapaalalahanan siya ng ina. Huwag daw siyang makikipagbagbag. Huwag daw niyang papansinin si Ogor. Talara gayon ito. Basagulero.`,
+    content: `Tuwing umagang mananog upang umigib, pinagpapaalalahanan siya ng ina. Huwag daw siyang makikipagbagbag. Huwag daw niyang papansinin si Ogor. Talagang gayon ito. Basagulero.`,
   },
   {
     image: Image8,
@@ -146,7 +146,7 @@ Noong una, sinasagot niya ang mga panunuksong ito;
     alt: "Image 10 description",
     content: `Nanunuri ang mga mata at nakangising iikutan siya ni Ogor. Pagkuwa’y bigla na lamang nitong kakayurin ng hintuturo ang balat sa kaniyang batok.
 
-“Negrong-negro ka nga, Negro,” tila nandidiring sasabihin ni Ogor. Magsusunuran nang manukso ang iba pang agwador. Pati ang mga batang naroon. 
+“Negrong-negro ka nga, Negro,” tila nandidiring sasabihin ni Ogor. Magsusunuran nang manukso ang iba pang agwador. Pati ang mga batang naroon.
 
 “Tingnan mo ang buhok, kulot na kulot!”
 
@@ -185,14 +185,14 @@ Natatanaw na niya ngayon ang poso. Sa malamig ngunit maliwanag nang sikat ng ara
   {
     image: Image15,
     alt: "Image 15 description",
-    content: `Sa langkay na iyon ay kilalang-kilala niya ang anyo ni Ogor. Paano niya malilimutan si Ogor? Sa mula’t mula pa, itinurong na siya nitong kaaway. ‘Di kailanman binigyan ng pagkakataong maging kaibigan.
+    content: `Sa langkay na iyon ay kilalang-kilala niya ang anyo ni Ogor. Paano niya malilimutan si Ogor? Sa mula’t mula pa, itinuring na siya nitong kaaway. ‘Di kailanman binigyan ng pagkakataong maging kaibigan.
 
-Halos kasing gulang niya si Ogor, ngunit higit na matipuno ang katawan nito. Malakas si Ogor. Tuwid ang tindig nito at halos hindi yumuyuko kahit may pasang balde ng tubig. Tila sino mang masasalubong sa daan ay kayang-kayang sagasaan. Nang marating niya ang poso ay tungo ang ulo tinungo niya ang hulihan ng pila. Marahan niyang inalis sa pagkakakawit ng mga balde. Sa sarili, nausal niyang sana’y huwag siya ang maging paksa ng paghaharutan at pagkakatuwaan ng mga agwador.`,
+Halos kasing gulang niya si Ogor, ngunit higit na matipuno ang katawan nito. Malakas si Ogor. Tuwid ang tindig nito at halos hindi yumuyuko kahit may pasang balde ng tubig. Tila sino mang masasalubong sa daan ay kayang-kayang sagasaan. Nang marating niya ang poso ay tungo ang ulo tinungo niya ang hulihan ng pila. Marahan niyang inalis sa pagkakakawit ang mga balde. Sa sarili, nausal niyang sana’y huwag siya ang maging paksa ng paghaharutan at pagkakatuwaan ng mga agwador.`,
   },
   {
     image: Image16,
     alt: "Image 16 description",
-    content: `Nakaanim na karga na si Impen. May sisenta sentimos nang kumakalansing sa bulsa ng kutod niyang maong. May isa pang nagpapaigip sa kaniya. Diyes sentimos naman.
+    content: `Nakaanim na karga na si Impen. May sisenta sentimos nang kumakalansing sa bulsa ng kutod niyang maong. May isa pang nagpapaigib sa kaniya. Diyes sentimos naman.
 
 Kapag tag-araw ay malaki-laki rin ang kinikita ng mga agwador. Mahina ang tulo ng tubig sa kanilang pook at bihira ang may poso.`,
   },
@@ -208,7 +208,7 @@ Sa kalawanging medyo-agwa niyon ay nakasilong ang iba pang agwador. May naghubad
   {
     image: Image18,
     alt: "Image 18 description",
-    content: `Sa pangkat na iyon ay kay Ogor agad natutok ang kaniyang tingin. Pinilit niyang supilin ang hangaring makasilong. Naroon sa tindahan si Ogor. Hubad-baro at ngumingisi. Mauupo na lamang siya sa kaniyang balde. Mabuti pa roon, kahit nakabilad sa init. Pasasaan ba’t di iikli ang pila? Naisip niya.`,
+    content: `Sa pangkat na iyon ay kay Ogor agad natutok ang kaniyang tingin. Pinilit niyang supilin ang hangaring makasilong. Naroon sa tindahan si Ogor. Hubad-baro at ngumingisi. Mauupo na lamang siya sa kaniyang balde. Mabuti pa roon, kahit nakabilad sa init. Pasasaan ba’t ‘di iikli ang pila? Naisip niya.`,
   },
   {
     image: Image19,
@@ -307,7 +307,7 @@ Tumawa nang malakas si Ogor. Humihingal at nakatangangang napapikit siya. Pumusl
     alt: "Image 33 description",
     content: `Matagal din bago napawi ang paninigas ng kaniyang pigi. Humihingal siya. Malikot ang kaniyang mga mata nang siya’y bumangon at itinukod ang mga kamay sa semento.
 
-Si Ogor.. Sa mula’t pa’y itinuring na siya nitongg kaaway… Bakit siya ginaganoon ni Ogor.`,
+Si Ogor.. Sa mula’t pa’y itinuring na siya nitong kaaway… Bakit siya ginaganoon ni Ogor.`,
   },
   {
     image: Image34,
@@ -333,12 +333,12 @@ Dagok, dagok, dagok… Nag-uumigting ang kaniyang mga ugat. Tila asong nagpipili
     alt: "Image 37 description",
     content: `Kakatatlo ng asawa si Inay. Si Kano… si Boyet… si Diding… at siya…. Negro.
 
-Sa mga dagok ni Ogor, tila nasasalinan pa siya ng lakas bigla, ubos-lakas at nag-uumiri siyang umigtad. Napailalim si Ogor. Nahantad ang mukha ni Ogor. Dagok, bayo, dagok, bayo, dagok, bayo, sagok…. Kahit saan. Sa dibdib. Sa mukha. Dagok, bayo, dagok, bayo, dagok, dagok, dagok…`,
+Sa mga dagok ni Ogor, tila nasasalinan pa siya ng lakas bigla, ubos-lakas at nag-uumiri siyang umigtad. Napailalim si Ogor. Nahantad ang mukha ni Ogor. Dagok, bayo, dagok, bayo, dagok, bayo, dagok…. Kahit saan. Sa dibdib. Sa mukha. Dagok, bayo, dagok, bayo, dagok, dagok, dagok…`,
   },
   {
     image: Image38,
     alt: "Image 38 description",
-    content: `Mahina na si Ogor. Lupaypay na. Nalalaglag na ang nagsasanggang kamay. Hnihingal na rin siya, humahagok. Ngunit nagliliyab pa rin ang poot sa kaniyang mga mata. Dagok, Papaluka. Dagok, bayo, dagok, bayo, dagok…`,
+    content: `Mahina na si Ogor. Lupaypay na. Nalalaglag na ang nagsasanggang kamay. Hinihingal na rin siya, humahagok. Ngunit nagliliyab pa rin ang poot sa kaniyang mga mata. Dagok, Papaluka. Dagok, bayo, dagok, bayo, dagok…`,
   },
   {
     image: Image39,
@@ -349,7 +349,7 @@ Sa mga dagok ni Ogor, tila nasasalinan pa siya ng lakas bigla, ubos-lakas at nag
 
 Muli niyang itinaas ang kamay.
 
-“I-Impen…” Halos hindi niya narinig ang halingling ni Ogor. “I-Impen…s-suko n-na… a-ako…s-suko…n-na…a-ako!”`,
+“I-Impen…” Halos hindi niya narinig ang halinghing ni Ogor. “I-Impen…s-suko n-na… a-ako…s-suko…n-na…a-ako!”`,
   },
   {
     image: Image40,
@@ -359,9 +359,9 @@ Muli niyang itinaas ang kamay.
   {
     image: Image41,
     alt: "Image 41 description",
-    content: `Maraming sandaling walang nagmangahas magsalita. Walang makakibo sa mga agwador. Hindi makapaniwala ang lahat. Lahat ay nakatingin sa kaniya.
+    content: `Maraming sandalling walang nagmangahas magsalita. Walang makakibo sa mga agwador. Hindi makapaniwala ang lahat. Lahat ay nakatingin sa kaniya.
 
-Isa-sa niyang tiningnan ang mga nakapaligid sa kaniya. Walang pagtutol sa mga mata ng mga ito. Ang nababakas niya’y paghanga. Ang Nakita niya’y pangingimi.
+Isa-isa niyang tiningnan ang mga nakapaligid sa kaniya. Walang pagtutol sa mga mata ng mga ito. Ang nababakas niya’y paghanga. Ang Nakita niya’y pangingimi.
 
 Pinangingimian siya!`,
   },
@@ -386,6 +386,6 @@ Pinangingimian siya!`,
     
 <span class='text-center'>I M P E N G  N E G R O</span>
 </span>`,
-    parseHTML: true
+    parseHTML: true,
   },
 ];

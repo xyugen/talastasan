@@ -61,8 +61,8 @@ export const impengNegroTalasalitaan: Salita[] = [
     sentence: "Kuyom ni Impen ang kanyang palad sa matinding galit kay Ogor.",
   },
   {
-    word: "Lankay",
-    syllabication: "lan•káy",
+    word: "Langkay",
+    syllabication: "lang•káy",
     meaning: "Pangkat ng mga tao.",
     partOfSpeech: "Pangngalan",
     sentence: "Nakikita na ni Impen ang langkay ng mga agwador sa gripo.",

@@ -19,8 +19,14 @@ const contactDetails = [
     email: "danikafey7@gmail.com",
     phoneNumber: ["09751086352", "09667454975"],
   },
+  {
+    name: "Arias, Jorym Renz M.",
+    title: "Web Developer",
+    email: "renzyx.dev@gmail.com",
+    phoneNumber: "09106054296",
+  },
 ];
 
 export default contactDetails;
 
-export type ContactDetail = typeof contactDetails[number];
+export type ContactDetail = (typeof contactDetails)[number];

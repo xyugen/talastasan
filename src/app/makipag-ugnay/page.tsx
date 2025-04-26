@@ -31,9 +31,10 @@ const Page = () => {
               key={index}
               className="space-y-1 text-sm md:text-base break-words"
             >
-              <h3 className="text-lg font-semibold text-foreground underline underline-offset-2">
+              <h3 className="inline-block text-lg font-semibold text-foreground">
                 {detail.name}
               </h3>
+              {detail.title && <p className="ml-2 inline-block">({detail.title})</p>}
               <p className="flex items-center gap-2">
                 <Mail className="size-4" />
                 <span className="font-semibold">Email:</span>

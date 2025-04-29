@@ -76,19 +76,19 @@ const Page = () => {
                     Kasabay nito, ang disenyo at implementasyon ng mungkahing
                     website na TalasTasan.com ay sinundan ang sistematikong
                     hakbang ng ADDIE Model na kinabibilangan ng limang yugto:
-                    Pagsusuri (Analysis), Disenyo (Design), Pag-unlad
-                    (Development), Pagpapatupad (Implementation), at Pagsusuri
+                    Pagsusuri (Analysis), Disenyo (Design), Pagbuo
+                    (Development), Pagpapatupad (Implementation), at Ebalwasyon
                     (Evaluation). Sa yugto ng pagsusuri, tinukoy ang mga
                     pangangailangan ng mga mag-aaral na may mababang antas ng
-                    pang-unawa at kasanayan sa pagbasa. Sa disenyo at pag-unlad,
-                    nilikha ang mungkahing website na TalasTasan.com na may
-                    nilalaman tulad ng maikling kuwento na inilahad gamit ang
-                    interactive features tulad ng Buod, Buong Kuwento, at
+                    pang-unawa at kasanayan sa pagbasa. Sa yugto ng disenyo at
+                    pagbuo, nilikha ang mungkahing website na TalasTasan.com na
+                    may nilalaman tulad ng maikling kuwento na inilahad gamit
+                    ang interactive features tulad ng Buod, Buong Kuwento, at
                     Kuwentong May Larawan upang mapataas ang interes at
                     partisipasyon ng mga mag-aaral. Sa yugto ng pagpapatupad,
                     ginamit ng mga piling mag-aaral ang mungkahing website na
                     TalasTasan.com bilang bahagi ng interbensyon, at sa yugto ng
-                    pagsusuri, isinagawa ang pretest, posttest, at sarbey upang
+                    ebalwasyon, isinagawa ang pretest, posttest, at sarbey upang
                     masukat ang epekto at kapakinabangan nito sa kanilang
                     kasanayan sa pagbasa at pagpapalawak ng bokabularyo. Sa
                     kabuuan, ang Multiliteracies Theory at ADDIE Model ay

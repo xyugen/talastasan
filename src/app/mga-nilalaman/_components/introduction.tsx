@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import parse from "html-react-parser";
 import PageTitle from "./page-title";
 
 const Introduction = ({ content }: { content: string }) => {
@@ -8,10 +9,11 @@ const Introduction = ({ content }: { content: string }) => {
             <p
                 className={cn(
                     "text-lg mx-auto w-full md:w-3/4 hlg:w-3/5 p-4 text-justify whitespace-pre-wrap",
-                    "first-letter:font-lora first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-secondary first-letter:mr-3 first-letter:float-left"
+                    "first-letter:font-lora first-letter:text-7xl first-letter:font-bold first-letter:text-secondary first-letter:mr-3 first-letter:float-left",
+                    // "first-line:tracking-widest first-line:uppercase"
                 )}
             >
-                {content}
+                {parse(content)}
             </p>
         </div>
     );

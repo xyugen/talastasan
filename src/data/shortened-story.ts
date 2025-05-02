@@ -15,3 +15,17 @@ export const saLupaNgSarilingBayanShortenedStory = `Si Layo ay naulila sa murang
 Isang araw, lumapit sa kanya ang kumpare ni Tiyo Julio upang humingi ng tulong sa isang kaso sa Manahan. Simula noon, nagsimulang bumalik ang kanyang ugnayan sa iilang taong mula sa San Roque. Sa paglipas ng panahon, naging malapit siya kay Tiyo Julio at sa anak nitong si Ben—ang natitira niyang koneksyon sa bayan ng kanyang kabataan.
 
 Nang matuklasang may malubhang sakit si Layo, madalas siyang dalawin nina Tiyo Julio at Ben. Bago siya pumanaw, mahigpit niyang ipinagbilin sa kanyang asawang si Ising na nais niyang mahimlay sa Maynila. Gayunman, sa kabila ng kanyang kagustuhan, siya ay inilibing sa San Roque—ang bayang matagal niyang iniwasan ngunit sa huli ay nagsilbing kanyang hantungan.`;
+
+export const quentinShortenedStory = `Sa matahimik at makasaysayang bayan ng San Fernando, dumalaw si Nes, isang manunulat, kasama ang kaibigang si Ben—dating seminarista na ngayo’y muling bumalik sa kumbento ng kanyang amain, si Padre Gonzalo. Sa tila panatag na paligid ng simbahan, dahan-dahang umusbong ang isang kuwento ng tahimik na lungkot at pag-ibig na hindi kailanman nasuklian—ang kuwento ni Quentin.
+
+Si Quentin ay isang payak binata—may kapansanan, ulila sa pagmamahal ng kanyang ina, at itinuturing na baliw ng marami. Lumaki siyang palaboy-laboy, hanggang sa siya’y kupkupin ng pari at ituring na tagapangalaga ng simbahan. Sa pagiging kampanero, natutunan ni Quentin ang wikang hindi sinasalita ng tao—ang himig ng kampana. Sa bawat tugtog nito, inilalagak niya ang kanyang damdamin: may sigla sa pagsilang, may pagluha sa paglisan, at may galak sa pag-iisang dibdib.
+
+Ngunit sa puso ng kampanero ay may lihim na panalangin—si Felicidad. Isang magandang dalaga, relihiyosa, at puno ng samahang Hijas de Maria. Para kay Quentin, si Felicidad ay hindi basta babae—siya’y isang diwata, isang birhen sa altar ng kanyang damdamin, isang pangarap na hinahawakan lamang sa dasal.
+
+Dahil sa lumalamig na pakikitungo ni Ben sa kanya, lumapit si Quentin kay Nes upang ibahagi ang kanyang saloobin. Sa bawat gabi, sa lilim ng punong kabalyero, ibinubuhos niya ang kanyang kuwento—puno ng pag-asang balang araw ay mapapansin din siya ni Felicidad. Sa kabila ng sakit ng katotohanang alam ni Nes—na kailanman ay hindi siya mamahalin ng dalaga—nangibabaw pa rin ang malasakit. Pinili niyang huwag sirain ang munting pag-asa ng kaibigan.
+
+Ngunit dumating ang balitang pinakakinatatakutan—ikakasal na si Felicidad sa isang anak-mayaman. At kay Quentin, ang balitang iyon ay parang isang kampanang bumasag sa katahimikan ng kanyang pangarap.
+
+Sa araw ng kasal, si Felicidad ay tila isang bulaklak na inihahandog sa langit—marikit, malinis, at tila hindi maaabot. At sa itaas ng simboryo, si Quentin ay naroon—hawak ang lubid ng kampana, tinutugtog ang pinakamalungkot ngunit pinakamatapat na handog ng puso: isang alingawngaw ng pag-ibig na hindi kailanman nasambit, isang himig ng damdaming hindi kailanman tinugon.
+
+Sa kanyang huling tugtog, nilagyan ni Quentin ng tinig ang kanyang katahimikan—isang paalam, isang panalangin, isang pagkilala na minsan, minahal niya si Felicidad sa paraang tanging ang kampana lamang ang lubos na nakauunawa.`

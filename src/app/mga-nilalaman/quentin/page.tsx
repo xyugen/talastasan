@@ -1,7 +1,9 @@
 "use client";
 
+import Buod from "@/components/stories/buod/buod";
 import BuongKuwento from "@/components/stories/buong-kuwento/buong-kuwento";
 import Talasalitaan from "@/components/stories/talasalitaan/talasalitaan";
+import { quentinShortenedStory } from "@/data/shortened-story";
 import { quentinStoryContents } from "@/data/stories-contents";
 import { quentinIntroduction } from "@/data/stories-introduction";
 import { quentinTalasalitaan } from "@/data/talasalitaan";
@@ -21,7 +23,7 @@ const quentinStories: AccordionStory[] = [
     },
     {
         title: "Buod",
-        content: () => <div />,
+        content: () => <Buod shortenedStory={quentinShortenedStory} />,
     },
     {
         title: "Kuwentong May Larawan",

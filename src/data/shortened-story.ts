@@ -18,7 +18,7 @@ Nang matuklasang may malubhang sakit si Layo, madalas siyang dalawin nina Tiyo J
 
 export const quentinShortenedStory = `Sa matahimik at makasaysayang bayan ng San Fernando, dumalaw si Nes, isang manunulat, kasama ang kaibigang si Ben—dating seminarista na ngayo’y muling bumalik sa kumbento ng kanyang amain, si Padre Gonzalo. Sa tila panatag na paligid ng simbahan, dahan-dahang umusbong ang isang kuwento ng tahimik na lungkot at pag-ibig na hindi kailanman nasuklian—ang kuwento ni Quentin.
 
-Si Quentin ay isang payak binata—may kapansanan, ulila sa pagmamahal ng kanyang ina, at itinuturing na baliw ng marami. Lumaki siyang palaboy-laboy, hanggang sa siya’y kupkupin ng pari at ituring na tagapangalaga ng simbahan. Sa pagiging kampanero, natutunan ni Quentin ang wikang hindi sinasalita ng tao—ang himig ng kampana. Sa bawat tugtog nito, inilalagak niya ang kanyang damdamin: may sigla sa pagsilang, may pagluha sa paglisan, at may galak sa pag-iisang dibdib.
+Si Quentin ay isang payak na binata—may kapansanan, ulila sa pagmamahal ng kanyang ina, at itinuturing na baliw ng marami. Lumaki siyang palaboy-laboy, hanggang sa siya’y kupkupin ng pari at ituring na tagapangalaga ng simbahan. Sa pagiging kampanero, natutuhan ni Quentin ang wikang hindi sinasalita ng tao—ang himig ng kampana. Sa bawat tugtog nito, inilalagak niya ang kanyang damdamin: may sigla sa pagsilang, may pagluha sa paglisan, at may galak sa pag-iisang dibdib.
 
 Ngunit sa puso ng kampanero ay may lihim na panalangin—si Felicidad. Isang magandang dalaga, relihiyosa, at puno ng samahang Hijas de Maria. Para kay Quentin, si Felicidad ay hindi basta babae—siya’y isang diwata, isang birhen sa altar ng kanyang damdamin, isang pangarap na hinahawakan lamang sa dasal.
 
